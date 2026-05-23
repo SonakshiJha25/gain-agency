@@ -1,0 +1,140 @@
+import Link from "next/link";
+
+import {
+  ArrowRight,
+  CalendarDays
+} from "lucide-react";
+
+export default function ServicesCTA() {
+  return (
+
+    // CTA Section
+    <section className="relative py-24 px-6 bg-white overflow-hidden">
+
+      {/* Background Glow */}
+      <div className="absolute top-[-120px] right-[-120px] w-[320px] h-[320px] bg-purple-100 rounded-full blur-3xl opacity-60" />
+
+      {/* Main Container */}
+      <div className="relative z-10 max-w-6xl mx-auto">
+
+        {/* CTA Card */}
+        <div className="relative overflow-hidden bg-[#6d28d9] rounded-[32px] px-8 md:px-16 py-16 md:py-20 shadow-xl shadow-purple-900/10">
+
+          {/* Inner Glow */}
+          <div className="absolute top-[-120px] right-[-120px] w-[320px] h-[320px] bg-white/10 rounded-full blur-3xl" />
+
+          {/* Background Text */}
+          <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none">
+
+            <h1
+              className="
+                text-[24vw]
+                md:text-[16vw]
+                font-black
+                tracking-[0.12em]
+                leading-none
+                text-transparent
+                [-webkit-text-stroke:1px_rgba(255,255,255,0.06)]
+              "
+            >
+              GROW
+            </h1>
+
+          </div>
+
+          {/* Content */}
+          <div className="relative z-10 text-center max-w-3xl mx-auto">
+
+            {/* Badge */}
+            <div className="inline-flex items-center gap-2 bg-white/10 border border-white/10 px-4 py-1.5 rounded-full mb-6">
+
+              <span className="w-2 h-2 rounded-full bg-white" />
+
+              <span className="text-[11px] font-bold text-white uppercase tracking-[0.08em]">
+                Ready To Scale?
+              </span>
+
+            </div>
+
+            {/* Heading */}
+            <h2 className="text-[28px] md:text-[42px] leading-[1.05] font-black tracking-[-0.05em] text-white">
+              Let’s Build Your
+              <br />
+              Amazon Growth System
+            </h2>
+
+            {/* Description */}
+            <p className="mt-5 text-[14px] md:text-[15px] leading-[1.8] text-purple-100">
+              Get a personalized consultation focused on scaling strategy, account performance, and long-term Amazon growth.
+            </p>
+
+            {/* Buttons */}
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-8">
+
+              {/* Primary Button */}
+              <Link
+                href="/book-consultation"
+                className="
+                  inline-flex
+                  items-center
+                  gap-2
+                  bg-white
+                  hover:bg-[#f3f0ff]
+                  text-[#6d28d9]
+                  px-5
+                  py-3
+                  rounded-xl
+                  text-[14px]
+                  font-medium
+                  transition-all
+                  duration-300
+                  hover:-translate-y-0.5
+                "
+              >
+
+                <CalendarDays className="w-4 h-4" />
+
+                Book Free Consultation
+
+              </Link>
+
+              {/* Secondary Button */}
+              <Link
+                href="/services#process"
+                className="
+                  inline-flex
+                  items-center
+                  gap-2
+                  border
+                  border-white/20
+                  bg-white/5
+                  hover:bg-white/10
+                  text-white
+                  px-5
+                  py-3
+                  rounded-xl
+                  text-[14px]
+                  font-medium
+                  transition-all
+                  duration-300
+                  hover:-translate-y-0.5
+                "
+              >
+
+                View Growth Process
+
+                <ArrowRight className="w-4 h-4" />
+
+              </Link>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+  );
+}

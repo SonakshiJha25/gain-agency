@@ -1,3 +1,34 @@
+# GAIN — Amazon Growth Agency Website
+
+A premium multi-page Amazon growth agency website built using Next.js and Tailwind CSS.
+
+Focused on scalable frontend architecture, modern UI/UX, responsive layouts, and conversion-focused design systems.
+
+---
+
+## Tech Stack
+
+- Next.js
+- React.js
+- Tailwind CSS
+- Lucide React
+
+---
+
+## Features
+
+- Premium responsive UI
+- Multi-page routing
+- Services dropdown navigation
+- FAQ accordion section
+- Resources page
+- Case Studies page
+- About page
+- Consultation booking page
+- Reusable component architecture
+
+---
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started

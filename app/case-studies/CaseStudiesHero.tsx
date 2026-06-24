@@ -26,7 +26,7 @@ export default function CaseStudiesHero() {
           <h1 className="text-[36px] md:text-[66px] leading-[0.9] font-black tracking-[-0.06em] text-[#020617]">
             Real Strategies
             <br />
-            <span className="bg-gradient-to-r from-[#8b5cf6] via-[#7c3aed] to-[#6d28d9] bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-[#8b5cf6] via-[#7c3aed] to-[#30a5b0] bg-clip-text text-transparent">
               Real Performance
             </span>
           </h1>

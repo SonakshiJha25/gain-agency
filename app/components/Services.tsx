@@ -30,7 +30,7 @@ export default function Services() {
             Services Built For
             <br />
 
-            <span className="bg-gradient-to-r from-[#8b5cf6] via-[#7c3aed] to-[#6d28d9] bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-[#8b5cf6] via-[#7c3aed] to-[#30a5b0] bg-clip-text text-transparent">
               Amazon Brand Growth
             </span>
 
@@ -58,19 +58,17 @@ export default function Services() {
 
             {/* Card Title */}
             <h3 className="text-[22px] font-bold tracking-[-0.03em] text-[#111827]">
-              Ad Optimization
+              Sponsored Ads (PPC)
             </h3>
 
             {/* Card Description */}
             <p className="mt-4 text-[15px] leading-[1.9] text-[#6b7280]">
-              Data-driven Amazon PPC strategies focused on increasing
-              profitability, reducing wasted spend, and scaling your
-              products with smarter advertising decisions.
+              Campaigns that convert clicks into customers. End-to-end management of Sponsored Products, Sponsored Brands, and Sponsored Display campaigns.
             </p>
 
             {/* Bottom Keywords */}
-            <div className="mt-7 text-[#6d28d9] text-[14px] font-semibold leading-[1.8]">
-              Campaign Strategy • ROAS Scaling • Keyword Research
+            <div className="mt-7 text-[#30a5b0] text-[14px] font-semibold leading-[1.8]">
+              Sponsored Products • Sponsored Brands • Sponsored Display
             </div>
 
           </div>
@@ -85,19 +83,17 @@ export default function Services() {
 
             {/* Card Title */}
             <h3 className="text-[22px] font-bold tracking-[-0.03em] text-[#111827]">
-              Account Management
+              Listing Optimization
             </h3>
 
             {/* Card Description */}
             <p className="mt-4 text-[15px] leading-[1.9] text-[#6b7280]">
-              Complete Amazon account management including listing
-              monitoring, growth planning, analytics tracking,
-              and continuous optimization for sustainable scaling.
+              Be found. Be chosen. Improve conversions with keyword-rich, high-performing product listings.
             </p>
 
             {/* Bottom Keywords */}
-            <div className="mt-7 text-[#6d28d9] text-[14px] font-semibold leading-[1.8]">
-              Analytics • Scaling Systems • Performance Tracking
+            <div className="mt-7 text-[#30a5b0] text-[14px] font-semibold leading-[1.8]">
+              Keyword Rich • Search Ranking • High-Performing Copy
             </div>
 
           </div>
@@ -112,19 +108,17 @@ export default function Services() {
 
             {/* Card Title */}
             <h3 className="text-[22px] font-bold tracking-[-0.03em] text-[#111827]">
-              A+ Content Creation
+              Visual Branding
             </h3>
 
             {/* Card Description */}
             <p className="mt-4 text-[15px] leading-[1.9] text-[#6b7280]">
-              Premium branded visuals and conversion-focused
-              content designed to increase trust, improve engagement,
-              and create a stronger customer experience.
+              Stand out with a Brand Story. Design compelling visuals for A+ Content, Store page, Product images and Product videos that drive conversions.
             </p>
 
             {/* Bottom Keywords */}
-            <div className="mt-7 text-[#6d28d9] text-[14px] font-semibold leading-[1.8]">
-              Brand Visuals • Enhanced Content • Conversion Design
+            <div className="mt-7 text-[#30a5b0] text-[14px] font-semibold leading-[1.8]">
+              A+ Content • Brand Store Page • Product Imagery & Video
             </div>
 
           </div>

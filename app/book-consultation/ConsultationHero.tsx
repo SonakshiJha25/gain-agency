@@ -48,7 +48,7 @@ export default function ConsultationHero() {
           <h1 className="text-[30px] md:text-[50px] leading-[0.96] font-black tracking-[-0.06em] text-[#020617]">
             Let’s Build Your
             <br />
-            <span className="bg-gradient-to-r from-[#8b5cf6] via-[#7c3aed] to-[#6d28d9] bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-[#8b5cf6] via-[#7c3aed] to-[#30a5b0] bg-clip-text text-transparent">
               Amazon Growth Plan
             </span>
           </h1>
@@ -206,7 +206,7 @@ export default function ConsultationHero() {
             {/* CTA */}
             <Link
               href="#form"
-              className="w-full mt-6 py-3 rounded-xl bg-[#6d28d9] hover:bg-[#5b21b6] text-white text-[14px] font-semibold transition-all duration-300 inline-flex items-center justify-center gap-2"
+              className="w-full mt-6 py-3 rounded-xl bg-gradient-to-r from-[#6d28d9] via-[#6d28d9] to-[#30a5b0] hover:from-[#5b21b6] hover:to-[#28929c] text-white text-[14px] font-semibold transition-all duration-300 inline-flex items-center justify-center gap-2"
             >
 
               Continue To Form

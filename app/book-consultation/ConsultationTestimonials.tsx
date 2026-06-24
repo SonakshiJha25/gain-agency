@@ -29,7 +29,7 @@ export default function ConsultationTestimonials() {
             Trusted By
             <br />
 
-            <span className="bg-gradient-to-r from-[#8b5cf6] via-[#7c3aed] to-[#6d28d9] bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-[#8b5cf6] via-[#7c3aed] to-[#30a5b0] bg-clip-text text-transparent">
               Growing Amazon Brands
             </span>
 
@@ -164,7 +164,7 @@ export default function ConsultationTestimonials() {
             Ready To Grow
             <br />
 
-            <span className="bg-gradient-to-r from-[#8b5cf6] via-[#7c3aed] to-[#6d28d9] bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-[#8b5cf6] via-[#7c3aed] to-[#30a5b0] bg-clip-text text-transparent">
               Your Amazon Brand?
             </span>
 
@@ -179,7 +179,7 @@ export default function ConsultationTestimonials() {
           {/* CTA Button */}
           <Link
             href="#form"
-            className="mt-8 bg-[#6d28d9] hover:bg-[#5b21b6] text-white px-5 py-3 rounded-xl text-[14px] font-medium transition-all duration-300 hover:-translate-y-0.5 inline-block"
+            className="mt-8 bg-gradient-to-r from-[#6d28d9] via-[#6d28d9] to-[#30a5b0] hover:from-[#5b21b6] hover:to-[#28929c] text-white px-5 py-3 rounded-xl text-[14px] font-medium transition-all duration-300 hover:-translate-y-0.5 inline-block"
           >
             Book Your Free Consultation
           </Link>

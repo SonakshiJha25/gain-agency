@@ -140,7 +140,7 @@ export default function ContactForm() {
         <button
           onClick={handleSubmit}
           disabled={loading}
-          className="bg-[#6d28d9] hover:bg-[#5b21b6] text-white px-12 py-4.5 rounded-full text-[16px] font-semibold shadow-lg shadow-purple-300/30 transition-all duration-300 hover:-translate-y-0.5 flex items-center gap-2 disabled:opacity-60 disabled:pointer-events-none"
+          className="bg-gradient-to-r from-[#6d28d9] via-[#6d28d9] to-[#30a5b0] hover:from-[#5b21b6] hover:to-[#28929c] text-white px-12 py-4.5 rounded-full text-[16px] font-semibold shadow-lg shadow-purple-300/30 transition-all duration-300 hover:-translate-y-0.5 flex items-center gap-2 disabled:opacity-60 disabled:pointer-events-none"
         >
           {loading ? "Submitting..." : "Submit Request"}
           {!loading && <ArrowRight className="w-5 h-5" />}

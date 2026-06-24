@@ -1,8 +1,8 @@
 import {
-  Eye,
-  Layers3,
-  Sparkles,
-  Gauge
+  TrendingUp,
+  Volume2,
+  Lightbulb,
+  Compass
 } from "lucide-react";
 
 export default function AboutValues() {
@@ -22,25 +22,24 @@ export default function AboutValues() {
 
           {/* Label */}
           <p className="text-[#6d28d9] text-[11px] font-bold tracking-[0.28em] uppercase mb-5">
-            Core Values
+            The GAIN Promise
           </p>
 
           {/* Heading */}
           <h2 className="text-[28px] md:text-[42px] leading-[1.05] font-black tracking-[-0.05em] text-[#020617]">
 
-            Principles Behind
+            Our Name Defines
             <br />
 
-            Every Growth Decision
+            Our Philosophy
 
           </h2>
 
           {/* Description */}
           <p className="mt-6 text-[15px] md:text-[14px] leading-[1.9] text-[#6b7280]">
 
-            Every strategy, optimization,
-            and execution system is built around
-            clarity, performance, and scalability.
+            At GAIN, we specialize in helping brands unlock their full potential on Amazon.
+            Our name defines our philosophy and commitment to your success:
 
           </p>
 
@@ -49,115 +48,105 @@ export default function AboutValues() {
         {/* Values Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-7 mt-20">
 
-          {/* VALUE 1 */}
+          {/* VALUE 1 (G) */}
           <div className="bg-white border border-[#ece4ff] rounded-[32px] p-9">
 
             {/* Icon */}
             <div className="w-14 h-14 rounded-2xl bg-[#f3edff] flex items-center justify-center">
 
-              <Eye className="w-6 h-6 text-[#6d28d9]" />
+              <TrendingUp className="w-6 h-6 text-[#30a5b0]" />
 
             </div>
 
             {/* Title */}
             <h3 className="mt-6 text-[22px] font-bold tracking-[-0.03em] text-[#020617]">
 
-              Clarity Over Complexity
+              Grow
 
             </h3>
 
             {/* Description */}
             <p className="mt-4 text-[14px] leading-[1.9] text-[#6b7280]">
 
-              We focus on structured systems,
-              transparent execution,
-              and decisions backed by logic —
-              not unnecessary complexity.
+              Grow your revenue with scalable strategies.
 
             </p>
 
           </div>
 
-          {/* VALUE 2 */}
+          {/* VALUE 2 (A) */}
           <div className="bg-[#6d28d9] rounded-[32px] p-9 text-white">
 
             {/* Icon */}
             <div className="w-14 h-14 rounded-2xl bg-white/10 flex items-center justify-center">
 
-              <Gauge className="w-6 h-6" />
+              <Volume2 className="w-6 h-6" />
 
             </div>
 
             {/* Title */}
             <h3 className="mt-6 text-[22px] font-bold tracking-[-0.03em]">
 
-              Performance Matters
+              Amplify
 
             </h3>
 
             {/* Description */}
             <p className="mt-4 text-[14px] leading-[1.9] text-purple-100">
 
-              Every action is tied to measurable
-              business outcomes like profitability,
-              conversion growth,
-              and scaling efficiency.
+              Amplify your visibility and conversions.
 
             </p>
 
           </div>
 
-          {/* VALUE 3 */}
+          {/* VALUE 3 (I) */}
           <div className="bg-[#6d28d9] rounded-[32px] p-9 text-white">
 
             {/* Icon */}
             <div className="w-14 h-14 rounded-2xl bg-white/10 flex items-center justify-center">
 
-              <Layers3 className="w-6 h-6" />
+              <Lightbulb className="w-6 h-6" />
 
             </div>
 
             {/* Title */}
             <h3 className="mt-6 text-[22px] font-bold tracking-[-0.03em]">
 
-              Systems Create Stability
+              Innovate
 
             </h3>
 
             {/* Description */}
             <p className="mt-4 text-[14px] leading-[1.9] text-purple-100">
 
-              Sustainable growth happens through
-              repeatable systems —
-              not random bursts of performance.
+              Innovate with cutting-edge ad tactics now, not what worked last year.
 
             </p>
 
           </div>
 
-          {/* VALUE 4 */}
+          {/* VALUE 4 (N) */}
           <div className="bg-white border border-[#ece4ff] rounded-[32px] p-9">
 
             {/* Icon */}
             <div className="w-14 h-14 rounded-2xl bg-[#f3edff] flex items-center justify-center">
 
-              <Sparkles className="w-6 h-6 text-[#6d28d9]" />
+              <Compass className="w-6 h-6 text-[#30a5b0]" />
 
             </div>
 
             {/* Title */}
             <h3 className="mt-6 text-[22px] font-bold tracking-[-0.03em] text-[#020617]">
 
-              Better Brands Win Long-Term
+              Navigate
 
             </h3>
 
             {/* Description */}
             <p className="mt-4 text-[14px] leading-[1.9] text-[#6b7280]">
 
-              Strong branding, trust,
-              customer experience,
-              and positioning drive sustainable scale.
+              Navigate the complexity of Amazon advertising.
 
             </p>
 

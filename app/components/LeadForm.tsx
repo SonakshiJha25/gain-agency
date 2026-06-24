@@ -18,7 +18,7 @@ export default function LeadForm() {
         {/* Header */}
         <div className="text-center mb-10">
           <h2 className="text-[28px] md:text-[42px] leading-[1.05] font-black tracking-[-0.05em] text-[#020617]">
-            Let’s Grow Your Amazon Business
+            Ready to <span className="text-[#30a5b0]">GAIN</span> your competitive edge on Amazon?
           </h2>
 
           <p className="mt-5 text-[15px] md:text-[14px] leading-[1.9] text-[#6b7280]">
@@ -55,8 +55,8 @@ export default function LeadForm() {
 
           {/* centered button */}
           <div className="flex justify-center mt-7">
-            <button className="bg-[#6d28d9] hover:bg-[#5b21b6] text-white px-12 py-4.5 rounded-full text-[16px] font-semibold transition-all duration-300 hover:-translate-y-0.5 shadow-lg shadow-purple-300/30 flex items-center gap-2">
-              Get My Free Growth Plan
+            <button className="bg-gradient-to-r from-[#6d28d9] via-[#6d28d9] to-[#30a5b0] hover:from-[#5b21b6] hover:to-[#28929c] text-white px-12 py-4.5 rounded-full text-[16px] font-semibold transition-all duration-300 hover:-translate-y-0.5 shadow-lg shadow-purple-300/30 flex items-center gap-2">
+              Book a Strategy Call
               <ArrowRight className="w-5 h-5" />
             </button>
           </div>

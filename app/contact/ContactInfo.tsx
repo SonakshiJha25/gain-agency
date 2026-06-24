@@ -5,16 +5,16 @@ export default function ContactInfo() {
     {
       icon: <Mail className="w-6 h-6 text-[#6d28d9]" />,
       title: "Email Us",
-      value: "hello@gain.agency",
+      value: "hello@gainagency.com",
       description: "For general inquiries, sales, and partnerships.",
-      link: "mailto:hello@gain.agency",
+      link: "mailto:hello@gainagency.com",
     },
     {
       icon: <Phone className="w-6 h-6 text-[#6d28d9]" />,
       title: "Call Us",
-      value: "+1 (555) 123-4567",
+      value: "+91-XXXXXXXXXX",
       description: "Speak directly with one of our growth specialists.",
-      link: "tel:+15551234567",
+      link: "tel:+91XXXXXXXXXX",
     },
     {
       icon: <MapPin className="w-6 h-6 text-[#6d28d9]" />,

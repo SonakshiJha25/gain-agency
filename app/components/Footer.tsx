@@ -21,13 +21,17 @@ export default function Footer() {
 
           {/* Brand */}
           <div>
-            <h3 className="text-xl font-black text-gray-900">
-              Amazon Growth Agency
-            </h3>
+            <Link href="/" className="inline-block mb-3">
+              <img
+                src="/logos/GAIN - clean logo.png"
+                alt="GAIN Logo"
+                className="h-10 w-auto object-contain"
+              />
+            </Link>
 
-            <p className="mt-3 text-gray-600 text-sm leading-relaxed">
-              We help Amazon brands scale through performance-driven Ads,
-              Account Management, and A+ Content optimization.
+            <p className="mt-1 text-gray-600 text-sm leading-relaxed">
+              We help brands scale profitably on Amazon through expert ad strategy,
+              creative optimization, and performance marketing.
             </p>
           </div>
 
@@ -68,12 +72,12 @@ export default function Footer() {
 
               <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4 text-purple-600" />
-                support@youragency.com
+                hello@gainagency.com
               </div>
 
               <div className="flex items-center gap-2">
                 <Phone className="w-4 h-4 text-purple-600" />
-                +91 98765 43210
+                +91-XXXXXXXXXX
               </div>
 
               <div className="flex items-center gap-2">
@@ -90,7 +94,7 @@ export default function Footer() {
         <div className="mt-12 pt-6 border-t border-purple-100 flex flex-col md:flex-row items-center justify-between gap-4">
 
           <p className="text-sm text-gray-600">
-            © {new Date().getFullYear()} Amazon Growth Agency. All rights reserved.
+            © {new Date().getFullYear()} GAIN. All rights reserved.
           </p>
 
           <div className="flex gap-6 text-sm text-gray-600">

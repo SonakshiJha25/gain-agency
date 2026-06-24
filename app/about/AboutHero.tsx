@@ -36,7 +36,7 @@ export default function AboutHero() {
           <br />
           Growth Systems
           <br />
-          <span className="bg-gradient-to-r from-[#8b5cf6] via-[#7c3aed] to-[#6d28d9] bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-[#8b5cf6] via-[#7c3aed] to-[#30a5b0] bg-clip-text text-transparent">
             That Actually Scale
           </span>
         </h1>

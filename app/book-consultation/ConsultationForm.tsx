@@ -98,7 +98,7 @@ export default function ConsultationForm() {
               Ready To Scale
               <br />
 
-              <span className="bg-gradient-to-r from-[#8b5cf6] via-[#7c3aed] to-[#6d28d9] bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-[#8b5cf6] via-[#7c3aed] to-[#30a5b0] bg-clip-text text-transparent">
                 Smarter?
               </span>
 
@@ -276,7 +276,7 @@ export default function ConsultationForm() {
               <button
                 type="submit"
                 disabled={loading}
-                className="bg-[#6d28d9] hover:bg-[#5b21b6] text-white px-12 py-4 rounded-full text-[16px] font-semibold shadow-lg shadow-purple-300/30 transition-all duration-300 hover:-translate-y-0.5 flex items-center gap-2 disabled:opacity-70"
+                className="bg-gradient-to-r from-[#6d28d9] via-[#6d28d9] to-[#30a5b0] hover:from-[#5b21b6] hover:to-[#28929c] text-white px-12 py-4 rounded-full text-[16px] font-semibold shadow-lg shadow-purple-300/30 transition-all duration-300 hover:-translate-y-0.5 flex items-center gap-2 disabled:opacity-70"
               >
 
                 {

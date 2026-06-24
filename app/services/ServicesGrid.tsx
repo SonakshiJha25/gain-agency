@@ -31,7 +31,7 @@ export default function ServicesGrid() {
             Built Around
             <br />
 
-            <span className="bg-gradient-to-r from-[#8b5cf6] via-[#7c3aed] to-[#6d28d9] bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-[#8b5cf6] via-[#7c3aed] to-[#30a5b0] bg-clip-text text-transparent">
               Amazon Performance
             </span>
 
@@ -63,7 +63,7 @@ export default function ServicesGrid() {
             <div className="flex items-center justify-between mt-8">
 
               <h3 className="text-[26px] font-black tracking-[-0.04em] text-[#111827]">
-                Ad Optimization
+                Sponsored Ads (PPC)
               </h3>
 
               <ArrowUpRight className="w-5 h-5 text-[#6d28d9] transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" />
@@ -72,32 +72,30 @@ export default function ServicesGrid() {
 
             {/* Description */}
             <p className="mt-5 text-[15px] leading-[1.9] text-[#6b7280]">
-              Performance-focused Amazon PPC management
-              designed to reduce wasted spend, improve ROAS,
-              and scale profitable campaigns.
+              Campaigns that convert clicks into customers. End-to-end management of Sponsored Products, Sponsored Brands, and Sponsored Display campaigns.
             </p>
 
             {/* Features */}
             <div className="space-y-3 mt-8">
 
               <div className="flex items-center gap-3">
-                <div className="w-2 h-2 rounded-full bg-[#6d28d9]" />
+                <div className="w-2 h-2 rounded-full bg-[#30a5b0]" />
                 <p className="text-[14px] text-[#111827]">
-                  Campaign Structure Optimization
+                  Sponsored Products Optimization
                 </p>
               </div>
 
               <div className="flex items-center gap-3">
-                <div className="w-2 h-2 rounded-full bg-[#6d28d9]" />
+                <div className="w-2 h-2 rounded-full bg-[#30a5b0]" />
                 <p className="text-[14px] text-[#111827]">
-                  Keyword Research & Scaling
+                  Sponsored Brands Scaling
                 </p>
               </div>
 
               <div className="flex items-center gap-3">
-                <div className="w-2 h-2 rounded-full bg-[#6d28d9]" />
+                <div className="w-2 h-2 rounded-full bg-[#30a5b0]" />
                 <p className="text-[14px] text-[#111827]">
-                  ROAS & ACOS Monitoring
+                  Sponsored Display Campaigns
                 </p>
               </div>
 
@@ -119,7 +117,7 @@ export default function ServicesGrid() {
             <div className="flex items-center justify-between mt-8">
 
               <h3 className="text-[26px] font-black tracking-[-0.04em] text-[#111827]">
-                Account Management
+                Listing Optimization
               </h3>
 
               <ArrowUpRight className="w-5 h-5 text-[#6d28d9] transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" />
@@ -128,32 +126,30 @@ export default function ServicesGrid() {
 
             {/* Description */}
             <p className="mt-5 text-[15px] leading-[1.9] text-[#6b7280]">
-              End-to-end Amazon account management focused
-              on operational efficiency, listing health,
-              scaling systems, and growth consistency.
+              Be found. Be chosen. Improve conversions with keyword-rich, high-performing product listings.
             </p>
 
             {/* Features */}
             <div className="space-y-3 mt-8">
 
               <div className="flex items-center gap-3">
-                <div className="w-2 h-2 rounded-full bg-[#6d28d9]" />
+                <div className="w-2 h-2 rounded-full bg-[#30a5b0]" />
                 <p className="text-[14px] text-[#111827]">
-                  Listing Monitoring & Optimization
+                  Keyword Rich Copywriting
                 </p>
               </div>
 
               <div className="flex items-center gap-3">
-                <div className="w-2 h-2 rounded-full bg-[#6d28d9]" />
+                <div className="w-2 h-2 rounded-full bg-[#30a5b0]" />
                 <p className="text-[14px] text-[#111827]">
-                  Analytics & Performance Tracking
+                  Search Ranking Optimization
                 </p>
               </div>
 
               <div className="flex items-center gap-3">
-                <div className="w-2 h-2 rounded-full bg-[#6d28d9]" />
+                <div className="w-2 h-2 rounded-full bg-[#30a5b0]" />
                 <p className="text-[14px] text-[#111827]">
-                  Scaling & Growth Planning
+                  Conversion Improvement
                 </p>
               </div>
 
@@ -175,7 +171,7 @@ export default function ServicesGrid() {
             <div className="flex items-center justify-between mt-8">
 
               <h3 className="text-[26px] font-black tracking-[-0.04em] text-[#111827]">
-                A+ Content Creation
+                Visual Branding
               </h3>
 
               <ArrowUpRight className="w-5 h-5 text-[#6d28d9] transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" />
@@ -184,32 +180,30 @@ export default function ServicesGrid() {
 
             {/* Description */}
             <p className="mt-5 text-[15px] leading-[1.9] text-[#6b7280]">
-              Premium branded visuals and conversion-focused
-              content systems designed to improve trust,
-              engagement, and purchase intent.
+              Stand out with a Brand Story. Design compelling visuals for A+ Content, Store page, Product images and Product videos that drive conversions.
             </p>
 
             {/* Features */}
             <div className="space-y-3 mt-8">
 
               <div className="flex items-center gap-3">
-                <div className="w-2 h-2 rounded-full bg-[#6d28d9]" />
+                <div className="w-2 h-2 rounded-full bg-[#30a5b0]" />
                 <p className="text-[14px] text-[#111827]">
-                  Premium Brand Visual Systems
+                  A+ Content Design
                 </p>
               </div>
 
               <div className="flex items-center gap-3">
-                <div className="w-2 h-2 rounded-full bg-[#6d28d9]" />
+                <div className="w-2 h-2 rounded-full bg-[#30a5b0]" />
                 <p className="text-[14px] text-[#111827]">
-                  Enhanced Product Storytelling
+                  Store Page Design
                 </p>
               </div>
 
               <div className="flex items-center gap-3">
-                <div className="w-2 h-2 rounded-full bg-[#6d28d9]" />
+                <div className="w-2 h-2 rounded-full bg-[#30a5b0]" />
                 <p className="text-[14px] text-[#111827]">
-                  Conversion-Focused Design
+                  Product Images & Videos
                 </p>
               </div>
 

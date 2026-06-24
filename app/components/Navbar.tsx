@@ -1,9 +1,8 @@
 "use client";
 
 import Link from "next/link";
-
 import { useState } from "react";
-
+import { usePathname } from "next/navigation";
 import {
   CalendarDays,
   ChevronDown,
@@ -12,7 +11,7 @@ import {
 } from "lucide-react";
 
 export default function Navbar() {
-
+  const pathname = usePathname();
   const [mobileMenu, setMobileMenu] = useState(false);
 
   return (
@@ -22,12 +21,12 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto flex items-center justify-between bg-white/70 backdrop-blur-md border border-[#ece4ff] rounded-2xl px-6 py-4 shadow-lg shadow-purple-100/20">
 
         {/* Logo */}
-        <Link href="/">
-
-          <h1 className="text-[36px] font-black tracking-[-0.08em] text-[#6d28d9]">
-            GAIN
-          </h1>
-
+        <Link href="/" className="flex items-center">
+          <img
+            src="/logos/GAIN - clean logo.png"
+            alt="GAIN Logo"
+            className="h-10 md:h-11 w-auto object-contain"
+          />
         </Link>
 
         {/* Desktop Nav */}
@@ -36,7 +35,11 @@ export default function Navbar() {
           {/* Home */}
           <Link
             href="/"
-            className="text-[15px] font-medium text-[#111827] hover:text-[#6d28d9] transition-colors duration-300"
+            className={`text-[15px] font-semibold transition-colors duration-300 relative py-1 ${
+              pathname === "/"
+                ? "text-[#30a5b0] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-[#30a5b0]"
+                : "text-[#111827] hover:text-[#6d28d9]"
+            }`}
           >
             Home
           </Link>
@@ -47,7 +50,11 @@ export default function Navbar() {
             {/* Trigger */}
             <Link
               href="/services"
-              className="flex items-center gap-1 text-[15px] font-medium text-[#111827] hover:text-[#6d28d9] transition-colors duration-300"
+              className={`flex items-center gap-1 text-[15px] font-semibold transition-colors duration-300 relative py-1 ${
+                pathname.startsWith("/services")
+                  ? "text-[#30a5b0] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-[#30a5b0]"
+                  : "text-[#111827] hover:text-[#6d28d9]"
+              }`}
             >
 
               Services
@@ -88,11 +95,11 @@ export default function Navbar() {
               >
 
                 <h3 className="text-[15px] font-semibold text-[#111827]">
-                  Ad Optimization
+                  Sponsored Ads (PPC)
                 </h3>
 
                 <p className="text-[13px] text-[#6b7280] mt-1 leading-[1.7]">
-                  Performance-focused Amazon PPC campaigns designed to scale profitably.
+                  Campaigns that convert clicks into customers. End-to-end management of Sponsored Products, Sponsored Brands, and Sponsored Display campaigns.
                 </p>
 
               </Link>
@@ -104,11 +111,11 @@ export default function Navbar() {
               >
 
                 <h3 className="text-[15px] font-semibold text-[#111827]">
-                  Account Management
+                  Listing Optimization
                 </h3>
 
                 <p className="text-[13px] text-[#6b7280] mt-1 leading-[1.7]">
-                  Complete Amazon account growth, monitoring, and optimization.
+                  Be found. Be chosen. Improve conversions with keyword-rich, high-performing product listings.
                 </p>
 
               </Link>
@@ -120,11 +127,11 @@ export default function Navbar() {
               >
 
                 <h3 className="text-[15px] font-semibold text-[#111827]">
-                  A+ Content Creation
+                  Visual Branding
                 </h3>
 
                 <p className="text-[13px] text-[#6b7280] mt-1 leading-[1.7]">
-                  Premium branded visuals and conversion-focused content design.
+                  Stand out with a Brand Story. Design compelling visuals for A+ Content, Store page, Product images and Product videos that drive conversions.
                 </p>
 
               </Link>
@@ -136,7 +143,11 @@ export default function Navbar() {
           {/* Case Studies */}
           <Link
             href="/case-studies"
-            className="text-[15px] font-medium text-[#111827] hover:text-[#6d28d9] transition-colors duration-300"
+            className={`text-[15px] font-semibold transition-colors duration-300 relative py-1 ${
+              pathname.startsWith("/case-studies")
+                ? "text-[#30a5b0] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-[#30a5b0]"
+                : "text-[#111827] hover:text-[#6d28d9]"
+            }`}
           >
             Case Studies
           </Link>
@@ -144,7 +155,11 @@ export default function Navbar() {
           {/* About */}
           <Link
             href="/about"
-            className="text-[15px] font-medium text-[#111827] hover:text-[#6d28d9] transition-colors duration-300"
+            className={`text-[15px] font-semibold transition-colors duration-300 relative py-1 ${
+              pathname.startsWith("/about")
+                ? "text-[#30a5b0] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-[#30a5b0]"
+                : "text-[#111827] hover:text-[#6d28d9]"
+            }`}
           >
             About Us
           </Link>
@@ -152,7 +167,11 @@ export default function Navbar() {
           {/* Resources */}
           <Link
             href="/resources"
-            className="text-[15px] font-medium text-[#111827] hover:text-[#6d28d9] transition-colors duration-300"
+            className={`text-[15px] font-semibold transition-colors duration-300 relative py-1 ${
+              pathname.startsWith("/resources")
+                ? "text-[#30a5b0] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-[#30a5b0]"
+                : "text-[#111827] hover:text-[#6d28d9]"
+            }`}
           >
             Resources
           </Link>
@@ -160,7 +179,11 @@ export default function Navbar() {
           {/* Contact */}
           <Link
             href="/contact"
-            className="text-[15px] font-medium text-[#111827] hover:text-[#6d28d9] transition-colors duration-300"
+            className={`text-[15px] font-semibold transition-colors duration-300 relative py-1 ${
+              pathname.startsWith("/contact")
+                ? "text-[#30a5b0] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-[#30a5b0]"
+                : "text-[#111827] hover:text-[#6d28d9]"
+            }`}
           >
             Contact
           </Link>
@@ -178,8 +201,7 @@ export default function Navbar() {
               md:flex
               items-center
               gap-2
-              bg-[#6d28d9]
-              hover:bg-[#5b21b6]
+              bg-gradient-to-r from-[#6d28d9] via-[#6d28d9] to-[#30a5b0] hover:from-[#5b21b6] hover:to-[#28929c]
               text-white
               px-5
               py-3
@@ -240,42 +262,54 @@ export default function Navbar() {
 
               <Link
                 href="/"
-                className="text-[15px] font-medium text-[#111827]"
+                className={`text-[15px] font-semibold transition-colors duration-300 ${
+                  pathname === "/" ? "text-[#30a5b0]" : "text-[#111827]"
+                }`}
               >
                 Home
               </Link>
 
               <Link
                 href="/services"
-                className="text-[15px] font-medium text-[#111827]"
+                className={`text-[15px] font-semibold transition-colors duration-300 ${
+                  pathname.startsWith("/services") ? "text-[#30a5b0]" : "text-[#111827]"
+                }`}
               >
                 Services
               </Link>
 
               <Link
                 href="/case-studies"
-                className="text-[15px] font-medium text-[#111827]"
+                className={`text-[15px] font-semibold transition-colors duration-300 ${
+                  pathname.startsWith("/case-studies") ? "text-[#30a5b0]" : "text-[#111827]"
+                }`}
               >
                 Case Studies
               </Link>
 
               <Link
                 href="/about"
-                className="text-[15px] font-medium text-[#111827]"
+                className={`text-[15px] font-semibold transition-colors duration-300 ${
+                  pathname.startsWith("/about") ? "text-[#30a5b0]" : "text-[#111827]"
+                }`}
               >
                 About Us
               </Link>
 
               <Link
                 href="/resources"
-                className="text-[15px] font-medium text-[#111827]"
+                className={`text-[15px] font-semibold transition-colors duration-300 ${
+                  pathname.startsWith("/resources") ? "text-[#30a5b0]" : "text-[#111827]"
+                }`}
               >
                 Resources
               </Link>
 
               <Link
                 href="/contact"
-                className="text-[15px] font-medium text-[#111827]"
+                className={`text-[15px] font-semibold transition-colors duration-300 ${
+                  pathname.startsWith("/contact") ? "text-[#30a5b0]" : "text-[#111827]"
+                }`}
               >
                 Contact
               </Link>

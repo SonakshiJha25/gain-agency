@@ -37,7 +37,7 @@ export default function ResourcesHero() {
           <br />
           Growth Starts
           <br />
-          <span className="bg-gradient-to-r from-[#8b5cf6] via-[#7c3aed] to-[#6d28d9] bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-[#8b5cf6] via-[#7c3aed] to-[#30a5b0] bg-clip-text text-transparent">
             With Better Knowledge
           </span>
         </h1>
@@ -52,4 +52,4 @@ export default function ResourcesHero() {
 
     </section>
   );
-}
+}

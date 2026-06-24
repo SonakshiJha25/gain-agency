@@ -63,7 +63,7 @@ export default function WhyUs() {
             >
               <div className="flex items-start gap-3">
 
-                <CheckCircle className="w-5 h-5 text-[#6d28d9] mt-1 shrink-0" />
+                <CheckCircle className="w-5 h-5 text-[#30a5b0] mt-1 shrink-0" />
 
                 <div>
                   <h3 className="text-[#111827] font-semibold text-[16px]">

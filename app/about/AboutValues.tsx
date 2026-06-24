@@ -75,7 +75,7 @@ export default function AboutValues() {
           </div>
 
           {/* VALUE 2 (A) */}
-          <div className="bg-[#6d28d9] rounded-[32px] p-9 text-white">
+          <div className="bg-gradient-to-br from-[#6d28d9] via-[#6d28d9] to-[#30a5b0] rounded-[32px] p-9 text-white">
 
             {/* Icon */}
             <div className="w-14 h-14 rounded-2xl bg-white/10 flex items-center justify-center">
@@ -101,7 +101,7 @@ export default function AboutValues() {
           </div>
 
           {/* VALUE 3 (I) */}
-          <div className="bg-[#6d28d9] rounded-[32px] p-9 text-white">
+          <div className="bg-gradient-to-br from-[#6d28d9] via-[#6d28d9] to-[#30a5b0] rounded-[32px] p-9 text-white">
 
             {/* Icon */}
             <div className="w-14 h-14 rounded-2xl bg-white/10 flex items-center justify-center">

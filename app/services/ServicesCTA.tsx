@@ -18,7 +18,7 @@ export default function ServicesCTA() {
       <div className="relative z-10 max-w-6xl mx-auto">
 
         {/* CTA Card */}
-        <div className="relative overflow-hidden bg-[#6d28d9] rounded-[32px] px-8 md:px-16 py-16 md:py-20 shadow-xl shadow-purple-900/10">
+        <div className="relative overflow-hidden bg-gradient-to-br from-[#6d28d9] via-[#6d28d9] to-[#30a5b0] rounded-[32px] px-8 md:px-16 py-16 md:py-20 shadow-xl shadow-purple-900/10">
 
           {/* Inner Glow */}
           <div className="absolute top-[-120px] right-[-120px] w-[320px] h-[320px] bg-white/10 rounded-full blur-3xl" />

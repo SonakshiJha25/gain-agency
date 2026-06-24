@@ -136,7 +136,7 @@ export default function FeaturedCaseStudy() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
 
             {/* Metric 1 */}
-            <div className="bg-[#6d28d9] rounded-[32px] p-8 text-white">
+            <div className="bg-gradient-to-br from-[#6d28d9] via-[#6d28d9] to-[#30a5b0] rounded-[32px] p-8 text-white">
 
               <div className="w-14 h-14 rounded-2xl bg-white/10 flex items-center justify-center">
 
@@ -193,7 +193,7 @@ export default function FeaturedCaseStudy() {
             </div>
 
             {/* Metric 4 */}
-            <div className="bg-[#6d28d9] rounded-[32px] p-8 text-white">
+            <div className="bg-gradient-to-br from-[#6d28d9] via-[#6d28d9] to-[#30a5b0] rounded-[32px] p-8 text-white">
 
               <div className="w-14 h-14 rounded-2xl bg-white/10 flex items-center justify-center">
 

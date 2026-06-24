@@ -75,7 +75,7 @@ export default function AboutStory() {
         </div>
 
         {/* Bottom Quote Card */}
-        <div className="mt-24 bg-[#6d28d9] rounded-[32px] p-12 md:p-16 relative overflow-hidden">
+        <div className="mt-24 bg-gradient-to-br from-[#6d28d9] via-[#6d28d9] to-[#30a5b0] rounded-[32px] p-12 md:p-16 relative overflow-hidden">
 
           {/* Outline Text */}
           <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none">

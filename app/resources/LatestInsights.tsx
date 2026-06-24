@@ -99,7 +99,7 @@ export default function LatestInsights() {
           </div>
 
           {/* ARTICLE 2 */}
-          <div className="group bg-[#6d28d9] rounded-[32px] p-8 text-white hover:-translate-y-1.5 transition-all duration-300 shadow-lg shadow-purple-900/10 hover:shadow-xl">
+          <div className="group bg-gradient-to-br from-[#6d28d9] via-[#6d28d9] to-[#30a5b0] rounded-[32px] p-8 text-white hover:-translate-y-1.5 transition-all duration-300 shadow-lg shadow-purple-900/10 hover:shadow-xl">
 
             {/* Category */}
             <div className="inline-flex items-center rounded-full bg-white/10 px-3 py-1">

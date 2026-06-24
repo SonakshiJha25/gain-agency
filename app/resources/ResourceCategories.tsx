@@ -65,7 +65,7 @@ export default function ResourceCategories() {
           </div>
 
           {/* CATEGORY 2 */}
-          <div className="bg-[#6d28d9] rounded-[32px] p-8 md:p-10 text-white shadow-lg shadow-purple-900/10 transition-all duration-300 hover:shadow-xl">
+          <div className="bg-gradient-to-br from-[#6d28d9] via-[#6d28d9] to-[#30a5b0] rounded-[32px] p-8 md:p-10 text-white shadow-lg shadow-purple-900/10 transition-all duration-300 hover:shadow-xl">
 
             {/* Icon */}
             <div className="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center">
@@ -87,7 +87,7 @@ export default function ResourceCategories() {
           </div>
 
           {/* CATEGORY 3 */}
-          <div className="bg-[#6d28d9] rounded-[32px] p-8 md:p-10 text-white shadow-lg shadow-purple-900/10 transition-all duration-300 hover:shadow-xl">
+          <div className="bg-gradient-to-br from-[#6d28d9] via-[#6d28d9] to-[#30a5b0] rounded-[32px] p-8 md:p-10 text-white shadow-lg shadow-purple-900/10 transition-all duration-300 hover:shadow-xl">
 
             {/* Icon */}
             <div className="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center">

@@ -18,7 +18,7 @@ export default function AboutCTA() {
       <div className="relative z-10 max-w-6xl mx-auto">
 
         {/* CTA Card */}
-        <div className="relative overflow-hidden rounded-[32px] bg-[#6d28d9] px-8 md:px-16 py-16 md:py-20">
+        <div className="relative overflow-hidden rounded-[32px] bg-gradient-to-br from-[#6d28d9] via-[#6d28d9] to-[#30a5b0] px-8 md:px-16 py-16 md:py-20">
 
           {/* Huge Outline Text */}
           <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none">

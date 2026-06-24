@@ -40,7 +40,7 @@ export default function CaseStudiesHero() {
           {/* CTA Buttons */}
           <div className="mt-10 flex flex-col sm:flex-row gap-4">
 
-            <button className="px-6 py-3 rounded-full bg-[#6d28d9] text-white font-semibold hover:bg-[#5b21b6] transition">
+            <button className="px-6 py-3 rounded-full bg-gradient-to-r from-[#6d28d9] via-[#6d28d9] to-[#30a5b0] text-white font-semibold hover:from-[#5b21b6] hover:to-[#28929c] transition">
               View Case Studies
             </button>
 

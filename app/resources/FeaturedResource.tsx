@@ -35,7 +35,7 @@ export default function FeaturedResource() {
         </div>
 
         {/* Featured Card */}
-        <div className="mt-12 relative overflow-hidden rounded-[32px] bg-[#6d28d9] p-8 md:p-12 shadow-xl shadow-purple-900/10">
+        <div className="mt-12 relative overflow-hidden rounded-[32px] bg-gradient-to-br from-[#6d28d9] via-[#6d28d9] to-[#30a5b0] p-8 md:p-12 shadow-xl shadow-purple-900/10">
 
           {/* Outline Text */}
           <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none">

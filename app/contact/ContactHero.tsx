@@ -1,48 +1,49 @@
 export default function ContactHero() {
   return (
-    <section className="relative overflow-hidden bg-[#f7f4ff] pt-64 md:pt-72 pb-24 md:pb-32 px-6 text-center">
+    <section className="relative pt-64 md:pt-72 pb-32 md:pb-40 overflow-hidden bg-[#f4f3ff] flex items-center justify-center">
 
-      {/* Background Glow */}
-      <div className="absolute bottom-[-180px] right-[-100px] h-[380px] w-[380px] rounded-full bg-purple-300/25 blur-3xl" />
+      {/* Glow */}
+      <div className="absolute top-[-140px] right-[-120px] w-[360px] h-[360px] rounded-full bg-purple-300/30 blur-3xl" />
+      <div className="absolute bottom-[-120px] left-[-100px] w-[300px] h-[300px] rounded-full bg-teal-200/20 blur-3xl" />
 
-      {/* Huge Background Outline Text */}
+      {/* Huge Background Text */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none">
         <h1
           className="
-            text-[26vw]
-            md:text-[22vw]
+            text-[22vw]
+            md:text-[20vw]
             font-black
             tracking-[0.12em]
             leading-none
             text-transparent
-            [-webkit-text-stroke:1px_rgba(109,40,217,0.15)]
+            [-webkit-text-stroke:1px_rgba(74,61,213,0.15)]
           "
         >
-          TALK
+          GAIN
         </h1>
       </div>
 
       {/* Main Content */}
-      <div className="relative z-10 max-w-4xl mx-auto pt-16">
+      <div className="relative z-10 max-w-4xl text-center px-6 pt-16">
 
-        {/* Small Badge */}
-        <p className="text-[#6d28d9] text-[11px] font-bold tracking-[0.28em] uppercase mb-4">
+        {/* Label */}
+        <p className="text-[#4A3DD5] text-[11px] font-bold tracking-[0.28em] uppercase mb-4">
           Contact Our Team
         </p>
 
-        {/* Main Heading */}
-        <h1 className="text-[30px] md:text-[50px] leading-[0.96] font-black tracking-[-0.06em] text-[#020617]">
+        {/* Heading */}
+        <h1 className="text-3xl md:text-4xl lg:text-5xl font-black tracking-tight leading-[1.05] text-[#152268]">
           Connect With Our
           <br />
-          <span className="bg-gradient-to-r from-[#8b5cf6] via-[#7c3aed] to-[#30a5b0] bg-clip-text text-transparent">
+          <span className="gain-gradient-text">
             Growth Strategists
           </span>
         </h1>
 
         {/* Description */}
-        <p className="max-w-2xl mx-auto mt-5 text-[15px] md:text-[14px] leading-[1.9] text-[#6b7280]">
-          Ready to scale your Amazon store? Contact us today to learn more about our advertising,
-          account management, and content creation services.
+        <p className="max-w-2xl mx-auto mt-5 text-[15px] md:text-[14px] leading-[1.9] text-slate-700">
+          Ready to scale your Amazon store? Contact us today to learn more about our
+          advertising, account management, and content creation services.
         </p>
 
       </div>

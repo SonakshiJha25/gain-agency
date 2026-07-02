@@ -1,39 +1,18 @@
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+"use client";
 
-import CaseStudiesHero from "./CaseStudiesHero";
-import FeaturedCaseStudy from "./FeaturedCaseStudy";
-import CaseStudiesGrid from "./CaseStudiesGrid";
-import CaseStudiesProcess from "./CaseStudiesProcess";
-import CaseStudiesCTA from "./CaseStudiesCTA";
+import { useEffect } from "react";
+import { useRouter } from "next/navigation";
 
 export default function CaseStudiesPage() {
+  const router = useRouter();
+
+  useEffect(() => {
+    router.replace("/resources");
+  }, [router]);
+
   return (
-
-    <main className="overflow-hidden">
-
-      {/* Navbar */}
-      <Navbar />
-
-      {/* Hero */}
-      <CaseStudiesHero />
-      
-      {/* Featured Case Study */}
-      <FeaturedCaseStudy />
-
-      {/* Case Studies */}
-      <CaseStudiesGrid />
-
-      {/* Process */}
-      <CaseStudiesProcess />
-
-      {/* CTA */}
-      <CaseStudiesCTA />
-
-      {/* Footer */}
-      <Footer />
-
-    </main>
-
+    <div className="min-h-screen bg-[#f4f3ff] flex items-center justify-center">
+      <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-[#4A3DD5]"></div>
+    </div>
   );
 }

@@ -23,12 +23,12 @@ export default function LatestInsights() {
           <div className="max-w-3xl">
 
             {/* Label */}
-            <p className="text-[#6d28d9] text-[11px] font-bold tracking-[0.28em] uppercase mb-4">
+            <p className="text-[#4A3DD5] text-[11px] font-bold tracking-[0.28em] uppercase mb-4">
               Latest Insights
             </p>
 
             {/* Heading */}
-            <h2 className="text-[28px] md:text-[42px] leading-[1.05] font-black tracking-[-0.05em] text-[#020617]">
+            <h2 className="text-[28px] md:text-[42px] leading-[1.05] font-black tracking-[-0.05em] text-[#152268]">
               Amazon Growth
               <br />
               Knowledge Hub
@@ -43,7 +43,7 @@ export default function LatestInsights() {
               inline-flex
               items-center
               gap-2
-              text-[#6d28d9]
+              text-[#4A3DD5]
               text-[14px]
               font-semibold
               hover:gap-3
@@ -64,42 +64,42 @@ export default function LatestInsights() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-16">
 
           {/* ARTICLE 1 */}
-          <div className="group bg-[#f7f4ff] border border-[#ece4ff] rounded-[32px] p-8 hover:-translate-y-1.5 transition-all duration-300 shadow-sm hover:shadow-md">
+          <div className="group bg-[#f4f3ff] border border-[#e2dfff] rounded-[32px] p-8 hover:-translate-y-1.5 transition-all duration-300 shadow-sm hover:shadow-md">
 
             {/* Category */}
             <div className="inline-flex items-center rounded-full bg-[#ede5ff] px-3 py-1">
 
-              <span className="text-[10px] font-bold uppercase tracking-[0.08em] text-[#6d28d9]">
+              <span className="text-[10px] font-bold uppercase tracking-[0.08em] text-[#4A3DD5]">
                 Amazon PPC
               </span>
 
             </div>
 
             {/* Title */}
-            <h3 className="mt-6 text-[22px] font-bold text-[#020617] leading-[1.3]">
+            <h3 className="mt-6 text-[22px] font-bold text-[#152268] leading-[1.3]">
               5 PPC Mistakes That Kill ROAS
             </h3>
 
             {/* Description */}
-            <p className="mt-3 text-[14px] leading-[1.7] text-[#6b7280]">
+            <p className="mt-3 text-[14px] leading-[1.7] text-slate-700">
               Learn the most common Amazon PPC mistakes that reduce profitability and waste advertising spend.
             </p>
 
             {/* Bottom */}
             <div className="mt-8 flex items-center justify-between">
 
-              <span className="text-[12px] text-[#6b7280]">
+              <span className="text-[12px] text-slate-700">
                 6 min read
               </span>
 
-              <ArrowRight className="w-4 h-4 text-[#6d28d9] group-hover:translate-x-1 transition-all duration-300" />
+              <ArrowRight className="w-4 h-4 text-[#4A3DD5] group-hover:translate-x-1 transition-all duration-300" />
 
             </div>
 
           </div>
 
           {/* ARTICLE 2 */}
-          <div className="group bg-gradient-to-br from-[#6d28d9] via-[#6d28d9] to-[#30a5b0] rounded-[32px] p-8 text-white hover:-translate-y-1.5 transition-all duration-300 shadow-lg shadow-purple-900/10 hover:shadow-xl">
+          <div className="group gain-gradient rounded-[32px] p-8 text-white hover:-translate-y-1.5 transition-all duration-300 shadow-lg shadow-purple-900/10 hover:shadow-2xl shadow-[#7e22ce]/20">
 
             {/* Category */}
             <div className="inline-flex items-center rounded-full bg-white/10 px-3 py-1">
@@ -134,35 +134,35 @@ export default function LatestInsights() {
           </div>
 
           {/* ARTICLE 3 */}
-          <div className="group bg-[#f7f4ff] border border-[#ece4ff] rounded-[32px] p-8 hover:-translate-y-1.5 transition-all duration-300 shadow-sm hover:shadow-md">
+          <div className="group bg-[#f4f3ff] border border-[#e2dfff] rounded-[32px] p-8 hover:-translate-y-1.5 transition-all duration-300 shadow-sm hover:shadow-md">
 
             {/* Category */}
             <div className="inline-flex items-center rounded-full bg-[#ede5ff] px-3 py-1">
 
-              <span className="text-[10px] font-bold uppercase tracking-[0.08em] text-[#6d28d9]">
+              <span className="text-[10px] font-bold uppercase tracking-[0.08em] text-[#4A3DD5]">
                 Conversion
               </span>
 
             </div>
 
             {/* Title */}
-            <h3 className="mt-6 text-[22px] font-bold text-[#020617] leading-[1.3]">
+            <h3 className="mt-6 text-[22px] font-bold text-[#152268] leading-[1.3]">
               Why Better A+ Content Wins
             </h3>
 
             {/* Description */}
-            <p className="mt-3 text-[14px] leading-[1.7] text-[#6b7280]">
+            <p className="mt-3 text-[14px] leading-[1.7] text-slate-700">
               Understand how stronger visuals, branding, and listing structure improve conversions.
             </p>
 
             {/* Bottom */}
             <div className="mt-8 flex items-center justify-between">
 
-              <span className="text-[12px] text-[#6b7280]">
+              <span className="text-[12px] text-slate-700">
                 5 min read
               </span>
 
-              <ArrowRight className="w-4 h-4 text-[#6d28d9] group-hover:translate-x-1 transition-all duration-300" />
+              <ArrowRight className="w-4 h-4 text-[#4A3DD5] group-hover:translate-x-1 transition-all duration-300" />
 
             </div>
 

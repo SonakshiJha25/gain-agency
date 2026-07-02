@@ -4,7 +4,6 @@ import ServicesHero from "./ServicesHero";
 import ServicesGrid from "./ServicesGrid";
 import ServiceDetails from "./ServiceDetails";
 import ServicesProcess from "./ServicesProcess";
-import ServicesResults from "./ServicesResults";
 import ServicesCTA from "./ServicesCTA";
 
 import Footer from "../components/Footer";
@@ -28,9 +27,6 @@ export default function ServicesPage() {
 
       {/* Process */}
       <ServicesProcess />
-
-      {/* Results */}
-      <ServicesResults />
 
       {/* CTA */}
       <ServicesCTA />

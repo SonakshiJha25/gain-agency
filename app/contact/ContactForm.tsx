@@ -78,9 +78,9 @@ export default function ContactForm() {
   }
 
   return (
-    <div className="bg-[#faf7ff] border border-[#ece4ff] rounded-[32px] p-6 md:p-8 shadow-sm">
+    <div className="bg-white border border-gray-100 rounded-3xl p-8 md:p-10 shadow-2xl shadow-slate-200/60">
 
-      <h2 className="text-[20px] font-bold text-[#020617] mb-6">
+      <h2 className="text-2xl font-black tracking-tight text-[#152268] mb-8">
         Get Your Free Growth Plan
       </h2>
 
@@ -91,7 +91,7 @@ export default function ContactForm() {
           value={form.name}
           onChange={handleChange}
           placeholder="Full Name *"
-          className="w-full h-11 px-4 rounded-xl border border-[#e5d9ff] bg-white text-[14px] outline-none focus:border-[#6d28d9] placeholder:text-[#6b7280]"
+          className="w-full h-12 px-4 rounded-xl border border-gray-200 bg-gray-50 text-[#152268] text-sm outline-none focus:border-[#13B3B7] focus:ring-1 focus:ring-[#13B3B7] placeholder:text-slate-600 transition-all duration-300"
         />
 
         <input
@@ -99,7 +99,7 @@ export default function ContactForm() {
           value={form.email}
           onChange={handleChange}
           placeholder="Email Address *"
-          className="w-full h-11 px-4 rounded-xl border border-[#e5d9ff] bg-white text-[14px] outline-none focus:border-[#6d28d9] placeholder:text-[#6b7280]"
+          className="w-full h-12 px-4 rounded-xl border border-gray-200 bg-gray-50 text-[#152268] text-sm outline-none focus:border-[#13B3B7] focus:ring-1 focus:ring-[#13B3B7] placeholder:text-slate-600 transition-all duration-300"
         />
 
         <input
@@ -107,15 +107,15 @@ export default function ContactForm() {
           value={form.phone}
           onChange={handleChange}
           placeholder="Phone Number *"
-          className="w-full h-11 px-4 rounded-xl border border-[#e5d9ff] bg-white text-[14px] outline-none focus:border-[#6d28d9] placeholder:text-[#6b7280]"
+          className="w-full h-12 px-4 rounded-xl border border-gray-200 bg-gray-50 text-[#152268] text-sm outline-none focus:border-[#13B3B7] focus:ring-1 focus:ring-[#13B3B7] placeholder:text-slate-600 transition-all duration-300"
         />
 
         <input
           name="store"
           value={form.store}
           onChange={handleChange}
-          placeholder="Amazon Store Link"
-          className="w-full h-11 px-4 rounded-xl border border-[#e5d9ff] bg-white text-[14px] outline-none focus:border-[#6d28d9] placeholder:text-[#6b7280]"
+          placeholder="Amazon Store Link (Optional)"
+          className="w-full h-12 px-4 rounded-xl border border-gray-200 bg-gray-50 text-[#152268] text-sm outline-none focus:border-[#13B3B7] focus:ring-1 focus:ring-[#13B3B7] placeholder:text-slate-600 transition-all duration-300"
         />
 
         <textarea
@@ -123,7 +123,7 @@ export default function ContactForm() {
           value={form.message}
           onChange={handleChange}
           placeholder="Tell us about your goals..."
-          className="w-full px-4 py-3 rounded-xl border border-[#e5d9ff] bg-white text-[14px] outline-none focus:border-[#6d28d9] placeholder:text-[#6b7280] min-h-[120px]"
+          className="w-full px-4 py-3 rounded-xl border border-gray-200 bg-gray-50 text-[#152268] text-sm outline-none resize-none focus:border-[#13B3B7] focus:ring-1 focus:ring-[#13B3B7] placeholder:text-slate-600 transition-all duration-300 min-h-[120px]"
         />
 
       </div>
@@ -140,14 +140,14 @@ export default function ContactForm() {
         <button
           onClick={handleSubmit}
           disabled={loading}
-          className="bg-gradient-to-r from-[#6d28d9] via-[#6d28d9] to-[#30a5b0] hover:from-[#5b21b6] hover:to-[#28929c] text-white px-12 py-4.5 rounded-full text-[16px] font-semibold shadow-lg shadow-purple-300/30 transition-all duration-300 hover:-translate-y-0.5 flex items-center gap-2 disabled:opacity-60 disabled:pointer-events-none"
+          className="gain-gradient hover:from-[#3630a8] hover:to-[#0d9a9e] text-white px-10 py-4 rounded-full text-sm font-bold uppercase tracking-[0.1em] shadow-[0_4px_14px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-0.5 flex items-center justify-center gap-2 disabled:opacity-70 disabled:pointer-events-none"
         >
           {loading ? "Submitting..." : "Submit Request"}
-          {!loading && <ArrowRight className="w-5 h-5" />}
+          {!loading && <ArrowRight className="w-4 h-4" />}
         </button>
       </div>
 
-      <p className="text-xs text-[#6b7280] mt-4 text-center">
+      <p className="text-xs text-slate-700 mt-6 text-center leading-relaxed">
         We respond within 24–48 hours with a tailored strategy.
       </p>
 

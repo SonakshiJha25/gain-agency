@@ -2,42 +2,26 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 import AboutHero from "./AboutHero";
+import AboutWhyUs from "./AboutWhyUs";
 import AboutMission from "./AboutMission";
-import AboutStats from "./AboutStats";
 import AboutStory from "./AboutStory";
-import AboutValues from "./AboutValues";
 import AboutCTA from "./AboutCTA";
 
 export default function AboutPage() {
   return (
-
     <main className="overflow-hidden bg-white">
-
-      {/* Navbar */}
       <Navbar />
-
-      {/* Hero */}
+      {/* 1 — Hero */}
       <AboutHero />
-
-      {/* Mission */}
+      {/* 2 — GAIN Promise flowchart (G·A·I·N) */}
+      <AboutWhyUs />
+      {/* 3 — Our Approach: 3 performance cards */}
       <AboutMission />
-
-      {/* Stats */}
-      <AboutStats />
-
-      {/* Story */}
+      {/* 4 — Why We Started */}
       <AboutStory />
-
-      {/* Values */}
-      <AboutValues />
-
-      {/* CTA */}
+      {/* 5 — CTA */}
       <AboutCTA />
-
-      {/* Footer */}
       <Footer />
-
     </main>
-
   );
 }

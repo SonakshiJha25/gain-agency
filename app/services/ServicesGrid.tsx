@@ -18,27 +18,24 @@ export default function ServicesGrid() {
       <div className="relative z-10 max-w-7xl mx-auto">
 
         {/* Header */}
-        <div className="max-w-3xl">
+        <div className="max-w-3xl mx-auto text-center">
 
           {/* Badge */}
-          <p className="text-[#6d28d9] text-[11px] font-bold tracking-[0.28em] uppercase mb-4">
+          <p className="text-xs font-bold tracking-[0.2em] uppercase text-[#13B3B7] mb-6">
             Core Services
           </p>
 
           {/* Heading */}
-          <h2 className="text-[30px] md:text-[50px] leading-[0.96] font-black tracking-[-0.06em] text-[#020617]">
-
-            Built Around
+          <h2 className="text-3xl md:text-4xl font-black tracking-tight leading-[1.1] text-[#152268]">
+            Services Designed to
             <br />
-
-            <span className="bg-gradient-to-r from-[#8b5cf6] via-[#7c3aed] to-[#30a5b0] bg-clip-text text-transparent">
-              Amazon Performance
+            <span className="gain-gradient-text">
+              Grow Your Brand
             </span>
-
           </h2>
 
           {/* Description */}
-          <p className="mt-5 text-[15px] md:text-[14px] leading-[1.9] text-[#6b7280]">
+          <p className="mt-6 text-base text-slate-700 leading-relaxed">
             Every service is designed to improve visibility,
             conversion rates, profitability, and long-term
             brand growth on Amazon.
@@ -50,164 +47,95 @@ export default function ServicesGrid() {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-7 mt-20">
 
           {/* CARD 1 */}
-          <div className="group bg-[#faf7ff] border border-[#eee7ff] rounded-[32px] p-9 hover:-translate-y-2 transition-all duration-500">
+          <div className="group bg-[#f8f7ff] border border-[#e2dfff] rounded-3xl p-10 hover:-translate-y-2 hover:shadow-2xl shadow-slate-200/60 transition-all duration-500">
 
             {/* Icon */}
-            <div className="w-14 h-14 rounded-2xl bg-[#efe7ff] flex items-center justify-center">
+            <div className="w-14 h-14 rounded-2xl bg-gray-50 flex items-center justify-center border border-gray-100">
 
-              <BarChart3 className="w-6 h-6 text-[#6d28d9]" />
+              <BarChart3 className="w-6 h-6 text-[#4A3DD5]" />
 
             </div>
 
             {/* Heading */}
             <div className="flex items-center justify-between mt-8">
 
-              <h3 className="text-[26px] font-black tracking-[-0.04em] text-[#111827]">
+              <h3 className="text-2xl font-black tracking-tight text-[#152268]">
                 Sponsored Ads (PPC)
               </h3>
 
-              <ArrowUpRight className="w-5 h-5 text-[#6d28d9] transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" />
+              <ArrowUpRight className="w-5 h-5 text-[#13B3B7] transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" />
 
             </div>
 
             {/* Description */}
-            <p className="mt-5 text-[15px] leading-[1.9] text-[#6b7280]">
-              Campaigns that convert clicks into customers. End-to-end management of Sponsored Products, Sponsored Brands, and Sponsored Display campaigns.
+            <p className="mt-6 text-base leading-relaxed text-slate-700">
+              <span className="block font-bold text-[#152268] mb-2">
+                Campaigns that convert clicks into customers.
+              </span>
+              End-to-end management of Sponsored Products, Sponsored Brands, and Sponsored Display campaigns.
             </p>
-
-            {/* Features */}
-            <div className="space-y-3 mt-8">
-
-              <div className="flex items-center gap-3">
-                <div className="w-2 h-2 rounded-full bg-[#30a5b0]" />
-                <p className="text-[14px] text-[#111827]">
-                  Sponsored Products Optimization
-                </p>
-              </div>
-
-              <div className="flex items-center gap-3">
-                <div className="w-2 h-2 rounded-full bg-[#30a5b0]" />
-                <p className="text-[14px] text-[#111827]">
-                  Sponsored Brands Scaling
-                </p>
-              </div>
-
-              <div className="flex items-center gap-3">
-                <div className="w-2 h-2 rounded-full bg-[#30a5b0]" />
-                <p className="text-[14px] text-[#111827]">
-                  Sponsored Display Campaigns
-                </p>
-              </div>
-
-            </div>
 
           </div>
 
           {/* CARD 2 */}
-          <div className="group bg-[#faf7ff] border border-[#eee7ff] rounded-[32px] p-9 hover:-translate-y-2 transition-all duration-500">
+          <div className="group bg-[#f8f7ff] border border-[#e2dfff] rounded-3xl p-10 hover:-translate-y-2 hover:shadow-2xl shadow-slate-200/60 transition-all duration-500">
 
             {/* Icon */}
-            <div className="w-14 h-14 rounded-2xl bg-[#efe7ff] flex items-center justify-center">
+            <div className="w-14 h-14 rounded-2xl bg-gray-50 flex items-center justify-center border border-gray-100">
 
-              <Layers3 className="w-6 h-6 text-[#6d28d9]" />
+              <Layers3 className="w-6 h-6 text-[#4A3DD5]" />
 
             </div>
 
             {/* Heading */}
             <div className="flex items-center justify-between mt-8">
 
-              <h3 className="text-[26px] font-black tracking-[-0.04em] text-[#111827]">
+              <h3 className="text-2xl font-black tracking-tight text-[#152268]">
                 Listing Optimization
               </h3>
 
-              <ArrowUpRight className="w-5 h-5 text-[#6d28d9] transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" />
+              <ArrowUpRight className="w-5 h-5 text-[#13B3B7] transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" />
 
             </div>
 
             {/* Description */}
-            <p className="mt-5 text-[15px] leading-[1.9] text-[#6b7280]">
-              Be found. Be chosen. Improve conversions with keyword-rich, high-performing product listings.
+            <p className="mt-6 text-base leading-relaxed text-slate-700">
+              <span className="block font-bold text-[#152268] mb-2">
+                Be found. Be chosen.
+              </span>
+              Improve conversions with keyword-rich, high-performing product listings. Increase visibility and conversions with product listings optimized for search rankings and shopper engagement.
             </p>
-
-            {/* Features */}
-            <div className="space-y-3 mt-8">
-
-              <div className="flex items-center gap-3">
-                <div className="w-2 h-2 rounded-full bg-[#30a5b0]" />
-                <p className="text-[14px] text-[#111827]">
-                  Keyword Rich Copywriting
-                </p>
-              </div>
-
-              <div className="flex items-center gap-3">
-                <div className="w-2 h-2 rounded-full bg-[#30a5b0]" />
-                <p className="text-[14px] text-[#111827]">
-                  Search Ranking Optimization
-                </p>
-              </div>
-
-              <div className="flex items-center gap-3">
-                <div className="w-2 h-2 rounded-full bg-[#30a5b0]" />
-                <p className="text-[14px] text-[#111827]">
-                  Conversion Improvement
-                </p>
-              </div>
-
-            </div>
 
           </div>
 
           {/* CARD 3 */}
-          <div className="group bg-[#faf7ff] border border-[#eee7ff] rounded-[32px] p-9 hover:-translate-y-2 transition-all duration-500">
+          <div className="group bg-[#f8f7ff] border border-[#e2dfff] rounded-3xl p-10 hover:-translate-y-2 hover:shadow-2xl shadow-slate-200/60 transition-all duration-500">
 
             {/* Icon */}
-            <div className="w-14 h-14 rounded-2xl bg-[#efe7ff] flex items-center justify-center">
+            <div className="w-14 h-14 rounded-2xl bg-gray-50 flex items-center justify-center border border-gray-100">
 
-              <PenTool className="w-6 h-6 text-[#6d28d9]" />
+              <PenTool className="w-6 h-6 text-[#4A3DD5]" />
 
             </div>
 
             {/* Heading */}
             <div className="flex items-center justify-between mt-8">
 
-              <h3 className="text-[26px] font-black tracking-[-0.04em] text-[#111827]">
+              <h3 className="text-2xl font-black tracking-tight text-[#152268]">
                 Visual Branding
               </h3>
 
-              <ArrowUpRight className="w-5 h-5 text-[#6d28d9] transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" />
+              <ArrowUpRight className="w-5 h-5 text-[#13B3B7] transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" />
 
             </div>
 
             {/* Description */}
-            <p className="mt-5 text-[15px] leading-[1.9] text-[#6b7280]">
-              Stand out with a Brand Story. Design compelling visuals for A+ Content, Store page, Product images and Product videos that drive conversions.
+            <p className="mt-6 text-base leading-relaxed text-slate-700">
+              <span className="block font-bold text-[#152268] mb-2">
+                Stand out with a Brand Story.
+              </span>
+              Design compelling visuals for A+ Content, Store page, Product images and Product videos that drive conversions.
             </p>
-
-            {/* Features */}
-            <div className="space-y-3 mt-8">
-
-              <div className="flex items-center gap-3">
-                <div className="w-2 h-2 rounded-full bg-[#30a5b0]" />
-                <p className="text-[14px] text-[#111827]">
-                  A+ Content Design
-                </p>
-              </div>
-
-              <div className="flex items-center gap-3">
-                <div className="w-2 h-2 rounded-full bg-[#30a5b0]" />
-                <p className="text-[14px] text-[#111827]">
-                  Store Page Design
-                </p>
-              </div>
-
-              <div className="flex items-center gap-3">
-                <div className="w-2 h-2 rounded-full bg-[#30a5b0]" />
-                <p className="text-[14px] text-[#111827]">
-                  Product Images & Videos
-                </p>
-              </div>
-
-            </div>
 
           </div>
 

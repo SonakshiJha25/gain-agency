@@ -21,21 +21,21 @@ export default function ServicesProcess() {
         <div className="max-w-3xl mx-auto text-center">
 
           {/* Badge */}
-          <p className="text-[#6d28d9] text-[11px] font-bold tracking-[0.28em] uppercase mb-4">
+          <p className="text-xs font-bold tracking-[0.2em] uppercase text-[#13B3B7] mb-6">
             Our Process
           </p>
 
           {/* Heading */}
-          <h2 className="text-[30px] md:text-[50px] leading-[0.96] font-black tracking-[-0.06em] text-[#020617]">
+          <h2 className="text-3xl md:text-4xl font-black tracking-tight leading-[1.1] text-[#152268]">
             A Structured Process
             <br />
-            <span className="bg-gradient-to-r from-[#8b5cf6] via-[#7c3aed] to-[#30a5b0] bg-clip-text text-transparent">
+            <span className="gain-gradient-text">
               Built For Scaling
             </span>
           </h2>
 
           {/* Description */}
-          <p className="mt-5 text-[15px] md:text-[14px] leading-[1.9] text-[#6b7280]">
+          <p className="mt-6 text-base text-slate-700 leading-relaxed">
             Every growth strategy follows a performance-focused
             framework designed to improve visibility,
             profitability, and long-term Amazon scaling.
@@ -47,30 +47,30 @@ export default function ServicesProcess() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7 mt-20">
 
           {/* STEP 1 */}
-          <div className="group bg-[#faf7ff] border border-[#eee7ff] rounded-[32px] p-8 hover:-translate-y-2 transition-all duration-500">
+          <div className="group bg-white border border-gray-100 rounded-3xl p-10 hover:-translate-y-2 hover:shadow-2xl shadow-slate-200/60 transition-all duration-500">
 
             {/* Number */}
             <div className="flex items-center justify-between">
 
-              <span className="text-[44px] font-black tracking-[-0.06em] text-[#d8c6ff]">
+              <span className="text-4xl font-black tracking-tight text-slate-600">
                 01
               </span>
 
-              <div className="w-12 h-12 rounded-2xl bg-[#efe7ff] flex items-center justify-center">
+              <div className="w-14 h-14 rounded-2xl bg-gray-50 flex items-center justify-center border border-gray-100">
 
-                <Search className="w-5 h-5 text-[#6d28d9]" />
+                <Search className="w-5 h-5 text-[#13B3B7]" />
 
               </div>
 
             </div>
 
             {/* Heading */}
-            <h3 className="mt-8 text-[24px] font-black tracking-[-0.04em] text-[#111827]">
+            <h3 className="mt-8 text-2xl font-black tracking-tight text-[#152268]">
               Audit
             </h3>
 
             {/* Description */}
-            <p className="mt-4 text-[14px] leading-[1.9] text-[#6b7280]">
+            <p className="mt-4 text-sm leading-relaxed text-slate-700">
               We analyze your Amazon account,
               campaigns, listings, and brand positioning
               to identify growth opportunities.
@@ -79,30 +79,30 @@ export default function ServicesProcess() {
           </div>
 
           {/* STEP 2 */}
-          <div className="group bg-[#faf7ff] border border-[#eee7ff] rounded-[32px] p-8 hover:-translate-y-2 transition-all duration-500">
+          <div className="group bg-white border border-gray-100 rounded-3xl p-10 hover:-translate-y-2 hover:shadow-2xl shadow-slate-200/60 transition-all duration-500">
 
             {/* Number */}
             <div className="flex items-center justify-between">
 
-              <span className="text-[44px] font-black tracking-[-0.06em] text-[#d8c6ff]">
+              <span className="text-4xl font-black tracking-tight text-slate-600">
                 02
               </span>
 
-              <div className="w-12 h-12 rounded-2xl bg-[#efe7ff] flex items-center justify-center">
+              <div className="w-14 h-14 rounded-2xl bg-gray-50 flex items-center justify-center border border-gray-100">
 
-                <ClipboardCheck className="w-5 h-5 text-[#6d28d9]" />
+                <ClipboardCheck className="w-5 h-5 text-[#13B3B7]" />
 
               </div>
 
             </div>
 
             {/* Heading */}
-            <h3 className="mt-8 text-[24px] font-black tracking-[-0.04em] text-[#111827]">
+            <h3 className="mt-8 text-2xl font-black tracking-tight text-[#152268]">
               Strategy
             </h3>
 
             {/* Description */}
-            <p className="mt-4 text-[14px] leading-[1.9] text-[#6b7280]">
+            <p className="mt-4 text-sm leading-relaxed text-slate-700">
               Based on performance insights,
               we build a scaling strategy focused
               on profitability and growth.
@@ -111,30 +111,30 @@ export default function ServicesProcess() {
           </div>
 
           {/* STEP 3 */}
-          <div className="group bg-[#faf7ff] border border-[#eee7ff] rounded-[32px] p-8 hover:-translate-y-2 transition-all duration-500">
+          <div className="group bg-white border border-gray-100 rounded-3xl p-10 hover:-translate-y-2 hover:shadow-2xl shadow-slate-200/60 transition-all duration-500">
 
             {/* Number */}
             <div className="flex items-center justify-between">
 
-              <span className="text-[44px] font-black tracking-[-0.06em] text-[#d8c6ff]">
+              <span className="text-4xl font-black tracking-tight text-slate-600">
                 03
               </span>
 
-              <div className="w-12 h-12 rounded-2xl bg-[#efe7ff] flex items-center justify-center">
+              <div className="w-14 h-14 rounded-2xl bg-gray-50 flex items-center justify-center border border-gray-100">
 
-                <Rocket className="w-5 h-5 text-[#6d28d9]" />
+                <Rocket className="w-5 h-5 text-[#13B3B7]" />
 
               </div>
 
             </div>
 
             {/* Heading */}
-            <h3 className="mt-8 text-[24px] font-black tracking-[-0.04em] text-[#111827]">
+            <h3 className="mt-8 text-2xl font-black tracking-tight text-[#152268]">
               Execution
             </h3>
 
             {/* Description */}
-            <p className="mt-4 text-[14px] leading-[1.9] text-[#6b7280]">
+            <p className="mt-4 text-sm leading-relaxed text-slate-700">
               Campaigns, account systems,
               and content assets are executed
               with precision and consistency.
@@ -143,30 +143,30 @@ export default function ServicesProcess() {
           </div>
 
           {/* STEP 4 */}
-          <div className="group bg-[#faf7ff] border border-[#eee7ff] rounded-[32px] p-8 hover:-translate-y-2 transition-all duration-500">
+          <div className="group bg-white border border-gray-100 rounded-3xl p-10 hover:-translate-y-2 hover:shadow-2xl shadow-slate-200/60 transition-all duration-500">
 
             {/* Number */}
             <div className="flex items-center justify-between">
 
-              <span className="text-[44px] font-black tracking-[-0.06em] text-[#d8c6ff]">
+              <span className="text-4xl font-black tracking-tight text-slate-600">
                 04
               </span>
 
-              <div className="w-12 h-12 rounded-2xl bg-[#efe7ff] flex items-center justify-center">
+              <div className="w-14 h-14 rounded-2xl bg-gray-50 flex items-center justify-center border border-gray-100">
 
-                <BarChart4 className="w-5 h-5 text-[#6d28d9]" />
+                <BarChart4 className="w-5 h-5 text-[#13B3B7]" />
 
               </div>
 
             </div>
 
             {/* Heading */}
-            <h3 className="mt-8 text-[24px] font-black tracking-[-0.04em] text-[#111827]">
+            <h3 className="mt-8 text-2xl font-black tracking-tight text-[#152268]">
               Optimization
             </h3>
 
             {/* Description */}
-            <p className="mt-4 text-[14px] leading-[1.9] text-[#6b7280]">
+            <p className="mt-4 text-sm leading-relaxed text-slate-700">
               Continuous performance tracking
               helps improve efficiency,
               conversions, and scaling results.

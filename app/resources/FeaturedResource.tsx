@@ -21,12 +21,12 @@ export default function FeaturedResource() {
         <div className="max-w-3xl">
 
           {/* Label */}
-          <p className="text-[#6d28d9] text-[11px] font-bold tracking-[0.28em] uppercase mb-4">
+          <p className="text-[#4A3DD5] text-[11px] font-bold tracking-[0.28em] uppercase mb-4">
             Featured Resource
           </p>
 
           {/* Heading */}
-          <h2 className="text-[28px] md:text-[42px] leading-[1.05] font-black tracking-[-0.05em] text-[#020617]">
+          <h2 className="text-[28px] md:text-[42px] leading-[1.05] font-black tracking-[-0.05em] text-[#152268]">
             Amazon Growth
             <br />
             Scaling Framework
@@ -35,15 +35,15 @@ export default function FeaturedResource() {
         </div>
 
         {/* Featured Card */}
-        <div className="mt-12 relative overflow-hidden rounded-[32px] bg-gradient-to-br from-[#6d28d9] via-[#6d28d9] to-[#30a5b0] p-8 md:p-12 shadow-xl shadow-purple-900/10">
+        <div className="mt-12 relative overflow-hidden rounded-[32px] gain-gradient p-8 md:p-12 shadow-2xl shadow-[#7e22ce]/20 shadow-purple-900/10">
 
           {/* Outline Text */}
           <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none">
 
             <h1
               className="
-                text-[20vw]
-                md:text-[14vw]
+                text-[22vw]
+                md:text-[18vw]
                 font-black
                 tracking-[0.14em]
                 leading-none
@@ -51,7 +51,7 @@ export default function FeaturedResource() {
                 [-webkit-text-stroke:1px_rgba(255,255,255,0.06)]
               "
             >
-              SCALE
+              GAIN
             </h1>
 
           </div>
@@ -148,15 +148,16 @@ export default function FeaturedResource() {
               <div className="flex flex-col sm:flex-row gap-3 mt-8">
 
                 {/* Download */}
-                <button
+                <Link
+                  href="/resources/coming-soon"
                   className="
                     inline-flex
                     items-center
                     justify-center
                     gap-2
                     bg-white
-                    hover:bg-[#f4f1ff]
-                    text-[#6d28d9]
+                    hover:bg-[#f2f1ff]
+                    text-[#4A3DD5]
                     px-5
                     py-3
                     rounded-xl
@@ -172,7 +173,7 @@ export default function FeaturedResource() {
 
                   Download Guide
 
-                </button>
+                </Link>
 
                 {/* Learn More */}
                 <Link

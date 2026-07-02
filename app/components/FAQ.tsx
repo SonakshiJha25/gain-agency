@@ -58,17 +58,17 @@ function AccordionItem({
   onToggle: () => void;
 }) {
   return (
-    <div className="rounded-2xl border border-gray-200 bg-white shadow-sm hover:shadow-md transition">
+    <div className="rounded-2xl border border-gray-100 bg-white hover:shadow-2xl shadow-slate-200/60 transition-all duration-300">
       <button
         onClick={onToggle}
         className="w-full flex justify-between items-center px-5 py-4 text-left"
       >
-        <span className="text-[15px] font-semibold text-gray-900 pr-4">
+        <span className="text-[15px] font-semibold text-[#152268] pr-4">
           {item.question}
         </span>
 
         <ChevronDown
-          className={`w-5 h-5 text-purple-600 transition-transform duration-300 ${
+          className={`w-5 h-5 text-[#4A3DD5] transition-transform duration-300 ${
             isOpen ? "rotate-180" : ""
           }`}
         />
@@ -80,7 +80,7 @@ function AccordionItem({
         }`}
       >
         <div className="overflow-hidden">
-          <p className="text-gray-500 text-[14px] leading-relaxed">
+          <p className="text-slate-700 text-[14px] leading-relaxed">
             {item.answer}
           </p>
         </div>
@@ -101,16 +101,15 @@ export default function FAQ() {
 
         {/* HEADER */}
         <div className="text-center mb-14">
-          <p className="text-purple-600 text-xs font-semibold tracking-[0.35em] uppercase">
+          <p className="text-xs font-bold tracking-[0.2em] uppercase text-[#13B3B7] mb-4">
             FAQ
           </p>
 
-          <h2 className="mt-3 text-5xl font-black text-gray-900">
+          <h2 className="text-3xl md:text-4xl font-black tracking-tight leading-[1.1] text-[#152268]">
             Frequently Asked Questions
           </h2>
 
-          {/* ONLY purple text as you wanted */}
-          <p className="mt-4 text-purple-600 max-w-2xl mx-auto leading-relaxed">
+          <p className="mt-6 text-base text-slate-700 leading-relaxed max-w-2xl mx-auto">
             Clear answers about Amazon Ads, Account Management, and A+ Content services.
           </p>
         </div>

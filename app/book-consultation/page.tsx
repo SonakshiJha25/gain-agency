@@ -3,7 +3,6 @@ import Navbar from "../components/Navbar";
 import ConsultationHero from "./ConsultationHero";
 import ConsultationProcess from "./ConsultationProcess";
 import ConsultationForm from "./ConsultationForm";
-import ConsultationTestimonials from "./ConsultationTestimonials";
 
 import Footer from "../components/Footer";
 
@@ -24,13 +23,10 @@ export default function BookConsultationPage() {
       {/* Consultation Form */}
       <ConsultationForm />
 
-      {/* Testimonials */}
-      <ConsultationTestimonials />
-
       {/* Footer */}
       <Footer />
 
     </main>
 
   );
-}
+}

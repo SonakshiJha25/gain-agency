@@ -16,52 +16,51 @@ export default function LeadForm() {
       <div className="max-w-5xl mx-auto relative">
 
         {/* Header */}
-        <div className="text-center mb-10">
-          <h2 className="text-[28px] md:text-[42px] leading-[1.05] font-black tracking-[-0.05em] text-[#020617]">
-            Ready to <span className="text-[#30a5b0]">GAIN</span> your competitive edge on Amazon?
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-black tracking-tight leading-[1.1] text-[#152268]">
+            Ready to <span className="gain-gradient-text">GAIN</span> your competitive edge on Amazon?
           </h2>
 
-          <p className="mt-5 text-[15px] md:text-[14px] leading-[1.9] text-[#6b7280]">
+          <p className="mt-6 text-base text-slate-700 leading-relaxed max-w-xl mx-auto">
             Share your details and we’ll build a quick growth plan for your store.
           </p>
         </div>
 
         {/* Form card */}
-        <div className="bg-[#faf7ff] border border-[#ece4ff] rounded-[32px] p-6 md:p-9 shadow-sm">
+        <div className="bg-white border border-gray-100 rounded-3xl p-8 md:p-12 shadow-2xl shadow-slate-200/60">
 
           <div className="grid md:grid-cols-2 gap-5">
 
             <input
               placeholder="Full Name"
-              className="w-full h-11 px-4 rounded-xl border border-[#e5d9ff] bg-white text-[14px] outline-none focus:border-[#6d28d9] placeholder:text-[#6b7280]"
+              className="w-full h-12 px-5 rounded-xl border border-gray-200 bg-white text-sm outline-none focus:border-[#13B3B7] focus:ring-1 focus:ring-[#13B3B7] transition-all placeholder:text-slate-600"
             />
 
             <input
               placeholder="Email Address"
-              className="w-full h-11 px-4 rounded-xl border border-[#e5d9ff] bg-white text-[14px] outline-none focus:border-[#6d28d9] placeholder:text-[#6b7280]"
+              className="w-full h-12 px-5 rounded-xl border border-gray-200 bg-white text-sm outline-none focus:border-[#13B3B7] focus:ring-1 focus:ring-[#13B3B7] transition-all placeholder:text-slate-600"
             />
 
             <input
               placeholder="Phone Number"
-              className="w-full h-11 px-4 rounded-xl border border-[#e5d9ff] bg-white text-[14px] outline-none focus:border-[#6d28d9] placeholder:text-[#6b7280]"
+              className="w-full h-12 px-5 rounded-xl border border-gray-200 bg-white text-sm outline-none focus:border-[#13B3B7] focus:ring-1 focus:ring-[#13B3B7] transition-all placeholder:text-slate-600"
             />
 
             <input
-              placeholder="Amazon Store Link"
-              className="w-full h-11 px-4 rounded-xl border border-[#e5d9ff] bg-white text-[14px] outline-none focus:border-[#6d28d9] placeholder:text-[#6b7280]"
+              placeholder="Amazon Store Link (Optional)"
+              className="w-full h-12 px-5 rounded-xl border border-gray-200 bg-white text-sm outline-none focus:border-[#13B3B7] focus:ring-1 focus:ring-[#13B3B7] transition-all placeholder:text-slate-600"
             />
 
           </div>
 
           {/* centered button */}
-          <div className="flex justify-center mt-7">
-            <button className="bg-gradient-to-r from-[#6d28d9] via-[#6d28d9] to-[#30a5b0] hover:from-[#5b21b6] hover:to-[#28929c] text-white px-12 py-4.5 rounded-full text-[16px] font-semibold transition-all duration-300 hover:-translate-y-0.5 shadow-lg shadow-purple-300/30 flex items-center gap-2">
+          <div className="flex justify-center mt-10">
+            <button className="gain-gradient hover:from-[#3630a8] hover:to-[#0d9a9e] text-white px-8 py-3.5 rounded-full text-sm font-semibold transition-all duration-300 shadow-2xl shadow-[#152268]/20 hover:shadow-[0_8px_30px_rgba(0,0,0,0.16)] hover:-translate-y-0.5 flex items-center justify-center gap-2">
               Book a Strategy Call
-              <ArrowRight className="w-5 h-5" />
             </button>
           </div>
 
-          <p className="text-xs text-[#6b7280] mt-4 text-center">
+          <p className="text-xs text-slate-700 mt-4 text-center">
             We usually respond within 24–48 hours.
           </p>
 

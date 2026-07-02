@@ -54,10 +54,10 @@ function Stars({ rating }: { rating: number }) {
           key={i}
           className={`w-4 h-4 ${
             i < Math.floor(rating)
-              ? "text-[#6d28d9] fill-[#6d28d9]"
+              ? "text-[#4A3DD5] fill-[#4A3DD5]"
               : i < rating
-              ? "text-[#8b5cf6] fill-[#8b5cf6]"
-              : "text-gray-200"
+              ? "text-[#4A3DD5] fill-[#4A3DD5]"
+              : "text-slate-600"
           }`}
         />
       ))}
@@ -99,11 +99,11 @@ export default function ClientsCarousel() {
 
         {/* header */}
         <div className="text-center mb-16">
-          <p className="text-[#6d28d9] text-[11px] font-bold tracking-[0.28em] uppercase mb-4">
+          <p className="text-[#4A3DD5] text-[11px] font-bold tracking-[0.28em] uppercase mb-4">
             OUR CLIENTS
           </p>
 
-          <h2 className="text-[28px] md:text-[42px] leading-[1.05] font-black tracking-[-0.05em] text-[#020617]">
+          <h2 className="text-[28px] md:text-[42px] leading-[1.05] font-black tracking-[-0.05em] text-[#152268]">
             Real Results, Real Feedback
           </h2>
         </div>
@@ -114,17 +114,17 @@ export default function ClientsCarousel() {
           {/* LEFT */}
           <button
             onClick={prev}
-            className="absolute -left-2 md:-left-6 top-1/2 -translate-y-1/2 p-2.5 rounded-full border border-[#ece4ff] bg-white hover:bg-[#f7f4ff] hover:border-[#6d28d9] transition-all duration-300 z-10 shadow-sm"
+            className="absolute -left-2 md:-left-6 top-1/2 -translate-y-1/2 p-2.5 rounded-full border border-[#e2dfff] bg-white hover:bg-[#f4f3ff] hover:border-[#4A3DD5] transition-all duration-300 z-10 shadow-sm"
           >
-            <ChevronLeft className="w-5 h-5 text-gray-700" />
+            <ChevronLeft className="w-5 h-5 text-[#152268]" />
           </button>
 
           {/* RIGHT */}
           <button
             onClick={next}
-            className="absolute -right-2 md:-right-6 top-1/2 -translate-y-1/2 p-2.5 rounded-full border border-[#ece4ff] bg-white hover:bg-[#f7f4ff] hover:border-[#6d28d9] transition-all duration-300 z-10 shadow-sm"
+            className="absolute -right-2 md:-right-6 top-1/2 -translate-y-1/2 p-2.5 rounded-full border border-[#e2dfff] bg-white hover:bg-[#f4f3ff] hover:border-[#4A3DD5] transition-all duration-300 z-10 shadow-sm"
           >
-            <ChevronRight className="w-5 h-5 text-gray-700" />
+            <ChevronRight className="w-5 h-5 text-[#152268]" />
           </button>
 
           {/* cards */}
@@ -133,28 +133,28 @@ export default function ClientsCarousel() {
             {visibleClients.map((c, i) => (
               <div
                 key={i}
-                className="bg-[#faf7ff] border border-[#ece4ff] rounded-[32px] p-8 transition-all duration-300 hover:-translate-y-1 shadow-sm flex flex-col justify-between"
+                className="bg-[#f5f4ff] border border-[#e2dfff] rounded-[32px] p-8 transition-all duration-300 hover:-translate-y-1 shadow-sm flex flex-col justify-between"
               >
                 <div className="flex items-start gap-4">
 
                   <img
                     src={c.image}
-                    className="w-12 h-12 rounded-full object-cover border border-[#ece4ff] shrink-0"
+                    className="w-12 h-12 rounded-full object-cover border border-[#e2dfff] shrink-0"
                     alt={c.name}
                   />
 
                   <div>
                     <Stars rating={c.rating} />
 
-                    <p className="mt-4 text-[#6b7280] text-[14px] leading-[1.8]">
+                    <p className="mt-4 text-slate-700 text-[14px] leading-[1.8]">
                       "{c.feedback}"
                     </p>
 
                     <div className="mt-5">
-                      <p className="font-bold text-[#111827] text-[15px]">
+                      <p className="font-bold text-[#152268] text-[15px]">
                         {c.name}
                       </p>
-                      <p className="text-[12px] text-[#6b7280] mt-0.5">
+                      <p className="text-[12px] text-slate-700 mt-0.5">
                         {c.role}
                       </p>
                     </div>

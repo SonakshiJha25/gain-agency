@@ -1,3 +1,6 @@
+import Link from "next/link";
+import { CalendarDays } from "lucide-react";
+
 export default function AboutStory() {
   return (
 
@@ -8,30 +11,24 @@ export default function AboutStory() {
       <div className="absolute bottom-[-140px] right-[-120px] w-[340px] h-[340px] rounded-full bg-purple-200/40 blur-3xl" />
 
       {/* Main Container */}
-      <div className="relative z-10 max-w-7xl mx-auto">
+      <div className="relative z-10 max-w-5xl mx-auto">
 
         {/* Grid Layout */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-12 items-center">
 
           {/* Left Side */}
           <div>
 
             {/* Label */}
-            <p className="text-[#6d28d9] text-[11px] font-bold tracking-[0.28em] uppercase mb-5">
+            <p className="text-xs font-bold tracking-[0.2em] uppercase text-[#13B3B7] mb-5">
               Why We Started
             </p>
 
             {/* Heading */}
-            <h2 className="text-[28px] md:text-[42px] leading-[1.05] font-black tracking-[-0.05em] text-[#020617]">
-
-              Most Brands
-              <br />
-
-              Don’t Need
-              <br />
-
+            <h2 className="text-3xl md:text-4xl font-black tracking-tight leading-[1.05] text-[#152268]">
+              Most Brands<br />
+              Don't Need<br />
               More Noise
-
             </h2>
 
           </div>
@@ -40,7 +37,7 @@ export default function AboutStory() {
           <div>
 
             {/* Paragraph 1 */}
-            <p className="text-[15px] md:text-[14px] leading-[1.9] text-[#6b7280]">
+            <p className="text-base leading-relaxed text-slate-700">
 
               Too many Amazon brands waste time
               jumping between random tactics,
@@ -51,9 +48,9 @@ export default function AboutStory() {
             </p>
 
             {/* Paragraph 2 */}
-            <p className="mt-6 text-[15px] md:text-[14px] leading-[1.9] text-[#6b7280]">
+            <p className="mt-6 text-base leading-relaxed text-slate-700">
 
-              GAIN was created to build structured
+              <span className="font-extrabold text-[#4A3DD5]">GAIN</span> was created to build structured
               systems focused on clarity,
               execution, profitability,
               and sustainable long-term scaling.
@@ -61,64 +58,12 @@ export default function AboutStory() {
             </p>
 
             {/* Paragraph 3 */}
-            <p className="mt-6 text-[15px] md:text-[14px] leading-[1.9] text-[#6b7280]">
+            <p className="mt-6 text-base leading-relaxed text-slate-700">
 
               Instead of chasing vanity metrics,
               we focus on building Amazon growth
               ecosystems that actually improve
               business performance over time.
-
-            </p>
-
-          </div>
-
-        </div>
-
-        {/* Bottom Quote Card */}
-        <div className="mt-24 bg-gradient-to-br from-[#6d28d9] via-[#6d28d9] to-[#30a5b0] rounded-[32px] p-12 md:p-16 relative overflow-hidden">
-
-          {/* Outline Text */}
-          <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none">
-
-            <h1
-              className="
-                text-[18vw]
-                md:text-[12vw]
-                font-black
-                tracking-[0.14em]
-                leading-none
-                text-transparent
-                [-webkit-text-stroke:1px_rgba(255,255,255,0.08)]
-              "
-            >
-              GROW
-            </h1>
-
-          </div>
-
-          {/* Content */}
-          <div className="relative z-10 max-w-4xl">
-
-            {/* Quote */}
-            <h3 className="text-[28px] md:text-[44px] leading-[0.98] font-black tracking-[-0.06em] text-white">
-
-              Real Amazon Growth
-              <br />
-
-              Happens Through
-              <br />
-
-              Better Systems
-
-            </h3>
-
-            {/* Description */}
-            <p className="mt-6 text-[15px] md:text-[14px] leading-[1.9] text-purple-100 max-w-2xl">
-
-              Stronger strategy,
-              better execution,
-              smarter optimization,
-              and long-term performance thinking.
 
             </p>
 

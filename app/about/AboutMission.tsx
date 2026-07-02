@@ -1,163 +1,88 @@
-import {
-  Target,
-  TrendingUp,
-  ShieldCheck
-} from "lucide-react";
+import { BarChart2, Layers, TrendingUp } from "lucide-react";
+
+const cards = [
+  {
+    icon: <BarChart2 className="w-6 h-6 text-[#4A3DD5]" />,
+    title: "Performance Driven Approach",
+    desc: "We focus on the metrics that truly impact your business, including ROAS, ACOS, CTR, and conversion rate, ensuring every decision drives measurable growth.",
+    dark: false,
+  },
+  {
+    icon: <Layers className="w-6 h-6 text-white" />,
+    title: "Data + Strategy Balance",
+    desc: "We combine data driven decisions with long term strategy to build sustainable and profitable growth.",
+    dark: true,
+  },
+  {
+    icon: <TrendingUp className="w-6 h-6 text-[#4A3DD5]" />,
+    title: "Growth Focused Execution",
+    desc: "We align every decision with your business goals, focusing on revenue growth rather than just activity.",
+    dark: false,
+  },
+];
 
 export default function AboutMission() {
   return (
+    <section className="relative bg-white py-24 px-6 overflow-hidden">
 
-    // Mission Section
-    <section className="relative bg-white py-32 px-6 overflow-hidden">
-
-      {/* Soft Glow */}
       <div className="absolute bottom-[-120px] left-[-120px] w-[320px] h-[320px] rounded-full bg-purple-200/40 blur-3xl" />
 
-      {/* Main Container */}
       <div className="relative z-10 max-w-7xl mx-auto">
 
-        {/* Top Content */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-start">
-
-          {/* Left Side */}
-          <div>
-
-            {/* Small Label */}
-            <p className="text-[#6d28d9] text-[11px] font-bold tracking-[0.28em] uppercase mb-5">
-              Our Mission
-            </p>
-
-            {/* Heading */}
-            <h2 className="text-[28px] md:text-[42px] leading-[1.05] font-black tracking-[-0.05em] text-[#020617]">
-
-              Real Growth
-              <br />
-
-              Requires Systems
-
-            </h2>
-
-          </div>
-
-          {/* Right Side */}
-          <div>
-
-            {/* Paragraph 1 */}
-            <p className="text-[15px] md:text-[14px] leading-[1.9] text-[#6b7280]">
-
-              Most Amazon brands struggle because
-              they rely on disconnected tactics,
-              inconsistent advertising decisions,
-              and short-term scaling approaches.
-
-            </p>
-
-            {/* Paragraph 2 */}
-            <p className="mt-6 text-[15px] md:text-[14px] leading-[1.9] text-[#6b7280]">
-
-              GAIN was built to create structured
-              growth systems that combine Amazon PPC,
-              conversion-focused content,
-              and long-term optimization strategies
-              into one scalable ecosystem.
-
-            </p>
-
-          </div>
-
+        {/* Section label */}
+        <div className="text-center mb-14">
+          <p className="text-xs font-bold tracking-[0.2em] uppercase text-[#13B3B7] mb-4">
+            Our Approach
+          </p>
+          <h2 className="text-3xl md:text-4xl font-black tracking-tight leading-[1.1] text-[#152268]">
+            How We Drive{" "}
+            <span className="gain-gradient-text">
+              Consistent Growth
+            </span>
+          </h2>
+          <p className="mt-6 max-w-2xl mx-auto text-base leading-relaxed text-slate-700">
+            From Ads to Account Management to A+ Content, we manage every aspect
+            of your Amazon presence to drive consistent growth.
+          </p>
         </div>
 
         {/* Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-7 mt-24">
-
-          {/* Card 1 */}
-          <div className="bg-[#f7f4ff] border border-[#ece4ff] rounded-[32px] p-9">
-
-            {/* Icon */}
-            <div className="w-14 h-14 rounded-2xl bg-white flex items-center justify-center">
-
-              <Target className="w-6 h-6 text-[#6d28d9]" />
-
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {cards.map((card, i) => (
+            <div
+              key={i}
+              className={`rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1 ${
+                card.dark
+                  ? "bg-[linear-gradient(150deg,_#7c3aed_0%,_#7c3aed_65%,_#4f6fd4_85%,_#14b8a6_100%)] text-white shadow-lg"
+                  : "bg-[#f8f7ff] border border-[#e2dfff] hover:shadow-2xl shadow-slate-200/60"
+              }`}
+            >
+              <div
+                className={`w-12 h-12 rounded-xl flex items-center justify-center mb-6 shadow-sm ${
+                  card.dark ? "bg-white/10" : "bg-gray-50"
+                }`}
+              >
+                {card.icon}
+              </div>
+              <h3
+                className={`text-lg font-bold tracking-tight mb-2 ${
+                  card.dark ? "text-white" : "text-[#152268]"
+                }`}
+              >
+                {card.title}
+              </h3>
+              <p
+                className={`text-sm leading-relaxed ${
+                  card.dark ? "text-white/80" : "text-slate-700"
+                }`}
+              >
+                {card.desc}
+              </p>
             </div>
-
-            {/* Title */}
-            <h3 className="mt-8 text-[22px] font-bold tracking-[-0.03em] text-[#020617]">
-
-              Strategy First
-
-            </h3>
-
-            {/* Description */}
-            <p className="mt-4 text-[14px] leading-[1.9] text-[#6b7280]">
-
-              Every decision is based on performance,
-              scalability, and long-term growth —
-              not random experimentation.
-
-            </p>
-
-          </div>
-
-          {/* Card 2 */}
-          <div className="bg-gradient-to-br from-[#6d28d9] via-[#6d28d9] to-[#30a5b0] rounded-[32px] p-9 text-white">
-
-            {/* Icon */}
-            <div className="w-14 h-14 rounded-2xl bg-white/10 flex items-center justify-center">
-
-              <TrendingUp className="w-6 h-6" />
-
-            </div>
-
-            {/* Title */}
-            <h3 className="mt-8 text-[22px] font-bold tracking-[-0.03em]">
-
-              Performance Focused
-
-            </h3>
-
-            {/* Description */}
-            <p className="mt-4 text-[14px] leading-[1.9] text-purple-100">
-
-              We prioritize measurable business impact
-              through ROAS, conversions,
-              profitability, and sustainable scaling.
-
-            </p>
-
-          </div>
-
-          {/* Card 3 */}
-          <div className="bg-[#f7f4ff] border border-[#ece4ff] rounded-[32px] p-9">
-
-            {/* Icon */}
-            <div className="w-14 h-14 rounded-2xl bg-white flex items-center justify-center">
-
-              <ShieldCheck className="w-6 h-6 text-[#6d28d9]" />
-
-            </div>
-
-            {/* Title */}
-            <h3 className="mt-8 text-[22px] font-bold tracking-[-0.03em] text-[#020617]">
-
-              Long-Term Scaling
-
-            </h3>
-
-            {/* Description */}
-            <p className="mt-4 text-[14px] leading-[1.9] text-[#6b7280]">
-
-              Growth systems are designed to stay
-              stable while supporting stronger
-              long-term brand expansion.
-
-            </p>
-
-          </div>
-
+          ))}
         </div>
 
       </div>
-
     </section>
   );
 }

@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 import ResourcesHero from "./ResourcesHero";
 import FeaturedResource from "./FeaturedResource";
 import ResourceCategories from "./ResourceCategories";
-import LatestInsights from "./LatestInsights";
+import CaseStudiesGrid from "./CaseStudiesGrid";
 
 export default function ResourcesPage() {
   return (
@@ -21,8 +21,8 @@ export default function ResourcesPage() {
       {/* Resource Categories */}
       <ResourceCategories />
 
-      {/* Latest Insights */}
-      <LatestInsights />
+      {/* Case Studies Section */}
+      <CaseStudiesGrid />
 
       {/* Footer */}
       <Footer />

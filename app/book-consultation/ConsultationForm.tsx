@@ -75,36 +75,33 @@ export default function ConsultationForm() {
 
     <section
       id="form"
-      className="relative py-24 px-6 bg-[#f7f4ff] overflow-hidden"
+      className="relative py-24 px-6 bg-gray-50 overflow-hidden"
     >
-
-      {/* Background Glow */}
-      <div className="absolute top-[-120px] right-[-120px] w-[320px] h-[320px] bg-purple-200 rounded-full blur-3xl opacity-50" />
 
       {/* Main Container */}
       <div className="relative z-10 max-w-7xl mx-auto">
 
         {/* Form Wrapper */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start bg-white border border-[#ece4ff] rounded-[32px] p-6 md:p-10 shadow-xl shadow-purple-100/30">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start bg-white border border-gray-100 rounded-3xl p-8 md:p-12 shadow-2xl shadow-slate-200/60">
 
           {/* Left Content */}
           <div>
 
-            <p className="text-[#6d28d9] text-[11px] font-bold tracking-[0.28em] uppercase mb-4">
+            <p className="text-xs font-bold tracking-[0.2em] uppercase text-[#13B3B7] mb-6">
               Start Your Growth Journey
             </p>
 
-            <h2 className="text-[30px] md:text-[50px] leading-[0.96] font-black tracking-[-0.06em] text-[#020617]">
+            <h2 className="text-3xl md:text-4xl font-black tracking-tight leading-[1.1] text-[#152268]">
               Ready To Scale
               <br />
 
-              <span className="bg-gradient-to-r from-[#8b5cf6] via-[#7c3aed] to-[#30a5b0] bg-clip-text text-transparent">
+              <span className="gain-gradient-text">
                 Smarter?
               </span>
 
             </h2>
 
-            <p className="mt-5 text-[15px] md:text-[14px] leading-[1.9] text-[#6b7280] max-w-md">
+            <p className="mt-6 text-base text-slate-700 leading-relaxed max-w-md">
               Fill out the form and our team will reach out with the next steps,
               recommendations, and a personalized growth direction for your brand.
             </p>
@@ -114,15 +111,15 @@ export default function ConsultationForm() {
 
               <div className="flex items-start gap-4">
 
-                <div className="w-3 h-3 rounded-full bg-[#6d28d9] mt-2" />
+                <div className="w-3 h-3 rounded-full bg-[#13B3B7] mt-1.5" />
 
                 <div>
 
-                  <h3 className="text-[16px] font-bold text-[#111827]">
+                  <h3 className="text-base font-bold text-[#152268]">
                     Personalized Strategy
                   </h3>
 
-                  <p className="mt-1 text-[13px] leading-[1.7] text-[#6b7280]">
+                  <p className="mt-1 text-sm leading-relaxed text-slate-700">
                     Tailored recommendations based on your brand goals and performance.
                   </p>
 
@@ -132,15 +129,15 @@ export default function ConsultationForm() {
 
               <div className="flex items-start gap-4">
 
-                <div className="w-3 h-3 rounded-full bg-[#6d28d9] mt-2" />
+                <div className="w-3 h-3 rounded-full bg-[#13B3B7] mt-1.5" />
 
                 <div>
 
-                  <h3 className="text-[16px] font-bold text-[#111827]">
+                  <h3 className="text-base font-bold text-[#152268]">
                     Transparent Communication
                   </h3>
 
-                  <p className="mt-1 text-[13px] leading-[1.7] text-[#6b7280]">
+                  <p className="mt-1 text-sm leading-relaxed text-slate-700">
                     Clear process, honest insights, and actionable recommendations.
                   </p>
 
@@ -150,15 +147,15 @@ export default function ConsultationForm() {
 
               <div className="flex items-start gap-4">
 
-                <div className="w-3 h-3 rounded-full bg-[#6d28d9] mt-2" />
+                <div className="w-3 h-3 rounded-full bg-[#13B3B7] mt-1.5" />
 
                 <div>
 
-                  <h3 className="text-[16px] font-bold text-[#111827]">
+                  <h3 className="text-base font-bold text-[#152268]">
                     Fast Response Time
                   </h3>
 
-                  <p className="mt-1 text-[13px] leading-[1.7] text-[#6b7280]">
+                  <p className="mt-1 text-sm leading-relaxed text-slate-700">
                     Most consultation requests receive a response within 24–48 hours.
                   </p>
 
@@ -179,7 +176,7 @@ export default function ConsultationForm() {
             {/* Full Name */}
             <div>
 
-              <label className="block text-[13px] font-semibold text-[#111827] mb-1.5">
+              <label className="block text-sm font-semibold text-[#152268] mb-2">
                 Full Name
               </label>
 
@@ -190,7 +187,7 @@ export default function ConsultationForm() {
                 onChange={handleChange}
                 required
                 placeholder="Enter your full name"
-                className="w-full h-11 px-4 rounded-xl border border-[#e5d9ff] bg-[#faf7ff] text-[#111827] placeholder:text-[#9ca3af] text-[14px] outline-none focus:border-[#6d28d9] transition-all duration-300"
+                className="w-full h-12 px-4 rounded-xl border border-gray-200 bg-gray-50 text-[#152268] placeholder:text-slate-600 text-sm outline-none focus:border-[#13B3B7] focus:ring-1 focus:ring-[#13B3B7] transition-all duration-300"
               />
 
             </div>
@@ -198,7 +195,7 @@ export default function ConsultationForm() {
             {/* Email */}
             <div>
 
-              <label className="block text-[13px] font-semibold text-[#111827] mb-1.5">
+              <label className="block text-sm font-semibold text-[#152268] mb-2">
                 Email Address
               </label>
 
@@ -209,7 +206,7 @@ export default function ConsultationForm() {
                 onChange={handleChange}
                 required
                 placeholder="Enter your email address"
-                className="w-full h-11 px-4 rounded-xl border border-[#e5d9ff] bg-[#faf7ff] text-[#111827] placeholder:text-[#9ca3af] text-[14px] outline-none focus:border-[#6d28d9] transition-all duration-300"
+                className="w-full h-12 px-4 rounded-xl border border-gray-200 bg-gray-50 text-[#152268] placeholder:text-slate-600 text-sm outline-none focus:border-[#13B3B7] focus:ring-1 focus:ring-[#13B3B7] transition-all duration-300"
               />
 
             </div>
@@ -217,7 +214,7 @@ export default function ConsultationForm() {
             {/* Phone */}
             <div>
 
-              <label className="block text-[13px] font-semibold text-[#111827] mb-1.5">
+              <label className="block text-sm font-semibold text-[#152268] mb-2">
                 Phone Number
               </label>
 
@@ -228,7 +225,7 @@ export default function ConsultationForm() {
                 onChange={handleChange}
                 required
                 placeholder="Enter your phone number"
-                className="w-full h-11 px-4 rounded-xl border border-[#e5d9ff] bg-[#faf7ff] text-[#111827] placeholder:text-[#9ca3af] text-[14px] outline-none focus:border-[#6d28d9] transition-all duration-300"
+                className="w-full h-12 px-4 rounded-xl border border-gray-200 bg-gray-50 text-[#152268] placeholder:text-slate-600 text-sm outline-none focus:border-[#13B3B7] focus:ring-1 focus:ring-[#13B3B7] transition-all duration-300"
               />
 
             </div>
@@ -236,8 +233,8 @@ export default function ConsultationForm() {
             {/* Store */}
             <div>
 
-              <label className="block text-[13px] font-semibold text-[#111827] mb-1.5">
-                Amazon Store / Brand
+              <label className="block text-sm font-semibold text-[#152268] mb-2">
+                Amazon Store / Brand (Optional)
               </label>
 
               <input
@@ -245,9 +242,8 @@ export default function ConsultationForm() {
                 name="store"
                 value={formData.store}
                 onChange={handleChange}
-                required
                 placeholder="Enter your brand or store name"
-                className="w-full h-11 px-4 rounded-xl border border-[#e5d9ff] bg-[#faf7ff] text-[#111827] placeholder:text-[#9ca3af] text-[14px] outline-none focus:border-[#6d28d9] transition-all duration-300"
+                className="w-full h-12 px-4 rounded-xl border border-gray-200 bg-gray-50 text-[#152268] placeholder:text-slate-600 text-sm outline-none focus:border-[#13B3B7] focus:ring-1 focus:ring-[#13B3B7] transition-all duration-300"
               />
 
             </div>
@@ -255,7 +251,7 @@ export default function ConsultationForm() {
             {/* Goals */}
             <div>
 
-              <label className="block text-[13px] font-semibold text-[#111827] mb-1.5">
+              <label className="block text-sm font-semibold text-[#152268] mb-2">
                 Goals & Challenges
               </label>
 
@@ -265,7 +261,7 @@ export default function ConsultationForm() {
                 onChange={handleChange}
                 required
                 placeholder="Tell us about your current challenges and growth goals..."
-                className="w-full h-28 p-4 rounded-xl border border-[#e5d9ff] bg-[#faf7ff] text-[#111827] placeholder:text-[#9ca3af] text-[14px] outline-none resize-none focus:border-[#6d28d9] transition-all duration-300"
+                className="w-full h-32 p-4 rounded-xl border border-gray-200 bg-gray-50 text-[#152268] placeholder:text-slate-600 text-sm outline-none resize-none focus:border-[#13B3B7] focus:ring-1 focus:ring-[#13B3B7] transition-all duration-300"
               />
 
             </div>
@@ -276,7 +272,7 @@ export default function ConsultationForm() {
               <button
                 type="submit"
                 disabled={loading}
-                className="bg-gradient-to-r from-[#6d28d9] via-[#6d28d9] to-[#30a5b0] hover:from-[#5b21b6] hover:to-[#28929c] text-white px-12 py-4 rounded-full text-[16px] font-semibold shadow-lg shadow-purple-300/30 transition-all duration-300 hover:-translate-y-0.5 flex items-center gap-2 disabled:opacity-70"
+                className="w-full gain-gradient hover:from-[#3630a8] hover:to-[#0d9a9e] text-white px-8 py-4 rounded-full text-sm font-bold uppercase tracking-[0.1em] shadow-[0_4px_14px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-0.5 flex items-center justify-center gap-2 disabled:opacity-70"
               >
 
                 {
@@ -290,7 +286,7 @@ export default function ConsultationForm() {
             </div>
 
             {/* Bottom Note */}
-            <p className="text-[12px] text-[#6b7280] text-center leading-[1.8]">
+            <p className="text-xs text-slate-700 text-center leading-relaxed">
               We usually respond within 24–48 hours.
             </p>
 
@@ -334,11 +330,11 @@ export default function ConsultationForm() {
               {/* Content */}
               <div>
 
-                <h3 className="text-[15px] font-semibold text-[#111827]">
+                <h3 className="text-[15px] font-semibold text-[#152268]">
                   Consultation Request Sent
                 </h3>
 
-                <p className="mt-1 text-[13px] leading-[1.7] text-[#6b7280]">
+                <p className="mt-1 text-[13px] leading-[1.7] text-slate-700">
                   Our team will contact you within 24–48 hours.
                 </p>
 

@@ -1,10 +1,10 @@
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
-import Services from "./components/Services"
-import FAQ from "./components/FAQ"
+import Services from "./components/Services";
+import HomeAbout from "./components/HomeAbout";
 import WhyUs from "./components/WhyUs";
+import FAQ from "./components/FAQ";
 import LeadForm from "./components/LeadForm";
-import ClientsCarousel from "./components/ClientsCarousel";
 import Footer from "./components/Footer";
 
 export default function Home() {
@@ -13,10 +13,10 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Services />
-      <FAQ />
+      <HomeAbout />
       <WhyUs />
+      <FAQ />
       <LeadForm />
-      <ClientsCarousel />
       <Footer />
     </main>
   );

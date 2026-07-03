@@ -80,7 +80,7 @@ export default function ContactForm() {
   return (
     <div className="bg-white border border-gray-100 rounded-3xl p-8 md:p-10 shadow-2xl shadow-slate-200/60">
 
-      <h2 className="text-2xl font-black tracking-tight text-[#152268] mb-8">
+      <h2 className="text-xl font-black tracking-tight text-[#152268] mb-8">
         Get Your Free Growth Plan
       </h2>
 

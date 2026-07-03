@@ -35,7 +35,7 @@ export default function ServicesProcess() {
           </h2>
 
           {/* Description */}
-          <p className="mt-6 text-base text-slate-700 leading-relaxed">
+          <p className="mt-6 text-sm leading-relaxed text-slate-700">
             Every growth strategy follows a performance-focused
             framework designed to improve visibility,
             profitability, and long-term Amazon scaling.
@@ -65,7 +65,7 @@ export default function ServicesProcess() {
             </div>
 
             {/* Heading */}
-            <h3 className="mt-8 text-2xl font-black tracking-tight text-[#152268]">
+            <h3 className="mt-8 text-xl font-black tracking-tight text-[#152268]">
               Audit
             </h3>
 
@@ -97,7 +97,7 @@ export default function ServicesProcess() {
             </div>
 
             {/* Heading */}
-            <h3 className="mt-8 text-2xl font-black tracking-tight text-[#152268]">
+            <h3 className="mt-8 text-xl font-black tracking-tight text-[#152268]">
               Strategy
             </h3>
 
@@ -129,7 +129,7 @@ export default function ServicesProcess() {
             </div>
 
             {/* Heading */}
-            <h3 className="mt-8 text-2xl font-black tracking-tight text-[#152268]">
+            <h3 className="mt-8 text-xl font-black tracking-tight text-[#152268]">
               Execution
             </h3>
 
@@ -161,7 +161,7 @@ export default function ServicesProcess() {
             </div>
 
             {/* Heading */}
-            <h3 className="mt-8 text-2xl font-black tracking-tight text-[#152268]">
+            <h3 className="mt-8 text-xl font-black tracking-tight text-[#152268]">
               Optimization
             </h3>
 

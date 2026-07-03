@@ -233,10 +233,8 @@ export default function Hero() {
           variants={itemVariants}
           className="text-3xl md:text-4xl lg:text-5xl font-black tracking-tight leading-[1.05] text-[#152268]"
         >
-          Ads That Actually Work.{" "}
-          <br />
           <span className="gain-gradient-text">
-            Imagine That.
+            Ads That Actually Work.
           </span>
         </motion.h1>
 

@@ -35,7 +35,7 @@ export default function AboutHero() {
         </h1>
 
         {/* Description */}
-        <p className="max-w-2xl mx-auto mt-6 text-lg text-slate-700 leading-relaxed">
+        <p className="max-w-2xl mx-auto mt-6 text-sm leading-relaxed text-slate-700">
           Our name defines our philosophy — every letter is a commitment we make to the brands we work with.
         </p>
 

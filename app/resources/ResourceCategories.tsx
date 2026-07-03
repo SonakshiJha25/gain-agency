@@ -21,19 +21,19 @@ export default function ResourceCategories() {
         <div className="max-w-3xl mx-auto text-center">
 
           {/* Label */}
-          <p className="text-[#4A3DD5] text-[11px] font-bold tracking-[0.28em] uppercase mb-4">
+          <p className="text-[#4A3DD5] text-xs font-bold tracking-[0.2em] uppercase mb-4">
             Resource Categories
           </p>
 
           {/* Heading */}
-          <h2 className="text-[28px] md:text-[42px] leading-[1.05] font-black tracking-[-0.05em] text-[#152268]">
+          <h2 className="text-3xl md:text-4xl font-black tracking-tight leading-[1.1] text-[#152268]">
             Learn The Systems
             <br />
             Behind Amazon Growth
           </h2>
 
           {/* Description */}
-          <p className="mt-5 text-[15px] md:text-[14px] leading-[1.9] text-slate-700">
+          <p className="mt-5 text-sm leading-relaxed text-slate-700">
             Explore frameworks, strategies, and optimization systems built for scalable Amazon brands.
           </p>
 
@@ -53,12 +53,12 @@ export default function ResourceCategories() {
             </div>
 
             {/* Title */}
-            <h3 className="mt-6 text-[22px] font-bold text-[#152268]">
+            <h3 className="mt-6 text-xl font-bold text-[#152268]">
               Amazon PPC Strategy
             </h3>
 
             {/* Description */}
-            <p className="mt-3 text-[14px] leading-[1.7] text-slate-700">
+            <p className="mt-3 text-sm leading-relaxed text-slate-700">
               Learn campaign structure, ROAS optimization, keyword systems, and scaling frameworks.
             </p>
 
@@ -75,12 +75,12 @@ export default function ResourceCategories() {
             </div>
 
             {/* Title */}
-            <h3 className="mt-6 text-[22px] font-bold">
+            <h3 className="mt-6 text-xl font-bold">
               Account Optimization
             </h3>
 
             {/* Description */}
-            <p className="mt-3 text-[14px] leading-[1.7] text-purple-100">
+            <p className="mt-3 text-sm leading-relaxed text-purple-100">
               Discover listing optimization, account structure, analytics tracking, and growth systems.
             </p>
 
@@ -97,12 +97,12 @@ export default function ResourceCategories() {
             </div>
 
             {/* Title */}
-            <h3 className="mt-6 text-[22px] font-bold">
+            <h3 className="mt-6 text-xl font-bold">
               A+ Content Systems
             </h3>
 
             {/* Description */}
-            <p className="mt-3 text-[14px] leading-[1.7] text-purple-100">
+            <p className="mt-3 text-sm leading-relaxed text-purple-100">
               Understand conversion-focused branding, premium visuals, and customer experience systems.
             </p>
 
@@ -119,12 +119,12 @@ export default function ResourceCategories() {
             </div>
 
             {/* Title */}
-            <h3 className="mt-6 text-[22px] font-bold text-[#152268]">
+            <h3 className="mt-6 text-xl font-bold text-[#152268]">
               Brand Scaling Frameworks
             </h3>
 
             {/* Description */}
-            <p className="mt-3 text-[14px] leading-[1.7] text-slate-700">
+            <p className="mt-3 text-sm leading-relaxed text-slate-700">
               Explore sustainable scaling, growth planning, and long-term Amazon expansion systems.
             </p>
 

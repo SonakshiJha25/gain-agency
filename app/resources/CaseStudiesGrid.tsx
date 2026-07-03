@@ -17,16 +17,16 @@ export default function CaseStudiesGrid() {
         <div className="max-w-3xl mx-auto text-center">
 
           {/* Badge */}
-          <p className="text-[#4A3DD5] text-[11px] font-bold tracking-[0.28em] uppercase mb-4">
+          <p className="text-[#4A3DD5] text-xs font-bold tracking-[0.2em] uppercase mb-4">
             Proven Frameworks
           </p>
 
           {/* Heading */}
-          <h2 className="text-[28px] md:text-[42px] leading-[1.05] font-black tracking-[-0.05em] text-[#152268]">
+          <h2 className="text-3xl md:text-4xl font-black tracking-tight leading-[1.1] text-[#152268]">
             Structured Case Studies
           </h2>
           
-          <p className="mt-4 text-[15px] md:text-[14px] leading-[1.9] text-slate-700">
+          <p className="mt-4 text-sm leading-relaxed text-slate-700">
             Review how we deploy advertising, optimization, and content frameworks to support Amazon brands.
           </p>
 
@@ -49,12 +49,12 @@ export default function CaseStudiesGrid() {
             </p>
 
             {/* Title */}
-            <h3 className="mt-4 text-[24px] leading-[1.1] font-black tracking-[-0.03em] text-[#152268]">
+            <h3 className="mt-4 text-xl font-black tracking-tight text-[#152268]">
               Campaign Efficiency Restructure
             </h3>
 
             {/* Description */}
-            <p className="mt-5 text-[14px] leading-[1.9] text-slate-700">
+            <p className="mt-5 text-sm leading-relaxed text-slate-700">
               Rebuilt account ad structures to improve efficiency, eliminate wasted spend on non-converting keywords, and build scalable campaign categories.
             </p>
 
@@ -84,12 +84,12 @@ export default function CaseStudiesGrid() {
             </p>
 
             {/* Title */}
-            <h3 className="mt-4 text-[24px] leading-[1.1] font-black tracking-[-0.03em] text-[#152268]">
+            <h3 className="mt-4 text-xl font-black tracking-tight text-[#152268]">
               Algorithm & Conversion Alignment
             </h3>
 
             {/* Description */}
-            <p className="mt-5 text-[14px] leading-[1.9] text-slate-700">
+            <p className="mt-5 text-sm leading-relaxed text-slate-700">
               Refined product title keywords, descriptions, and backend search terms to align with Amazon's indexing guidelines and buyer conversion flow.
             </p>
 
@@ -119,12 +119,12 @@ export default function CaseStudiesGrid() {
             </p>
 
             {/* Title */}
-            <h3 className="mt-4 text-[24px] leading-[1.1] font-black tracking-[-0.03em] text-[#152268]">
+            <h3 className="mt-4 text-xl font-black tracking-tight text-[#152268]">
               A+ Content & Storefront Design
             </h3>
 
             {/* Description */}
-            <p className="mt-5 text-[14px] leading-[1.9] text-slate-700">
+            <p className="mt-5 text-sm leading-relaxed text-slate-700">
               Created custom visual assets and comparison tables for product detail pages, establishing a highly polished, trustworthy brand storefront.
             </p>
 

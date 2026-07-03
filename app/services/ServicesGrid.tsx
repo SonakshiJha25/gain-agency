@@ -35,7 +35,7 @@ export default function ServicesGrid() {
           </h2>
 
           {/* Description */}
-          <p className="mt-6 text-base text-slate-700 leading-relaxed">
+          <p className="mt-6 text-sm leading-relaxed text-slate-700">
             Every service is designed to improve visibility,
             conversion rates, profitability, and long-term
             brand growth on Amazon.
@@ -59,7 +59,7 @@ export default function ServicesGrid() {
             {/* Heading */}
             <div className="flex items-center justify-between mt-8">
 
-              <h3 className="text-2xl font-black tracking-tight text-[#152268]">
+              <h3 className="text-xl font-black tracking-tight text-[#152268]">
                 Sponsored Ads (PPC)
               </h3>
 
@@ -68,7 +68,7 @@ export default function ServicesGrid() {
             </div>
 
             {/* Description */}
-            <p className="mt-6 text-base leading-relaxed text-slate-700">
+            <p className="mt-6 text-sm leading-relaxed text-slate-700">
               <span className="block font-bold text-[#152268] mb-2">
                 Campaigns that convert clicks into customers.
               </span>
@@ -90,7 +90,7 @@ export default function ServicesGrid() {
             {/* Heading */}
             <div className="flex items-center justify-between mt-8">
 
-              <h3 className="text-2xl font-black tracking-tight text-[#152268]">
+              <h3 className="text-xl font-black tracking-tight text-[#152268]">
                 Listing Optimization
               </h3>
 
@@ -99,7 +99,7 @@ export default function ServicesGrid() {
             </div>
 
             {/* Description */}
-            <p className="mt-6 text-base leading-relaxed text-slate-700">
+            <p className="mt-6 text-sm leading-relaxed text-slate-700">
               <span className="block font-bold text-[#152268] mb-2">
                 Be found. Be chosen.
               </span>
@@ -121,7 +121,7 @@ export default function ServicesGrid() {
             {/* Heading */}
             <div className="flex items-center justify-between mt-8">
 
-              <h3 className="text-2xl font-black tracking-tight text-[#152268]">
+              <h3 className="text-xl font-black tracking-tight text-[#152268]">
                 Visual Branding
               </h3>
 
@@ -130,7 +130,7 @@ export default function ServicesGrid() {
             </div>
 
             {/* Description */}
-            <p className="mt-6 text-base leading-relaxed text-slate-700">
+            <p className="mt-6 text-sm leading-relaxed text-slate-700">
               <span className="block font-bold text-[#152268] mb-2">
                 Stand out with a Brand Story.
               </span>

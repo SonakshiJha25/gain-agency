@@ -46,7 +46,7 @@ export default function ServiceDetails() {
 
             </h2>
 
-            <p className="mt-6 text-base text-slate-700 leading-relaxed max-w-xl">
+            <p className="mt-6 text-sm leading-relaxed text-slate-700 max-w-xl">
               Campaigns that convert clicks into customers. End-to-end management of Sponsored Products, Sponsored Brands, and Sponsored Display campaigns.
             </p>
 
@@ -186,7 +186,7 @@ export default function ServiceDetails() {
 
             </h2>
 
-            <p className="mt-6 text-base text-slate-700 leading-relaxed max-w-xl">
+            <p className="mt-6 text-sm leading-relaxed text-slate-700 max-w-xl">
               Increase visibility and conversions with product listings optimized for search rankings and shopper engagement.
             </p>
 
@@ -224,7 +224,7 @@ export default function ServiceDetails() {
 
             </h2>
 
-            <p className="mt-6 text-base text-slate-700 leading-relaxed max-w-xl">
+            <p className="mt-6 text-sm leading-relaxed text-slate-700 max-w-xl">
               Stand out with a Brand Story. Design compelling visuals for A+ Content, Store page, Product images and Product videos that drive conversions.
             </p>
 

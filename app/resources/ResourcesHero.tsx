@@ -27,7 +27,7 @@ export default function ResourcesHero() {
       <div className="relative z-10 max-w-4xl text-center px-6 pt-16">
 
         {/* Label */}
-        <p className="text-[#4A3DD5] text-[11px] font-bold tracking-[0.28em] uppercase mb-4">
+        <p className="text-[#4A3DD5] text-xs font-bold tracking-[0.2em] uppercase mb-4">
           Resources & Insights
         </p>
 
@@ -43,7 +43,7 @@ export default function ResourcesHero() {
         </h1>
 
         {/* Description */}
-        <p className="max-w-2xl mx-auto mt-5 text-[15px] md:text-[14px] leading-[1.9] text-slate-700">
+        <p className="max-w-2xl mx-auto mt-5 text-sm leading-relaxed text-slate-700">
           Explore Amazon advertising insights, scaling frameworks,
           optimization strategies, and growth resources built for modern brands.
         </p>

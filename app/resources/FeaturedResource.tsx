@@ -21,12 +21,12 @@ export default function FeaturedResource() {
         <div className="max-w-3xl">
 
           {/* Label */}
-          <p className="text-[#4A3DD5] text-[11px] font-bold tracking-[0.28em] uppercase mb-4">
+          <p className="text-[#4A3DD5] text-xs font-bold tracking-[0.2em] uppercase mb-4">
             Featured Resource
           </p>
 
           {/* Heading */}
-          <h2 className="text-[28px] md:text-[42px] leading-[1.05] font-black tracking-[-0.05em] text-[#152268]">
+          <h2 className="text-3xl md:text-4xl font-black tracking-tight leading-[1.1] text-[#152268]">
             Amazon Growth
             <br />
             Scaling Framework
@@ -74,7 +74,7 @@ export default function FeaturedResource() {
               </div>
 
               {/* Title */}
-              <h3 className="mt-6 text-[26px] md:text-[38px] leading-[1.05] font-black tracking-[-0.05em] text-white">
+              <h3 className="mt-6 text-xl font-black tracking-tight leading-[1.1] text-white">
                 The Complete
                 <br />
                 Amazon Scaling
@@ -83,7 +83,7 @@ export default function FeaturedResource() {
               </h3>
 
               {/* Description */}
-              <p className="mt-6 text-[14px] md:text-[15px] leading-[1.8] text-purple-100 max-w-xl">
+              <p className="mt-6 text-sm leading-relaxed text-purple-100 max-w-xl">
                 Learn the exact systems used to improve
                 advertising performance,
                 increase conversion rates,
@@ -103,7 +103,7 @@ export default function FeaturedResource() {
 
                   <div className="w-2.5 h-2.5 rounded-full bg-white mt-1.5" />
 
-                  <p className="text-[14px] leading-[1.6] text-purple-100">
+                  <p className="text-sm leading-relaxed text-purple-100">
                     Amazon PPC scaling systems
                   </p>
 
@@ -114,7 +114,7 @@ export default function FeaturedResource() {
 
                   <div className="w-2.5 h-2.5 rounded-full bg-white mt-1.5" />
 
-                  <p className="text-[14px] leading-[1.6] text-purple-100">
+                  <p className="text-sm leading-relaxed text-purple-100">
                     Conversion-focused listing optimization
                   </p>
 
@@ -125,7 +125,7 @@ export default function FeaturedResource() {
 
                   <div className="w-2.5 h-2.5 rounded-full bg-white mt-1.5" />
 
-                  <p className="text-[14px] leading-[1.6] text-purple-100">
+                  <p className="text-sm leading-relaxed text-purple-100">
                     ROAS improvement frameworks
                   </p>
 
@@ -136,7 +136,7 @@ export default function FeaturedResource() {
 
                   <div className="w-2.5 h-2.5 rounded-full bg-white mt-1.5" />
 
-                  <p className="text-[14px] leading-[1.6] text-purple-100">
+                  <p className="text-sm leading-relaxed text-purple-100">
                     Sustainable long-term scaling strategies
                   </p>
 

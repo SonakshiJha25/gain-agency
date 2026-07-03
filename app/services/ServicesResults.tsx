@@ -43,17 +43,17 @@ export default function ServicesResults() {
 
         {/* Header */}
         <div className="max-w-3xl mx-auto text-center">
-          <p className="text-[#4A3DD5] text-[11px] font-bold tracking-[0.28em] uppercase mb-4">
+          <p className="text-[#4A3DD5] text-xs font-bold tracking-[0.2em] uppercase mb-4">
             Performance Metrics
           </p>
-          <h2 className="text-[30px] md:text-[50px] leading-[0.96] font-black tracking-[-0.06em] text-[#152268]">
+          <h2 className="text-3xl md:text-4xl font-black tracking-tight leading-[1.1] text-[#152268]">
             Focused On
             <br />
             <span className="gain-gradient-text">
               Measurable Growth
             </span>
           </h2>
-          <p className="mt-5 text-[15px] md:text-[16px] leading-[1.9] text-slate-700">
+          <p className="mt-5 text-sm leading-relaxed text-slate-700">
             We focus on the metrics that directly impact your business — not vanity numbers.
             Every decision is anchored to performance.
           </p>
@@ -72,10 +72,10 @@ export default function ServicesResults() {
               <h3 className="mt-6 text-[32px] font-black tracking-[-0.06em] gain-gradient-text">
                 {m.label}
               </h3>
-              <p className="mt-1 text-[15px] font-semibold text-[#152268]">
+              <p className="mt-1 text-sm font-semibold text-[#152268]">
                 {m.title}
               </p>
-              <p className="mt-3 text-[13.5px] leading-[1.8] text-slate-700">
+              <p className="mt-3 text-sm leading-relaxed text-slate-700">
                 {m.desc}
               </p>
             </div>

@@ -36,7 +36,7 @@ export default function ServicesCTA() {
               Amazon Growth System
             </h2>
 
-            <p className="mt-5 text-[14px] leading-[1.8] text-purple-100 max-w-xl mx-auto">
+            <p className="mt-5 text-sm leading-relaxed text-purple-100 max-w-xl mx-auto">
               Get a personalized consultation focused on scaling strategy,
               account performance, and long-term Amazon growth.
             </p>

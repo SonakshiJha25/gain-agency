@@ -49,7 +49,7 @@ export default function WhyUs() {
               Brands Choose Us
             </span>
           </h2>
-          <p className="mt-6 text-base text-slate-700 leading-relaxed max-w-2xl mx-auto">
+          <p className="mt-6 text-sm leading-relaxed text-slate-700 max-w-2xl mx-auto">
             We focus on real Amazon growth — not theories, not vanity metrics, just measurable performance.
           </p>
         </div>

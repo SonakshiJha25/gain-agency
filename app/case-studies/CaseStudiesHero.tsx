@@ -18,7 +18,7 @@ export default function CaseStudiesHero() {
         <div className="text-center flex flex-col items-center">
 
           {/* Badge */}
-          <p className="text-[#4A3DD5] text-[11px] font-bold tracking-[0.35em] uppercase mb-6">
+          <p className="text-[#4A3DD5] text-xs font-bold tracking-[0.2em] uppercase mb-6">
             Case Studies
           </p>
 
@@ -32,7 +32,7 @@ export default function CaseStudiesHero() {
           </h1>
 
           {/* Description */}
-          <p className="mt-6 max-w-2xl text-[15px] md:text-[16px] leading-[1.8] text-slate-800">
+          <p className="mt-6 max-w-2xl text-sm leading-relaxed text-slate-800">
             We help brands scale on Amazon using performance-driven advertising,
             listing optimization, and conversion-focused systems that actually work in the market.
           </p>

@@ -32,7 +32,7 @@ export default function ServicesHero() {
           </span>
         </h1>
 
-        <p className="mt-6 text-lg text-slate-700 leading-relaxed max-w-2xl mx-auto">
+        <p className="mt-6 text-sm leading-relaxed text-slate-700 max-w-2xl mx-auto">
           We help Amazon brands grow through performance-focused advertising,
           optimized account management, and premium A+ content systems.
         </p>

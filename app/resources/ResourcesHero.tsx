@@ -6,18 +6,14 @@ export default function ResourcesHero() {
       {/* Glow */}
       <div className="absolute top-[-140px] right-[-120px] w-[360px] h-[360px] rounded-full bg-purple-300/30 blur-3xl" />
 
-      {/* Huge Background Text */}
-      <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none">
+      {/* Huge GAIN shadow background */}
+      <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none z-0 overflow-hidden">
         <h1
-          className="
-            text-[22vw]
-            md:text-[20vw]
-            font-black
-            tracking-[0.12em]
-            leading-none
-            text-transparent
-            [-webkit-text-stroke:1px_rgba(74,61,213,0.15)]
-          "
+          className="text-[38vw] md:text-[35vw] font-black tracking-tighter leading-none text-transparent select-none"
+          style={{
+            WebkitTextStroke: "1px rgba(0, 0, 0, 0.08)"
+          }}
+          aria-hidden="true"
         >
           GAIN
         </h1>
@@ -27,19 +23,17 @@ export default function ResourcesHero() {
       <div className="relative z-10 max-w-4xl text-center px-6 pt-16">
 
         {/* Label */}
-        <p className="text-[#4A3DD5] text-xs font-bold tracking-[0.2em] uppercase mb-4">
+        <p className="text-[#13B3B7] text-xs font-bold tracking-[0.2em] uppercase mb-4 text-center mx-auto">
           Resources & Insights
         </p>
 
         {/* Heading */}
-        <h1 className="text-3xl md:text-4xl lg:text-5xl font-black tracking-tight leading-[1.05] text-[#152268]">
+        <h1 className="text-3xl md:text-4xl lg:text-5xl font-black tracking-tight leading-[1.05] gain-gradient-text">
           Smarter Amazon
           <br />
           Growth Starts
           <br />
-          <span className="gain-gradient-text">
-            With Better Knowledge
-          </span>
+          With Better Knowledge
         </h1>
 
         {/* Description */}

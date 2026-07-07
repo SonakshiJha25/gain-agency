@@ -29,7 +29,9 @@ export default function FeaturedResource() {
           <h2 className="text-3xl md:text-4xl font-black tracking-tight leading-[1.1] text-[#152268]">
             Amazon Growth
             <br />
-            Scaling Framework
+            <span className="gain-gradient-text">
+              Scaling Framework
+            </span>
           </h2>
 
         </div>

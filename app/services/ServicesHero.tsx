@@ -10,9 +10,15 @@ export default function ServicesHero() {
       {/* Background Glow */}
       <div className="absolute top-[-120px] right-[-100px] w-[380px] h-[380px] bg-purple-300/20 rounded-full blur-3xl" />
 
-      {/* Huge Background Text */}
-      <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none">
-        <h1 className="text-[22vw] md:text-[20vw] font-black tracking-[0.12em] leading-none text-transparent [-webkit-text-stroke:1px_rgba(74,61,213,0.15)]">
+      {/* Huge GAIN shadow background */}
+      <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none z-0 overflow-hidden">
+        <h1
+          className="text-[38vw] md:text-[35vw] font-black tracking-tighter leading-none text-transparent select-none"
+          style={{
+            WebkitTextStroke: "1px rgba(167, 139, 250, 0.4)",
+          }}
+          aria-hidden="true"
+        >
           GAIN
         </h1>
       </div>

@@ -56,7 +56,7 @@ export default function LeadForm() {
           {/* centered button */}
           <div className="flex justify-center mt-10">
             <button className="gain-gradient hover:from-[#3630a8] hover:to-[#0d9a9e] text-white px-8 py-3.5 rounded-full text-sm font-semibold transition-all duration-300 shadow-2xl shadow-[#152268]/20 hover:shadow-[0_8px_30px_rgba(0,0,0,0.16)] hover:-translate-y-0.5 flex items-center justify-center gap-2">
-              Book a Strategy Call
+              Get Started Now
             </button>
           </div>
 

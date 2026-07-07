@@ -6,18 +6,14 @@ export default function ContactHero() {
       <div className="absolute top-[-140px] right-[-120px] w-[360px] h-[360px] rounded-full bg-purple-300/30 blur-3xl" />
       <div className="absolute bottom-[-120px] left-[-100px] w-[300px] h-[300px] rounded-full bg-teal-200/20 blur-3xl" />
 
-      {/* Huge Background Text */}
-      <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none">
+      {/* Huge GAIN shadow background */}
+      <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none z-0 overflow-hidden">
         <h1
-          className="
-            text-[22vw]
-            md:text-[20vw]
-            font-black
-            tracking-[0.12em]
-            leading-none
-            text-transparent
-            [-webkit-text-stroke:1px_rgba(74,61,213,0.15)]
-          "
+          className="text-[38vw] md:text-[35vw] font-black tracking-tighter leading-none text-transparent select-none"
+          style={{
+            WebkitTextStroke: "1px rgba(167, 139, 250, 0.4)",
+          }}
+          aria-hidden="true"
         >
           GAIN
         </h1>
@@ -27,7 +23,7 @@ export default function ContactHero() {
       <div className="relative z-10 max-w-4xl text-center px-6 pt-16">
 
         {/* Label */}
-        <p className="text-[#4A3DD5] text-[11px] font-bold tracking-[0.28em] uppercase mb-4">
+        <p className="text-[#13B3B7] text-[11px] font-bold tracking-[0.28em] uppercase mb-4 text-center mx-auto">
           Contact Our Team
         </p>
 

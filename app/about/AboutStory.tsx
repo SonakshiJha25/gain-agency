@@ -22,9 +22,9 @@ const pillars = [
     icon: TrendingUp,
     label: "The Outcome",
     text: "Instead of chasing numbers, we build Amazon growth ecosystems that improve business performance sustainably, month after month.",
-    color: "#13B3B7",
-    bg: "#f0fdfd",
-    border: "#ccf7f7",
+    color: "#4A3DD5",
+    bg: "#f0eeff",
+    border: "#e2dfff",
   },
 ];
 

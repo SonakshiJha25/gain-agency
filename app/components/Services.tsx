@@ -1,7 +1,9 @@
+import Link from "next/link";
 import {
   Target,
   BarChart3,
-  Sparkles
+  Sparkles,
+  ArrowRight
 } from "lucide-react";
 
 export default function Services() {
@@ -46,88 +48,106 @@ export default function Services() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-7 mt-16">
 
           {/* Card 1 */}
-          <div className="bg-white border border-gray-100 rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl shadow-slate-200/60">
+          <a
+            href="/services#ppc"
+            className="group bg-[#f8f7ff] border border-[#e2dfff] rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-purple-100 flex flex-col justify-between"
+          >
+            <div>
+              {/* Icon & Arrow Wrapper */}
+              <div className="flex justify-between items-start mb-7">
+                <div className="w-14 h-14 rounded-2xl bg-[#eceaff] flex items-center justify-center group-hover:bg-[#4A3DD5]/10 transition-colors">
+                  <Target className="w-6 h-6 text-[#4A3DD5]" />
+                </div>
+                <ArrowRight className="w-5 h-5 text-slate-400 group-hover:text-[#4A3DD5] group-hover:translate-x-1 transition-all" />
+              </div>
 
-            {/* Icon */}
-            <div className="w-14 h-14 rounded-2xl bg-[#eceaff] flex items-center justify-center mb-7">
-              <Target className="w-6 h-6 text-[#4A3DD5]" />
+              {/* Card Title */}
+              <h3 className="text-xl font-bold tracking-tight text-[#152268] group-hover:text-[#4A3DD5] transition-colors">
+                Sponsored Ads (PPC)
+              </h3>
+
+              {/* Card Description */}
+              <p className="mt-4 text-base leading-relaxed text-slate-700">
+                <span className="block font-bold text-[#152268] mb-2">
+                  Campaigns that convert clicks into customers.
+                </span>
+                End-to-end management of Sponsored Products, Sponsored Brands, and Sponsored Display campaigns.
+              </p>
             </div>
-
-            {/* Card Title */}
-            <h3 className="text-xl font-bold tracking-tight text-[#152268]">
-              Sponsored Ads (PPC)
-            </h3>
-
-            {/* Card Description */}
-            <p className="mt-4 text-base leading-relaxed text-slate-700">
-              <span className="block font-bold text-[#152268] mb-2">
-                Campaigns that convert clicks into customers.
-              </span>
-              End-to-end management of Sponsored Products, Sponsored Brands, and Sponsored Display campaigns.
-            </p>
 
             {/* Bottom Keywords */}
             <div className="mt-8 text-sm font-semibold leading-relaxed text-[#13B3B7]">
               Sponsored Products • Sponsored Brands • Sponsored Display
             </div>
-
-          </div>
+          </a>
 
           {/* Card 2 */}
-          <div className="bg-white border border-gray-100 rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl shadow-slate-200/60">
+          <a
+            href="/services#listing-optimization"
+            className="group bg-[#f8f7ff] border border-[#e2dfff] rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-purple-100 flex flex-col justify-between"
+          >
+            <div>
+              {/* Icon & Arrow Wrapper */}
+              <div className="flex justify-between items-start mb-7">
+                <div className="w-14 h-14 rounded-2xl bg-[#eceaff] flex items-center justify-center group-hover:bg-[#4A3DD5]/10 transition-colors">
+                  <BarChart3 className="w-6 h-6 text-[#4A3DD5]" />
+                </div>
+                <ArrowRight className="w-5 h-5 text-slate-400 group-hover:text-[#4A3DD5] group-hover:translate-x-1 transition-all" />
+              </div>
 
-            {/* Icon */}
-            <div className="w-14 h-14 rounded-2xl bg-[#eceaff] flex items-center justify-center mb-7">
-              <BarChart3 className="w-6 h-6 text-[#4A3DD5]" />
+              {/* Card Title */}
+              <h3 className="text-xl font-bold tracking-tight text-[#152268] group-hover:text-[#4A3DD5] transition-colors">
+                Listing Optimization
+              </h3>
+
+              {/* Card Description */}
+              <p className="mt-4 text-base leading-relaxed text-slate-700">
+                <span className="block font-bold text-[#152268] mb-2">
+                  Be found. Be chosen.
+                </span>
+                Improve conversions with keyword-rich, high-performing product listings. Increase visibility and conversions with product listings optimized for search rankings and shopper engagement.
+              </p>
             </div>
-
-            {/* Card Title */}
-            <h3 className="text-xl font-bold tracking-tight text-[#152268]">
-              Listing Optimization
-            </h3>
-
-            {/* Card Description */}
-            <p className="mt-4 text-base leading-relaxed text-slate-700">
-              <span className="block font-bold text-[#152268] mb-2">
-                Be found. Be chosen.
-              </span>
-              Improve conversions with keyword-rich, high-performing product listings. Increase visibility and conversions with product listings optimized for search rankings and shopper engagement.
-            </p>
 
             {/* Bottom Keywords */}
             <div className="mt-8 text-sm font-semibold leading-relaxed text-[#13B3B7]">
               Keyword Rich • Search Ranking • High-Performing Copy
             </div>
-
-          </div>
+          </a>
 
           {/* Card 3 */}
-          <div className="bg-white border border-gray-100 rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl shadow-slate-200/60">
+          <a
+            href="/services#visual-branding"
+            className="group bg-[#f8f7ff] border border-[#e2dfff] rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-purple-100 flex flex-col justify-between"
+          >
+            <div>
+              {/* Icon & Arrow Wrapper */}
+              <div className="flex justify-between items-start mb-7">
+                <div className="w-14 h-14 rounded-2xl bg-[#eceaff] flex items-center justify-center group-hover:bg-[#4A3DD5]/10 transition-colors">
+                  <Sparkles className="w-6 h-6 text-[#4A3DD5]" />
+                </div>
+                <ArrowRight className="w-5 h-5 text-slate-400 group-hover:text-[#4A3DD5] group-hover:translate-x-1 transition-all" />
+              </div>
 
-            {/* Icon */}
-            <div className="w-14 h-14 rounded-2xl bg-[#eceaff] flex items-center justify-center mb-7">
-              <Sparkles className="w-6 h-6 text-[#4A3DD5]" />
+              {/* Card Title */}
+              <h3 className="text-xl font-bold tracking-tight text-[#152268] group-hover:text-[#4A3DD5] transition-colors">
+                Visual Branding
+              </h3>
+
+              {/* Card Description */}
+              <p className="mt-4 text-base leading-relaxed text-slate-700">
+                <span className="block font-bold text-[#152268] mb-2">
+                  Stand out with a Brand Story.
+                </span>
+                Design compelling visuals for A+ Content, Store page, Product images and Product videos that drive conversions.
+              </p>
             </div>
-
-            {/* Card Title */}
-            <h3 className="text-xl font-bold tracking-tight text-[#152268]">
-              Visual Branding
-            </h3>
-
-            {/* Card Description */}
-            <p className="mt-4 text-base leading-relaxed text-slate-700">
-              <span className="block font-bold text-[#152268] mb-2">
-                Stand out with a Brand Story.
-              </span>
-              Design compelling visuals for A+ Content, Store page, Product images and Product videos that drive conversions.
-            </p>
 
             {/* Bottom Keywords */}
             <div className="mt-8 text-sm font-semibold leading-relaxed text-[#13B3B7]">
               A+ Content • Brand Store Page • Product Imagery & Video
             </div>
-
-          </div>
+          </a>
 
         </div>
 

@@ -47,7 +47,7 @@ export default function ServicesProcess() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7 mt-20">
 
           {/* STEP 1 */}
-          <div className="group bg-white border border-gray-100 rounded-3xl p-10 hover:-translate-y-2 hover:shadow-2xl shadow-slate-200/60 transition-all duration-500">
+          <div className="group bg-[#f8f7ff] border border-[#e2dfff] rounded-3xl p-10 hover:-translate-y-2 hover:shadow-2xl shadow-slate-200/60 transition-all duration-500">
 
             {/* Number */}
             <div className="flex items-center justify-between">
@@ -79,7 +79,7 @@ export default function ServicesProcess() {
           </div>
 
           {/* STEP 2 */}
-          <div className="group bg-white border border-gray-100 rounded-3xl p-10 hover:-translate-y-2 hover:shadow-2xl shadow-slate-200/60 transition-all duration-500">
+          <div className="group bg-[#f8f7ff] border border-[#e2dfff] rounded-3xl p-10 hover:-translate-y-2 hover:shadow-2xl shadow-slate-200/60 transition-all duration-500">
 
             {/* Number */}
             <div className="flex items-center justify-between">
@@ -111,7 +111,7 @@ export default function ServicesProcess() {
           </div>
 
           {/* STEP 3 */}
-          <div className="group bg-white border border-gray-100 rounded-3xl p-10 hover:-translate-y-2 hover:shadow-2xl shadow-slate-200/60 transition-all duration-500">
+          <div className="group bg-[#f8f7ff] border border-[#e2dfff] rounded-3xl p-10 hover:-translate-y-2 hover:shadow-2xl shadow-slate-200/60 transition-all duration-500">
 
             {/* Number */}
             <div className="flex items-center justify-between">
@@ -143,7 +143,7 @@ export default function ServicesProcess() {
           </div>
 
           {/* STEP 4 */}
-          <div className="group bg-white border border-gray-100 rounded-3xl p-10 hover:-translate-y-2 hover:shadow-2xl shadow-slate-200/60 transition-all duration-500">
+          <div className="group bg-[#f8f7ff] border border-[#e2dfff] rounded-3xl p-10 hover:-translate-y-2 hover:shadow-2xl shadow-slate-200/60 transition-all duration-500">
 
             {/* Number */}
             <div className="flex items-center justify-between">

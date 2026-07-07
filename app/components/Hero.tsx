@@ -8,13 +8,7 @@ import LogoArrow from "./LogoArrow";
 const TAGLINE_TEXT = "Grow. Amplify. Innovate. Navigate.";
 const TAGLINE_WORDS = ["Grow.", "Amplify.", "Innovate.", "Navigate."];
 
-// Floating metric badges data
-const FLOATING_BADGES = [
-  { text: "ROAS Optimized", sub: "Ad Performance", color: "from-[#4A3DD5] to-[#4A3DD5]", x: "8%", y: "22%", delay: 0, flipped: true },
-  { text: "PPC Campaigns", sub: "Sponsored Ads", color: "from-[#13B3B7] to-[#18C7C9]", x: "82%", y: "18%", delay: 0.6, flipped: false },
-  { text: "A+ Content", sub: "Visual Branding", color: "from-[#5A46E0] to-[#4A3DD5]", x: "88%", y: "68%", delay: 1.2, flipped: false },
-  { text: "Listing Growth", sub: "SEO Optimized", color: "from-[#13B3B7] to-[#13B3B7]", x: "5%", y: "70%", delay: 0.9, flipped: true },
-];
+
 
 const CLOUD_FLOATERS = [
   { size: 28, x: "8%", y: "15%", delay: 0.2, duration: 8, color: "text-[#4A3DD5]/25" },
@@ -63,56 +57,7 @@ function CloudFloater({ size, x, y, delay, duration, color }: { size: number; x:
 }
 
 
-function FloatingBadge({
-  text, sub, color, x, y, delay
-}: { text: string; sub: string; color: string; x: string; y: string; delay: number }) {
-  return (
-    <motion.div
-      className="absolute hidden lg:block pointer-events-none select-none z-20 w-[150px] h-[110px]"
-      style={{ left: x, top: y }}
-      initial={{ opacity: 0, y: 18, scale: 0.88 }}
-      animate={{ opacity: 1, y: [0, -12, 0], scale: 1 }}
-      transition={{
-        opacity: { delay, duration: 0.7 },
-        scale: { delay, duration: 0.7 },
-        y: {
-          delay: delay + 0.7,
-          duration: 4,
-          repeat: Infinity,
-          repeatType: "loop",
-          ease: "easeInOut",
-        },
-      }}
-    >
-      {/* Background Cloud Thought Bubble SVG */}
-      <svg viewBox="0 0 150 110" fill="none" className="absolute inset-0 w-full h-full drop-shadow-[0_8px_20px_rgba(74,61,213,0.12)]">
-        {/* Main cloud body */}
-        <path
-          d="M 35 75 C 20 75, 12 60, 22 48 C 12 36, 25 18, 45 22 C 60 10, 85 12, 95 25 C 115 15, 132 30, 128 50 C 138 62, 130 75, 115 75 C 105 88, 75 88, 60 75 Z"
-          fill="rgba(255, 255, 255, 0.94)"
-          stroke="#e2dfff"
-          strokeWidth="1.5"
-        />
-        {/* Circle 1 */}
-        <circle cx="28" cy="88" r="6" fill="rgba(255, 255, 255, 0.9)" stroke="#e2dfff" strokeWidth="1.5" />
-        {/* Circle 2 */}
-        <circle cx="18" cy="98" r="3.5" fill="rgba(255, 255, 255, 0.8)" stroke="#e2dfff" strokeWidth="1.5" />
-      </svg>
 
-      {/* Absolutely centered text container */}
-      <div className="absolute top-[28px] left-[20px] w-[110px] h-[45px] flex flex-col items-center justify-center gap-0.5 z-30">
-        <span
-          className={`text-[9.5px] font-black bg-gradient-to-r ${color} bg-clip-text text-transparent bg-[linear-gradient(150deg,_#7c3aed_0%,_#7c3aed_65%,_#4f6fd4_85%,_#14b8a6_100%)] tracking-wide uppercase text-center leading-tight`}
-        >
-          {text}
-        </span>
-        <span className="text-[8px] text-[#9ca3af] font-bold text-center leading-tight">
-          {sub}
-        </span>
-      </div>
-    </motion.div>
-  );
-}
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -191,25 +136,24 @@ export default function Hero() {
 
   return (
     <section className="relative h-screen overflow-hidden bg-[#f4f3ff] flex items-center justify-center">
-
       {/* Huge GAIN shadow background */}
-      <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none">
+      {/* Huge GAIN shadow background */}
+      <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none z-0 overflow-hidden">
         <h1
-          className="text-[22vw] md:text-[20vw] font-black tracking-[0.12em] leading-none text-transparent"
-          style={{ WebkitTextStroke: "1px rgba(74,61,213,0.12)" }}
+          className="text-[38vw] md:text-[35vw] font-black tracking-tighter leading-none text-transparent select-none"
+          style={{
+            WebkitTextStroke: "1px rgba(167, 139, 250, 0.4)",
+          }}
           aria-hidden="true"
         >
           GAIN
         </h1>
       </div>
 
+
+
       {/* Soft purple glow */}
       <div className="absolute bottom-[-180px] right-[-100px] h-[380px] w-[380px] rounded-full bg-purple-300/25 blur-3xl pointer-events-none" />
-
-      {/* Floating badges */}
-      {FLOATING_BADGES.map((b) => (
-        <FloatingBadge key={b.text} {...b} />
-      ))}
 
       {/* Cloud Floaters in Background */}
       {CLOUD_FLOATERS.map((cf, idx) => (
@@ -238,14 +182,7 @@ export default function Hero() {
           </span>
         </motion.h1>
 
-        {/* Description */}
-        <motion.p
-          variants={itemVariants}
-          className="max-w-2xl mx-auto mt-5 text-[15px] md:text-[14px] leading-[1.9] text-slate-700"
-        >
-          We help brands scale profitably on Amazon through expert ad strategy,
-          creative optimization, and performance marketing.
-        </motion.p>
+
 
         {/* CTA */}
         <motion.div variants={itemVariants} className="flex items-center justify-center mt-10">
@@ -253,7 +190,7 @@ export default function Hero() {
             href="/book-consultation"
             className="gain-gradient hover:from-[#3630a8] hover:to-[#0d9a9e] text-white text-[15px] font-medium px-10 py-4 rounded-full transition-all duration-300 shadow-lg shadow-purple-300/30 inline-flex items-center justify-center hover:-translate-y-0.5"
           >
-            Book a Strategy Call →
+            Get started now →
           </Link>
         </motion.div>
       </motion.div>

@@ -1,3 +1,5 @@
+"use client";
+
 import {
   ArrowUpRight,
   BarChart3,
@@ -6,6 +8,13 @@ import {
 } from "lucide-react";
 
 export default function ServicesGrid() {
+  const handleScroll = (id: string) => {
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
 
     // Services Grid Section
@@ -47,7 +56,10 @@ export default function ServicesGrid() {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-7 mt-20">
 
           {/* CARD 1 */}
-          <div className="group bg-[#f8f7ff] border border-[#e2dfff] rounded-3xl p-10 hover:-translate-y-2 hover:shadow-2xl shadow-slate-200/60 transition-all duration-500">
+          <div
+            onClick={() => handleScroll('ppc')}
+            className="group bg-[#f8f7ff] border border-[#e2dfff] rounded-3xl p-10 hover:-translate-y-1 hover:shadow-lg shadow-slate-200/60 transition-all duration-500 cursor-pointer"
+          >
 
             {/* Icon */}
             <div className="w-14 h-14 rounded-2xl bg-gray-50 flex items-center justify-center border border-gray-100">
@@ -63,7 +75,7 @@ export default function ServicesGrid() {
                 Sponsored Ads (PPC)
               </h3>
 
-              <ArrowUpRight className="w-5 h-5 text-[#13B3B7] transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" />
+              <ArrowUpRight className="w-5 h-5 text-[#13B3B7] transition-transform duration-300 group-hover:translate-x-[3px] group-hover:-translate-y-[3px]" />
 
             </div>
 
@@ -78,7 +90,10 @@ export default function ServicesGrid() {
           </div>
 
           {/* CARD 2 */}
-          <div className="group bg-[#f8f7ff] border border-[#e2dfff] rounded-3xl p-10 hover:-translate-y-2 hover:shadow-2xl shadow-slate-200/60 transition-all duration-500">
+          <div
+            onClick={() => handleScroll('listing-optimization')}
+            className="group bg-[#f8f7ff] border border-[#e2dfff] rounded-3xl p-10 hover:-translate-y-1 hover:shadow-lg shadow-slate-200/60 transition-all duration-500 cursor-pointer"
+          >
 
             {/* Icon */}
             <div className="w-14 h-14 rounded-2xl bg-gray-50 flex items-center justify-center border border-gray-100">
@@ -94,7 +109,7 @@ export default function ServicesGrid() {
                 Listing Optimization
               </h3>
 
-              <ArrowUpRight className="w-5 h-5 text-[#13B3B7] transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" />
+              <ArrowUpRight className="w-5 h-5 text-[#13B3B7] transition-transform duration-300 group-hover:translate-x-[3px] group-hover:-translate-y-[3px]" />
 
             </div>
 
@@ -109,7 +124,10 @@ export default function ServicesGrid() {
           </div>
 
           {/* CARD 3 */}
-          <div className="group bg-[#f8f7ff] border border-[#e2dfff] rounded-3xl p-10 hover:-translate-y-2 hover:shadow-2xl shadow-slate-200/60 transition-all duration-500">
+          <div
+            onClick={() => handleScroll('visual-branding')}
+            className="group bg-[#f8f7ff] border border-[#e2dfff] rounded-3xl p-10 hover:-translate-y-1 hover:shadow-lg shadow-slate-200/60 transition-all duration-500 cursor-pointer"
+          >
 
             {/* Icon */}
             <div className="w-14 h-14 rounded-2xl bg-gray-50 flex items-center justify-center border border-gray-100">
@@ -125,7 +143,7 @@ export default function ServicesGrid() {
                 Visual Branding
               </h3>
 
-              <ArrowUpRight className="w-5 h-5 text-[#13B3B7] transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" />
+              <ArrowUpRight className="w-5 h-5 text-[#13B3B7] transition-transform duration-300 group-hover:translate-x-[3px] group-hover:-translate-y-[3px]" />
 
             </div>
 

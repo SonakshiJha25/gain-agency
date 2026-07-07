@@ -1,7 +1,23 @@
 "use client";
 
 import Link from "next/link";
-import { Mail, ExternalLink } from "lucide-react";
+import { Mail } from "lucide-react";
+
+const InstagramIcon = ({ className }: { className?: string }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
+    <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+    <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
+  </svg>
+);
+
+const LinkedinIcon = ({ className }: { className?: string }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
+    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+    <rect width="4" height="12" x="2" y="9"/>
+    <circle cx="4" cy="4" r="2"/>
+  </svg>
+);
 
 export default function Footer() {
   return (
@@ -23,16 +39,11 @@ export default function Footer() {
           <div>
             <Link href="/" className="inline-flex items-center mb-3 group">
               <img
-                src="/logos/logo.png"
+                src="/logos/GAIN_final_logo.png"
                 alt="GAIN Logo"
-                className="h-10 w-auto object-contain"
+                className="h-8 w-auto object-contain"
               />
             </Link>
-
-            <p className="mt-1 text-slate-800 text-sm leading-relaxed">
-              We help brands scale profitably on Amazon through expert ad strategy,
-              creative optimization, and performance marketing.
-            </p>
           </div>
 
           {/* Quick Links */}
@@ -75,7 +86,7 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 hover:text-[#4A3DD5] transition"
               >
-                <ExternalLink className="w-4 h-4 text-[#4A3DD5] shrink-0" />
+                <InstagramIcon className="w-4 h-4 text-[#4A3DD5] shrink-0" />
                 @gain.ads
               </a>
 
@@ -85,7 +96,7 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 hover:text-[#4A3DD5] transition"
               >
-                <ExternalLink className="w-4 h-4 text-[#4A3DD5] shrink-0" />
+                <LinkedinIcon className="w-4 h-4 text-[#4A3DD5] shrink-0" />
                 GAIN Ads
               </a>
 

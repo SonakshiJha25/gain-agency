@@ -58,18 +58,22 @@ function AccordionItem({
   onToggle: () => void;
 }) {
   return (
-    <div className="rounded-2xl border border-gray-100 bg-white hover:shadow-2xl shadow-slate-200/60 transition-all duration-300">
+    <div className={`rounded-2xl border transition-all duration-300 ${
+      isOpen ? "border-[#4A3DD5]/40 bg-[#f4f3ff]/30 ring-1 ring-[#4A3DD5]/10" : "border-gray-100 bg-white"
+    }`}>
       <button
         onClick={onToggle}
         className="w-full flex justify-between items-center px-5 py-4 text-left"
       >
-        <span className="text-[15px] font-semibold text-[#152268] pr-4">
+        <span className={`text-[15px] font-semibold pr-4 transition-colors duration-300 ${
+          isOpen ? "text-[#4A3DD5]" : "text-[#152268]"
+        }`}>
           {item.question}
         </span>
 
         <ChevronDown
-          className={`w-5 h-5 text-[#4A3DD5] transition-transform duration-300 ${
-            isOpen ? "rotate-180" : ""
+          className={`w-5 h-5 transition-transform duration-300 ${
+            isOpen ? "text-[#13B3B7] rotate-180" : "text-[#4A3DD5]"
           }`}
         />
       </button>
@@ -96,17 +100,19 @@ export default function FAQ() {
   const right = faqs.filter((_, i) => i % 2 === 1);
 
   return (
-    <section className="relative py-28 px-6 bg-[#fafafa]">
-      <div className="max-w-6xl mx-auto">
+    <section className="relative py-28 px-6 bg-[#faf9ff] overflow-hidden">
+      
+      {/* Brand background glow */}
+      <div className="absolute top-[-100px] right-[-100px] w-[350px] h-[350px] bg-purple-200/35 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute bottom-[-100px] left-[-100px] w-[350px] h-[350px] bg-teal-100/25 rounded-full blur-3xl pointer-events-none" />
+
+      <div className="max-w-6xl mx-auto relative z-10">
 
         {/* HEADER */}
         <div className="text-center mb-14">
-          <p className="text-xs font-bold tracking-[0.2em] uppercase text-[#13B3B7] mb-4">
-            FAQ
-          </p>
 
           <h2 className="text-3xl md:text-4xl font-black tracking-tight leading-[1.1] text-[#152268]">
-            Frequently Asked Questions
+            Frequently Asked <span className="gain-gradient-text">Questions</span>
           </h2>
 
           <p className="mt-6 text-base text-slate-700 leading-relaxed max-w-2xl mx-auto">

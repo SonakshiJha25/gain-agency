@@ -3,8 +3,6 @@ import Footer from "../components/Footer";
 
 import ResourcesHero from "./ResourcesHero";
 import FeaturedResource from "./FeaturedResource";
-import ResourceCategories from "./ResourceCategories";
-import CaseStudiesGrid from "./CaseStudiesGrid";
 
 export default function ResourcesPage() {
   return (
@@ -15,14 +13,8 @@ export default function ResourcesPage() {
       {/* Hero */}
       <ResourcesHero />
 
-      {/* Featured Resource */}
+      {/* Featured Resource (PDF section) */}
       <FeaturedResource />
-
-      {/* Resource Categories */}
-      <ResourceCategories />
-
-      {/* Case Studies Section */}
-      <CaseStudiesGrid />
 
       {/* Footer */}
       <Footer />

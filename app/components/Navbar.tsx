@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
-import { CalendarDays, ChevronDown, Menu, X } from "lucide-react";
+import { CalendarDays, Menu, X } from "lucide-react";
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -14,15 +14,12 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 md:px-12 py-4">
 
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2 md:gap-2.5 group">
+        <Link href="/" className="flex items-center group">
           <img
-            src="/logos/logo.png"
+            src="/logos/GAIN_final_logo.png"
             alt="GAIN Logo"
-            className="h-9 md:h-10 w-auto object-contain"
+            className="h-8 md:h-10 w-auto object-contain"
           />
-          <span className="text-xl md:text-2xl font-black tracking-tight text-[#152268] select-none">
-            GAIN
-          </span>
         </Link>
 
         {/* Desktop Nav */}
@@ -39,32 +36,16 @@ export default function Navbar() {
             Home
           </Link>
 
-          {/* Services Dropdown */}
-          <div className="relative group">
-            <Link
-              href="/services"
-              className={`flex items-center gap-1 text-[15px] font-semibold transition-colors duration-300 relative py-1 ${
-                pathname.startsWith("/services")
-                  ? "text-[#13B3B7] after:bg-[#13B3B7]"
-                  : "text-[#152268] hover:text-[#4A3DD5]"
-              }`}
-            >
-              Services
-              <ChevronDown className="w-4 h-4 mt-[1px] transition-transform duration-300 group-hover:rotate-180" />
-            </Link>
-
-            <div className="absolute top-[140%] left-0 w-[220px] opacity-0 invisible translate-y-3 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-300 bg-white border border-[#e2dfff] rounded-2xl shadow-2xl shadow-purple-100/40 p-2">
-              <Link href="/services#ppc" className="block px-4 py-3 rounded-xl hover:bg-[#f4f3ff] hover:text-[#4A3DD5] text-[#152268] text-[14px] font-bold transition-all duration-300">
-                Sponsored Ads (PPC)
-              </Link>
-              <Link href="/services#listing" className="block px-4 py-3 rounded-xl hover:bg-[#f4f3ff] hover:text-[#4A3DD5] text-[#152268] text-[14px] font-bold transition-all duration-300">
-                Listing Optimization
-              </Link>
-              <Link href="/services#branding" className="block px-4 py-3 rounded-xl hover:bg-[#f4f3ff] hover:text-[#4A3DD5] text-[#152268] text-[14px] font-bold transition-all duration-300">
-                Visual Branding
-              </Link>
-            </div>
-          </div>
+          <Link
+            href="/services"
+            className={`text-[15px] font-semibold transition-colors duration-300 relative py-1 ${
+              pathname.startsWith("/services")
+                ? "text-[#13B3B7] after:bg-[#13B3B7]"
+                : "text-[#152268] hover:text-[#4A3DD5]"
+            }`}
+          >
+            Services
+          </Link>
 
           <Link
             href="/about"

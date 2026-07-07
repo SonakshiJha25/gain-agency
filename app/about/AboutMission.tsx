@@ -5,19 +5,16 @@ const cards = [
     icon: <BarChart2 className="w-6 h-6 text-[#4A3DD5]" />,
     title: "Performance Driven Approach",
     desc: "We focus on the metrics that truly impact your business, including ROAS, ACOS, CTR, and conversion rate, ensuring every decision drives measurable growth.",
-    dark: false,
   },
   {
-    icon: <Layers className="w-6 h-6 text-white" />,
+    icon: <Layers className="w-6 h-6 text-[#4A3DD5]" />,
     title: "Data + Strategy Balance",
     desc: "We combine data driven decisions with long term strategy to build sustainable and profitable growth.",
-    dark: true,
   },
   {
     icon: <TrendingUp className="w-6 h-6 text-[#4A3DD5]" />,
     title: "Growth Focused Execution",
     desc: "We align every decision with your business goals, focusing on revenue growth rather than just activity.",
-    dark: false,
   },
 ];
 
@@ -51,31 +48,15 @@ export default function AboutMission() {
           {cards.map((card, i) => (
             <div
               key={i}
-              className={`rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1 ${
-                card.dark
-                  ? "bg-[linear-gradient(150deg,_#7c3aed_0%,_#7c3aed_65%,_#4f6fd4_85%,_#14b8a6_100%)] text-white shadow-lg"
-                  : "bg-[#f8f7ff] border border-[#e2dfff] hover:shadow-2xl shadow-slate-200/60"
-              }`}
+              className="rounded-2xl p-8 bg-[#f8f7ff] border border-[#e2dfff] hover:shadow-2xl shadow-slate-200/60 transition-all duration-300 hover:-translate-y-1"
             >
-              <div
-                className={`w-12 h-12 rounded-xl flex items-center justify-center mb-6 shadow-sm ${
-                  card.dark ? "bg-white/10" : "bg-gray-50"
-                }`}
-              >
+              <div className="w-12 h-12 rounded-xl flex items-center justify-center mb-6 shadow-sm bg-gray-50">
                 {card.icon}
               </div>
-              <h3
-                className={`text-lg font-bold tracking-tight mb-2 ${
-                  card.dark ? "text-white" : "text-[#152268]"
-                }`}
-              >
+              <h3 className="text-lg font-bold tracking-tight mb-2 text-[#152268]">
                 {card.title}
               </h3>
-              <p
-                className={`text-sm leading-relaxed ${
-                  card.dark ? "text-white/80" : "text-slate-700"
-                }`}
-              >
+              <p className="text-sm leading-relaxed text-slate-700">
                 {card.desc}
               </p>
             </div>

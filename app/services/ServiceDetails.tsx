@@ -113,7 +113,7 @@ export default function ServiceDetails() {
         </div>
 
         {/* SECTION 2 */}
-        <div id="listing" className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center py-14 border-b border-[#ebe3ff] scroll-mt-24">
+        <div id="listing-optimization" className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center py-14 border-b border-[#ebe3ff] scroll-mt-24">
 
           {/* Left */}
           <div className="order-2 lg:order-1 bg-white border border-gray-100 rounded-3xl p-8 md:p-10 shadow-2xl shadow-slate-200/60">
@@ -202,7 +202,7 @@ export default function ServiceDetails() {
         </div>
 
         {/* SECTION 3 */}
-        <div id="branding" className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center py-14 scroll-mt-24">
+        <div id="visual-branding" className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center py-14 scroll-mt-24">
 
           {/* Left */}
           <div>

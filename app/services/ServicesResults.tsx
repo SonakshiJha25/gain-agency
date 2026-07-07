@@ -64,7 +64,7 @@ export default function ServicesResults() {
           {metrics.map((m) => (
             <div
               key={m.label}
-              className="bg-white border border-[#e2dfff] rounded-[28px] p-8 text-center hover:-translate-y-2 transition-all duration-500"
+              className="bg-[#f8f7ff] border border-[#e2dfff] rounded-[28px] p-8 text-center hover:-translate-y-2 transition-all duration-500"
             >
               <div className="w-14 h-14 rounded-2xl bg-[#eceaff] flex items-center justify-center mx-auto">
                 {m.icon}

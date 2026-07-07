@@ -48,7 +48,7 @@ export default function AboutWhyUs() {
   ];
 
   return (
-    <section className="relative py-32 px-4 overflow-hidden bg-[#f4f3ff]">
+    <section className="relative py-20 px-4 overflow-hidden bg-[#f4f3ff]">
 
       {/* Background glows — bigger and more vibrant */}
       <div className="absolute top-0 left-1/4 w-[800px] h-[600px] bg-purple-200/40 rounded-full blur-[120px] pointer-events-none" />
@@ -59,7 +59,7 @@ export default function AboutWhyUs() {
       <div className="relative z-10 max-w-[1400px] mx-auto">
 
         {/* ── DESKTOP LAYOUT ── */}
-        <div className="hidden lg:grid lg:grid-cols-[1fr_300px_1fr] items-center gap-0 relative min-h-[680px]">
+        <div className="hidden lg:grid lg:grid-cols-[1fr_300px_1fr] items-center gap-0 relative min-h-[550px]">
 
           {/* SVG connector lines */}
           <svg
@@ -94,14 +94,11 @@ export default function AboutWhyUs() {
               <div key={item.letter} className="flex items-center gap-5 justify-end">
 
                 {/* Card */}
-                <div className="flex-1 bg-white border border-[#e2dfff] rounded-3xl p-7 text-right shadow-md hover:shadow-xl hover:shadow-purple-100 hover:border-[#7c3aed]/40 hover:-translate-y-1 transition-all duration-300 cursor-default">
-                  <span className="inline-block text-[11px] font-black px-2.5 py-1 rounded-lg bg-[#f0eeff] text-[#7c3aed] border border-[#e2dfff] mb-3">
-                    {item.letter}
-                  </span>
+                <div className="flex-1 bg-[#f8f7ff] border border-[#e2dfff] rounded-3xl p-7 text-right shadow-md hover:shadow-xl hover:shadow-purple-100 hover:border-[#7c3aed]/40 hover:-translate-y-1 transition-all duration-300 cursor-default">
                   <h3 className="text-[#152268] font-black text-sm leading-snug">
-                    <span className="gain-gradient-text">{item.letter}</span>
+                    <span className="text-2xl">{item.letter}</span>
                     {item.title.slice(1)}<br />
-                    <span className="font-semibold text-slate-500">{item.subtitle}</span>
+                    <span>{item.subtitle}</span>
                   </h3>
                   <p className="text-slate-500 text-xs leading-relaxed mt-3">{item.desc}</p>
                 </div>
@@ -131,16 +128,13 @@ export default function AboutWhyUs() {
               {/* Content */}
               <div className="relative z-10 flex flex-col items-center justify-center text-center w-[185px]">
                 <img
-                  src="/logos/logo.png"
+                  src="/logos/GAIN_final_logo.png"
                   alt="GAIN"
                   className="h-12 w-auto object-contain mb-3"
                 />
                 <p className="text-[13px] font-black text-[#152268] leading-snug tracking-tight">
                   Our Name Is<br />
                   <span className="gain-gradient-text">Our Promise.</span>
-                </p>
-                <p className="text-[9px] text-slate-400 mt-2 font-medium leading-tight max-w-[140px]">
-                  Every letter stands for<br />a commitment we keep.
                 </p>
               </div>
             </div>
@@ -160,14 +154,11 @@ export default function AboutWhyUs() {
                 </div>
 
                 {/* Card */}
-                <div className="flex-1 bg-white border border-[#e2dfff] rounded-3xl p-7 text-left shadow-md hover:shadow-xl hover:shadow-teal-100 hover:border-[#13B3B7]/40 hover:-translate-y-1 transition-all duration-300 cursor-default">
-                  <span className="inline-block text-[11px] font-black px-2.5 py-1 rounded-lg bg-[#f0eeff] text-[#7c3aed] border border-[#e2dfff] mb-3">
-                    {item.letter}
-                  </span>
+                <div className="flex-1 bg-[#f8f7ff] border border-[#e2dfff] rounded-3xl p-7 text-left shadow-md hover:shadow-xl hover:shadow-teal-100 hover:border-[#13B3B7]/40 hover:-translate-y-1 transition-all duration-300 cursor-default">
                   <h3 className="text-[#152268] font-black text-sm leading-snug">
-                    <span className="gain-gradient-text">{item.letter}</span>
+                    <span className="text-2xl">{item.letter}</span>
                     {item.title.slice(1)}<br />
-                    <span className="font-semibold text-slate-500">{item.subtitle}</span>
+                    <span>{item.subtitle}</span>
                   </h3>
                   <p className="text-slate-500 text-xs leading-relaxed mt-3">{item.desc}</p>
                 </div>
@@ -180,7 +171,7 @@ export default function AboutWhyUs() {
         {/* ── MOBILE ── */}
         <div className="lg:hidden grid grid-cols-1 sm:grid-cols-2 gap-5">
           {items.map((item) => (
-            <div key={item.letter} className="bg-white border border-[#e2dfff] rounded-3xl p-6 flex items-start gap-4 hover:shadow-md transition-all duration-300">
+            <div key={item.letter} className="bg-[#f8f7ff] border border-[#e2dfff] rounded-3xl p-6 flex items-start gap-4 hover:shadow-md transition-all duration-300">
               <div
                 className="w-12 h-12 shrink-0 rounded-full flex items-center justify-center shadow-md"
                 style={{ background: `linear-gradient(135deg, ${item.color}, ${item.color2})` }}
@@ -188,9 +179,8 @@ export default function AboutWhyUs() {
                 <item.Icon className="w-5 h-5 text-white" />
               </div>
               <div>
-                <span className="text-[10px] font-black tracking-wider text-[#4A3DD5] uppercase mb-1 block">{item.letter}</span>
                 <h3 className="text-[#152268] font-bold text-sm leading-snug mb-1.5">
-                  <span className="gain-gradient-text">{item.letter}</span>{item.title.slice(1)} {item.subtitle}
+                  <span className="text-2xl">{item.letter}</span>{item.title.slice(1)} {item.subtitle}
                 </h3>
                 <p className="text-slate-500 text-xs leading-relaxed">{item.desc}</p>
               </div>
@@ -199,7 +189,7 @@ export default function AboutWhyUs() {
         </div>
 
         {/* CTA */}
-        <div className="mt-16 flex justify-center">
+        <div className="mt-2 flex justify-center">
           <Link
             href="/book-consultation"
             className="gain-gradient hover:from-[#3630a8] hover:to-[#0d9a9e] text-white text-sm font-bold tracking-wide px-12 py-5 rounded-full transition-all duration-300 shadow-2xl shadow-[#7e22ce]/20 hover:shadow-purple-300/60 hover:-translate-y-0.5"

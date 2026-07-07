@@ -6,15 +6,17 @@ export default function AboutHero() {
       <div className="absolute bottom-[-180px] right-[-100px] h-[380px] w-[380px] rounded-full bg-purple-300/25 blur-3xl" />
       <div className="absolute top-[-100px] left-[-80px] h-[300px] w-[300px] rounded-full bg-teal-200/20 blur-3xl" />
 
-      {/* Huge Background Outline Text */}
-      <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none">
-        <span
-          className="text-[22vw] md:text-[20vw] font-black tracking-[0.12em] leading-none text-transparent"
-          style={{ WebkitTextStroke: "1px rgba(74,61,213,0.12)" }}
+      {/* Huge GAIN shadow background */}
+      <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none z-0 overflow-hidden">
+        <h1
+          className="text-[38vw] md:text-[35vw] font-black tracking-tighter leading-none text-transparent select-none"
+          style={{
+            WebkitTextStroke: "1px rgba(167, 139, 250, 0.4)",
+          }}
           aria-hidden="true"
         >
           GAIN
-        </span>
+        </h1>
       </div>
 
       {/* Main Content */}
@@ -22,7 +24,7 @@ export default function AboutHero() {
 
         {/* Small Badge */}
         <p className="text-xs font-bold tracking-[0.2em] uppercase text-[#13B3B7] mb-6">
-          About <span className="font-extrabold text-[#4A3DD5]">GAIN</span>
+          About <span className="font-extrabold">GAIN</span>
         </p>
 
         {/* Main Heading */}

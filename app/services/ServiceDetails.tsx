@@ -15,7 +15,7 @@ export default function ServiceDetails() {
   return (
 
     // Detailed Services Section
-    <section className="relative py-32 px-6 bg-gray-50 border-t border-gray-100 overflow-hidden">
+    <section className="relative py-16 md:py-32 px-6 bg-gray-50 border-t border-gray-100 overflow-hidden">
 
       {/* Background Glow */}
       <div className="absolute top-[-120px] left-[-120px] w-[320px] h-[320px] bg-purple-200 rounded-full blur-3xl opacity-50" />
@@ -24,7 +24,7 @@ export default function ServiceDetails() {
       <div className="relative z-10 max-w-7xl mx-auto">
 
         {/* SECTION 1 */}
-        <div id="ppc" className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center py-14 border-b border-[#ebe3ff] scroll-mt-24">
+        <div id="ppc" className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center py-8 md:py-14 border-b border-[#ebe3ff] scroll-mt-24">
 
           {/* Left */}
           <div>
@@ -113,7 +113,7 @@ export default function ServiceDetails() {
         </div>
 
         {/* SECTION 2 */}
-        <div id="listing-optimization" className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center py-14 border-b border-[#ebe3ff] scroll-mt-24">
+        <div id="listing-optimization" className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center py-8 md:py-14 border-b border-[#ebe3ff] scroll-mt-24">
 
           {/* Left */}
           <div className="order-2 lg:order-1 bg-white border border-gray-100 rounded-3xl p-8 md:p-10 shadow-2xl shadow-slate-200/60">
@@ -202,7 +202,7 @@ export default function ServiceDetails() {
         </div>
 
         {/* SECTION 3 */}
-        <div id="visual-branding" className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center py-14 scroll-mt-24">
+        <div id="visual-branding" className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center py-8 md:py-14 scroll-mt-24">
 
           {/* Left */}
           <div>

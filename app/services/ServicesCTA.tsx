@@ -11,7 +11,7 @@ export default function ServicesCTA() {
       <div className="relative z-10 max-w-6xl mx-auto">
 
         {/* CTA Card — centered with unique services messaging */}
-        <div className="relative overflow-hidden gain-gradient rounded-[32px] px-8 md:px-16 py-16 md:py-20 shadow-2xl shadow-[#7e22ce]/20">
+        <div className="relative overflow-hidden gain-gradient rounded-[32px] px-8 md:px-16 py-16 md:py-10 md:py-20 shadow-2xl shadow-[#7e22ce]/20">
 
           <div className="absolute bottom-[-120px] left-[-120px] w-[320px] h-[320px] bg-white/10 rounded-full blur-3xl" />
 
@@ -20,7 +20,7 @@ export default function ServicesCTA() {
             <div className="inline-flex items-center gap-2 bg-white/10 border border-white/10 px-4 py-1.5 rounded-full mb-6">
               <span className="w-2 h-2 rounded-full bg-white" />
               <span className="text-[11px] font-bold text-white uppercase tracking-[0.08em]">
-                Our Process
+                Start your growth journey
               </span>
             </div>
 

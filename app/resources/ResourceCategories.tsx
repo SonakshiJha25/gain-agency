@@ -9,7 +9,7 @@ export default function ResourceCategories() {
   return (
 
     // Categories Section
-    <section className="relative py-24 px-6 bg-[#f4f3ff] overflow-hidden">
+    <section className="relative py-12 md:py-24 px-6 bg-[#f4f3ff] overflow-hidden">
 
       {/* Glow */}
       <div className="absolute top-[-120px] right-[-120px] w-[320px] h-[320px] rounded-full bg-purple-200/40 blur-3xl" />

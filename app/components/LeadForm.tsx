@@ -4,7 +4,7 @@ import { ArrowRight } from "lucide-react";
 
 export default function LeadForm() {
   return (
-    <section className="relative py-24 px-6 overflow-hidden">
+    <section className="relative py-12 md:py-24 px-6 overflow-hidden">
 
       {/* background base gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-white via-purple-50 to-white" />

@@ -48,7 +48,7 @@ export default function AboutWhyUs() {
   ];
 
   return (
-    <section className="relative py-20 px-4 overflow-hidden bg-[#f4f3ff]">
+    <section className="relative py-10 md:py-20 px-4 overflow-hidden bg-[#f4f3ff]">
 
       {/* Background glows — bigger and more vibrant */}
       <div className="absolute top-0 left-1/4 w-[800px] h-[600px] bg-purple-200/40 rounded-full blur-[120px] pointer-events-none" />

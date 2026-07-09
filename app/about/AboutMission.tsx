@@ -20,7 +20,7 @@ const cards = [
 
 export default function AboutMission() {
   return (
-    <section className="relative bg-white py-24 px-6 overflow-hidden">
+    <section className="relative bg-white py-12 md:py-24 px-6 overflow-hidden">
 
       <div className="absolute bottom-[-120px] left-[-120px] w-[320px] h-[320px] rounded-full bg-purple-200/40 blur-3xl" />
 

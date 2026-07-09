@@ -3,7 +3,7 @@ import { ArrowRight } from "lucide-react";
 
 export default function HomeAbout() {
   return (
-    <section className="relative bg-white py-20 px-6 overflow-hidden">
+    <section className="relative bg-white py-10 md:py-20 px-6 overflow-hidden">
 
       {/* Background Glow */}
       <div className="absolute bottom-[-140px] right-[-120px] w-[340px] h-[340px] rounded-full bg-purple-100/50 blur-3xl" />

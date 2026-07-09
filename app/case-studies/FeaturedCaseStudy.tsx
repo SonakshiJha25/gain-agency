@@ -9,7 +9,7 @@ export default function FeaturedCaseStudy() {
   return (
 
     // Featured Case Study
-    <section className="relative bg-white py-32 px-6 overflow-hidden">
+    <section className="relative bg-white py-16 md:py-32 px-6 overflow-hidden">
 
       {/* Background Glow */}
       <div className="absolute top-[-120px] right-[-120px] w-[320px] h-[320px] rounded-full bg-purple-200/40 blur-3xl" />

@@ -30,7 +30,7 @@ const pillars = [
 
 export default function AboutStory() {
   return (
-    <section className="relative bg-white py-32 px-6 overflow-hidden">
+    <section className="relative bg-white py-16 md:py-32 px-6 overflow-hidden">
 
       {/* Background glows */}
       <div className="absolute top-[-80px] left-[-100px] w-[500px] h-[500px] rounded-full bg-purple-100/60 blur-[120px] pointer-events-none" />
@@ -58,11 +58,11 @@ export default function AboutStory() {
         </div>
 
         {/* ── MIDDLE: Full-bleed pull quote ── */}
-        <div className="relative rounded-[32px] gain-gradient px-10 py-14 md:px-20 md:py-16 mb-20 overflow-hidden shadow-2xl shadow-[#7e22ce]/20">
+        <div className="relative rounded-[32px] gain-gradient px-10 py-8 md:py-14 md:px-20 md:py-16 mb-20 overflow-hidden shadow-2xl shadow-[#7e22ce]/20">
 
           {/* Decorative watermark */}
-          <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none opacity-[0.05]">
-            <span className="text-[22vw] font-black tracking-widest text-white leading-none">GAIN</span>
+          <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-0 overflow-hidden">
+            <img src="/gain-watermark-light.svg" alt="" className="w-[90%] md:w-[70%] h-auto opacity-[0.08] select-none" aria-hidden="true" />
           </div>
 
           {/* Decorative circles */}

@@ -75,7 +75,7 @@ export default function ConsultationForm() {
 
     <section
       id="form"
-      className="relative py-24 px-6 bg-gray-50 overflow-hidden"
+      className="relative py-12 md:py-24 px-6 bg-gray-50 overflow-hidden"
     >
 
       {/* Main Container */}

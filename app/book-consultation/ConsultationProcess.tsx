@@ -8,7 +8,7 @@ export default function ConsultationProcess() {
   return (
 
     // Process Section
-    <section className="relative py-32 px-6 bg-white overflow-hidden">
+    <section className="relative py-16 md:py-32 px-6 bg-white overflow-hidden">
 
       {/* Soft Glow */}
       <div className="absolute bottom-[-120px] left-[-120px] w-[320px] h-[320px] bg-purple-100 rounded-full blur-3xl opacity-60" />

@@ -15,7 +15,7 @@ export default function Contact() {
       <ContactHero />
 
       {/* Main Contact Section */}
-      <section className="py-20 px-6 md:px-12 bg-white">
+      <section className="py-10 md:py-20 px-6 md:px-12 bg-white">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
           {/* Info - occupies 5 cols on lg screens */}
           <div className="lg:col-span-5">

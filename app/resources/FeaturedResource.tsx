@@ -9,7 +9,7 @@ export default function FeaturedResource() {
   return (
 
     // Featured Resource Section
-    <section className="relative py-24 px-6 bg-white overflow-hidden">
+    <section className="relative py-12 md:py-24 px-6 bg-white overflow-hidden">
 
       {/* Glow */}
       <div className="absolute bottom-[-140px] left-[-120px] w-[340px] h-[340px] rounded-full bg-purple-200/40 blur-3xl" />

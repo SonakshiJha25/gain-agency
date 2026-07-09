@@ -9,7 +9,7 @@ export default function ServicesProcess() {
   return (
 
     // Process Section
-    <section id="process" className="relative py-24 px-6 bg-white overflow-hidden">
+    <section id="process" className="relative py-12 md:py-24 px-6 bg-white overflow-hidden">
 
       {/* Background Glow */}
       <div className="absolute right-[-120px] top-[20%] w-[320px] h-[320px] bg-purple-100 rounded-full blur-3xl opacity-60" />
@@ -66,7 +66,7 @@ export default function ServicesProcess() {
 
             {/* Heading */}
             <h3 className="mt-8 text-xl font-black tracking-tight text-[#152268]">
-              Audit
+              <span className="text-[#13B3B7]">A</span>udit
             </h3>
 
             {/* Description */}
@@ -98,7 +98,7 @@ export default function ServicesProcess() {
 
             {/* Heading */}
             <h3 className="mt-8 text-xl font-black tracking-tight text-[#152268]">
-              Strategy
+              <span className="text-[#13B3B7]">S</span>trategy
             </h3>
 
             {/* Description */}
@@ -130,7 +130,7 @@ export default function ServicesProcess() {
 
             {/* Heading */}
             <h3 className="mt-8 text-xl font-black tracking-tight text-[#152268]">
-              Execution
+              <span className="text-[#13B3B7]">E</span>xecution
             </h3>
 
             {/* Description */}
@@ -162,7 +162,7 @@ export default function ServicesProcess() {
 
             {/* Heading */}
             <h3 className="mt-8 text-xl font-black tracking-tight text-[#152268]">
-              Optimization
+              <span className="text-[#13B3B7]">O</span>ptimization
             </h3>
 
             {/* Description */}

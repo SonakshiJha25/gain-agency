@@ -30,7 +30,7 @@ export default function Footer() {
       <div className="absolute -top-40 -left-40 w-[400px] h-[400px] bg-purple-300 blur-[120px] opacity-30 rounded-full" />
       <div className="absolute -bottom-40 -right-40 w-[400px] h-[400px] bg-violet-400 blur-[140px] opacity-20 rounded-full" />
 
-      <div className="relative max-w-6xl mx-auto px-6 py-14">
+      <div className="relative max-w-6xl mx-auto px-6 py-8 md:py-14">
 
         {/* Top Grid */}
         <div className="grid md:grid-cols-3 gap-10">

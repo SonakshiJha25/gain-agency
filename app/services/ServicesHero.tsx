@@ -11,16 +11,8 @@ export default function ServicesHero() {
       <div className="absolute top-[-120px] right-[-100px] w-[380px] h-[380px] bg-purple-300/20 rounded-full blur-3xl" />
 
       {/* Huge GAIN shadow background */}
-      <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none z-0 overflow-hidden">
-        <h1
-          className="text-[38vw] md:text-[35vw] font-black tracking-tighter leading-none text-transparent select-none"
-          style={{
-            WebkitTextStroke: "1px rgba(167, 139, 250, 0.4)",
-          }}
-          aria-hidden="true"
-        >
-          GAIN
-        </h1>
+      <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-0 overflow-hidden">
+        <img src="/gain-watermark-dark.svg" alt="" className="w-[90%] md:w-[70%] h-auto opacity-[0.08] select-none" aria-hidden="true" />
       </div>
 
       {/* Main Container */}

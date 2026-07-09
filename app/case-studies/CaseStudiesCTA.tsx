@@ -11,13 +11,11 @@ export default function CaseStudiesCTA() {
       <div className="relative z-10 max-w-6xl mx-auto">
 
         {/* CTA Card */}
-        <div className="relative overflow-hidden rounded-[32px] gain-gradient px-8 md:px-16 py-16 md:py-20 shadow-2xl shadow-[#7e22ce]/20">
+        <div className="relative overflow-hidden rounded-[32px] gain-gradient px-8 md:px-16 py-16 md:py-10 md:py-20 shadow-2xl shadow-[#7e22ce]/20">
 
           {/* Background GAIN outline */}
-          <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none">
-            <h1 className="text-[24vw] md:text-[16vw] font-black tracking-[0.14em] leading-none text-transparent [-webkit-text-stroke:1px_rgba(255,255,255,0.06)]">
-              GAIN
-            </h1>
+          <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-0 overflow-hidden">
+            <img src="/gain-watermark-light.svg" alt="" className="w-[90%] md:w-[70%] h-auto opacity-[0.08] select-none" aria-hidden="true" />
           </div>
 
           <div className="absolute bottom-[-120px] left-[-120px] w-[320px] h-[320px] rounded-full bg-white/10 blur-3xl" />

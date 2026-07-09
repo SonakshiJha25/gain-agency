@@ -64,16 +64,9 @@ export default function FeaturedResource() {
             {/* Left */}
             <div>
 
-              {/* Mini Badge */}
-              <div className="inline-flex items-center gap-2 bg-white/10 border border-white/10 rounded-full px-4 py-1.5">
-
-                <span className="w-2 h-2 rounded-full bg-white" />
-
-                <span className="text-[11px] uppercase tracking-[0.08em] font-bold text-white">
-                  Free PDF Guide
-                </span>
-
-              </div>
+              <p className="text-[11px] uppercase tracking-[0.08em] font-bold text-white mb-4">
+                Free PDF Guide
+              </p>
 
               {/* Title */}
               <h3 className="mt-6 text-xl font-black tracking-tight leading-[1.1] text-white">

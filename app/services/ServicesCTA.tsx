@@ -17,12 +17,9 @@ export default function ServicesCTA() {
 
           <div className="relative z-10 text-center max-w-3xl mx-auto">
 
-            <div className="inline-flex items-center gap-2 bg-white/10 border border-white/10 px-4 py-1.5 rounded-full mb-6">
-              <span className="w-2 h-2 rounded-full bg-white" />
-              <span className="text-[11px] font-bold text-white uppercase tracking-[0.08em]">
-                Start your growth journey
-              </span>
-            </div>
+            <p className="text-[11px] font-bold text-white uppercase tracking-[0.08em] mb-6">
+              Start your growth journey
+            </p>
 
             <h2 className="text-3xl md:text-4xl font-black tracking-tight leading-[1.05] text-white">
               Let's Build Your<br />

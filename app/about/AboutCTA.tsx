@@ -22,12 +22,9 @@ export default function AboutCTA() {
 
             {/* Left — Text */}
             <div>
-              <div className="inline-flex items-center gap-2 bg-white/10 border border-white/10 rounded-full px-4 py-2 mb-6">
-                <span className="w-2 h-2 rounded-full bg-white" />
-                <span className="text-[11px] font-bold uppercase tracking-[0.08em] text-white">
-                  Partner With Us
-                </span>
-              </div>
+              <p className="text-[11px] font-bold uppercase tracking-[0.08em] text-white mb-6">
+                Partner With Us
+              </p>
 
               <h2 className="text-3xl md:text-4xl font-black tracking-tight leading-[1.05] text-white">
                 Your Brand Deserves<br />

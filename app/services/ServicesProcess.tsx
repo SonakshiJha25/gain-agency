@@ -25,14 +25,7 @@ export default function ServicesProcess() {
             Our Process
           </p>
 
-          {/* Heading */}
-          <h2 className="text-3xl md:text-4xl font-black tracking-tight leading-[1.1] text-[#152268]">
-            A Structured Process
-            <br />
-            <span className="gain-gradient-text">
-              Built For Scaling
-            </span>
-          </h2>
+
 
           {/* Description */}
           <p className="mt-6 text-sm leading-relaxed text-slate-700">

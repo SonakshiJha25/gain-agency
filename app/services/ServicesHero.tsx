@@ -2,6 +2,7 @@ import {
   BarChart3,
   Layers3
 } from "lucide-react";
+import GainWatermark from "../components/GainWatermark";
 
 export default function ServicesHero() {
   return (
@@ -11,9 +12,7 @@ export default function ServicesHero() {
       <div className="absolute top-[-120px] right-[-100px] w-[380px] h-[380px] bg-purple-300/20 rounded-full blur-3xl" />
 
       {/* Huge GAIN shadow background */}
-      <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-0 overflow-hidden">
-        <img src="/gain-watermark-dark.svg" alt="" className="w-[90%] md:w-[70%] h-auto opacity-[0.08] select-none" aria-hidden="true" />
-      </div>
+      <GainWatermark />
 
       {/* Main Container */}
       <div className="relative z-10 max-w-4xl text-center">

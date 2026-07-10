@@ -19,6 +19,7 @@ export default function Navbar() {
             src="/logos/GAIN_final_logo.png"
             alt="GAIN Logo"
             className="h-8 md:h-10 w-auto object-contain"
+            style={{ clipPath: "inset(0 0 8% 0)" }}
           />
         </Link>
 

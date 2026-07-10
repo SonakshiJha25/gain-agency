@@ -1,3 +1,5 @@
+import GainWatermark from "../components/GainWatermark";
+
 export default function ContactHero() {
   return (
     <section className="relative pt-64 md:pt-72 pb-32 md:pb-40 overflow-hidden bg-[#f4f3ff] flex items-center justify-center">
@@ -7,9 +9,7 @@ export default function ContactHero() {
       <div className="absolute bottom-[-120px] left-[-100px] w-[300px] h-[300px] rounded-full bg-teal-200/20 blur-3xl" />
 
       {/* Huge GAIN shadow background */}
-      <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-0 overflow-hidden">
-        <img src="/gain-watermark-dark.svg" alt="" className="w-[90%] md:w-[70%] h-auto opacity-[0.08] select-none" aria-hidden="true" />
-      </div>
+      <GainWatermark />
 
       {/* Main Content */}
       <div className="relative z-10 max-w-4xl text-center px-6 pt-16">

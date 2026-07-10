@@ -4,59 +4,10 @@ import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { motion, useAnimationFrame } from "framer-motion";
 import LogoArrow from "./LogoArrow";
+import GainWatermark from "./GainWatermark";
 
 const TAGLINE_TEXT = "Grow. Amplify. Innovate. Navigate.";
 const TAGLINE_WORDS = ["Grow.", "Amplify.", "Innovate.", "Navigate."];
-
-
-
-const CLOUD_FLOATERS = [
-  { size: 28, x: "8%", y: "15%", delay: 0.2, duration: 8, color: "text-[#4A3DD5]/25" },
-  { size: 20, x: "18%", y: "45%", delay: 1.5, duration: 6, color: "text-[#13B3B7]/30" },
-  { size: 24, x: "28%", y: "78%", delay: 0.8, duration: 9, color: "text-[#7c3aed]/25" },
-  { size: 16, x: "38%", y: "25%", delay: 2.1, duration: 7, color: "text-[#4A3DD5]/20" },
-  { size: 30, x: "50%", y: "10%", delay: 0.5, duration: 11, color: "text-[#13B3B7]/25" },
-  { size: 18, x: "62%", y: "65%", delay: 1.3, duration: 8, color: "text-[#7c3aed]/30" },
-  { size: 26, x: "72%", y: "20%", delay: 0.9, duration: 10, color: "text-[#4A3DD5]/25" },
-  { size: 22, x: "85%", y: "42%", delay: 2.7, duration: 7.5, color: "text-[#13B3B7]/30" },
-  { size: 16, x: "92%", y: "75%", delay: 1.1, duration: 6.5, color: "text-[#7c3aed]/25" },
-  { size: 25, x: "15%", y: "85%", delay: 0.4, duration: 9.5, color: "text-[#13B3B7]/25" },
-  { size: 20, x: "80%", y: "88%", delay: 1.9, duration: 8.5, color: "text-[#4A3DD5]/30" },
-  { size: 18, x: "33%", y: "52%", delay: 0.7, duration: 7.2, color: "text-[#7c3aed]/25" },
-];
-
-function CloudFloater({ size, x, y, delay, duration, color }: { size: number; x: string; y: string; delay: number; duration: number; color: string }) {
-  return (
-    <motion.div
-      className={`absolute pointer-events-none select-none z-10 ${color}`}
-      style={{ left: x, top: y, width: size, height: size }}
-      initial={{ opacity: 0, y: 10 }}
-      animate={{
-        opacity: [0, 0.75, 0.75, 0],
-        y: [0, -35, 0],
-        x: [0, 15, 0],
-      }}
-      transition={{
-        duration,
-        delay,
-        repeat: Infinity,
-        repeatType: "loop",
-        ease: "easeInOut",
-      }}
-    >
-      <svg viewBox="0 0 100 100" className="w-full h-full" fill="none" stroke="currentColor" strokeWidth="5.5">
-        {/* Main Cloud Bubble */}
-        <path d="M 42 70 C 27 70, 22 55, 32 45 C 22 35, 37 20, 52 25 C 67 15, 82 30, 77 45 C 87 55, 82 70, 67 70 Z" fill="rgba(255,255,255,0.4)" />
-        {/* Circle 1 */}
-        <circle cx="34" cy="79" r="6.5" fill="rgba(255,255,255,0.3)" />
-        {/* Circle 2 */}
-        <circle cx="25" cy="88" r="4.5" fill="rgba(255,255,255,0.2)" />
-      </svg>
-    </motion.div>
-  );
-}
-
-
 
 
 const containerVariants = {
@@ -136,21 +87,11 @@ export default function Hero() {
 
   return (
     <section className="relative h-screen overflow-hidden bg-[#f4f3ff] flex items-center justify-center">
-      {/* Huge GAIN shadow background */}
-      {/* Huge GAIN shadow background */}
-      <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-0 overflow-hidden">
-        <img src="/gain-watermark-dark.svg" alt="" className="w-[90%] md:w-[70%] h-auto opacity-[0.08] select-none" aria-hidden="true" />
-      </div>
-
-
+      {/* GAIN Watermark */}
+      <GainWatermark />
 
       {/* Soft purple glow */}
       <div className="absolute bottom-[-180px] right-[-100px] h-[380px] w-[380px] rounded-full bg-purple-300/25 blur-3xl pointer-events-none" />
-
-      {/* Cloud Floaters in Background */}
-      {CLOUD_FLOATERS.map((cf, idx) => (
-        <CloudFloater key={idx} {...cf} />
-      ))}
 
       {/* Main Content */}
       <motion.div

@@ -1,3 +1,5 @@
+import GainWatermark from "../components/GainWatermark";
+
 export default function ResourcesHero() {
   return (
     // Resources Hero
@@ -7,9 +9,7 @@ export default function ResourcesHero() {
       <div className="absolute top-[-140px] right-[-120px] w-[360px] h-[360px] rounded-full bg-purple-300/30 blur-3xl" />
 
       {/* Huge GAIN shadow background */}
-      <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-0 overflow-hidden">
-        <img src="/gain-watermark-dark.svg" alt="" className="w-[90%] md:w-[70%] h-auto opacity-[0.08] select-none" aria-hidden="true" />
-      </div>
+      <GainWatermark />
 
       {/* Main Content */}
       <div className="relative z-10 max-w-4xl text-center px-6 pt-16">

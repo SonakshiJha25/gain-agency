@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { CalendarDays, ArrowRight } from "lucide-react";
+import GainWatermark from "../components/GainWatermark";
 
 export default function AboutCTA() {
   return (
@@ -14,9 +15,7 @@ export default function AboutCTA() {
         <div className="relative overflow-hidden rounded-[32px] gain-gradient shadow-2xl shadow-[#7e22ce]/20">
 
           {/* Background GAIN outline */}
-          <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-0 overflow-hidden">
-            <img src="/gain-watermark-light.svg" alt="" className="w-[90%] md:w-[70%] h-auto opacity-[0.08] select-none" aria-hidden="true" />
-          </div>
+          <GainWatermark light />
 
           <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-10 px-8 md:px-16 py-16 md:py-10 md:py-20 items-center">
 

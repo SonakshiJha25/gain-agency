@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Flame, Target, TrendingUp } from "lucide-react";
+import GainWatermark from "../components/GainWatermark";
 
 const pillars = [
   {
@@ -61,9 +62,7 @@ export default function AboutStory() {
         <div className="relative rounded-[32px] gain-gradient px-10 py-8 md:py-14 md:px-20 md:py-16 mb-20 overflow-hidden shadow-2xl shadow-[#7e22ce]/20">
 
           {/* Decorative watermark */}
-          <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-0 overflow-hidden">
-            <img src="/gain-watermark-light.svg" alt="" className="w-[90%] md:w-[70%] h-auto opacity-[0.08] select-none" aria-hidden="true" />
-          </div>
+          <GainWatermark light />
 
           {/* Decorative circles */}
           <div className="absolute -top-20 -right-20 w-64 h-64 rounded-full bg-white/5 border border-white/10" />

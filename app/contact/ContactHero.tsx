@@ -2,20 +2,20 @@ import GainWatermark from "../components/GainWatermark";
 
 export default function ContactHero() {
   return (
-    <section className="relative pt-64 md:pt-72 pb-32 md:pb-40 overflow-hidden bg-[#f4f3ff] flex items-center justify-center">
+    <section className="relative overflow-hidden bg-[#f4f3ff] min-h-screen flex items-center justify-center px-6">
 
-      {/* Glow */}
-      <div className="absolute top-[-140px] right-[-120px] w-[360px] h-[360px] rounded-full bg-purple-300/30 blur-3xl" />
+      {/* Background Glow */}
+      <div className="absolute top-[-120px] right-[-100px] w-[380px] h-[380px] bg-purple-300/20 rounded-full blur-3xl" />
       <div className="absolute bottom-[-120px] left-[-100px] w-[300px] h-[300px] rounded-full bg-teal-200/20 blur-3xl" />
 
-      {/* Huge GAIN shadow background */}
+      {/* GAIN Watermark */}
       <GainWatermark />
 
       {/* Main Content */}
-      <div className="relative z-10 max-w-4xl text-center px-6 pt-16">
+      <div className="relative z-10 max-w-4xl text-center">
 
-        {/* Label */}
-        <p className="text-[#13B3B7] text-[11px] font-bold tracking-[0.28em] uppercase mb-4 text-center mx-auto">
+        {/* Badge */}
+        <p className="text-xs font-bold tracking-[0.2em] uppercase text-[#13B3B7] mb-6">
           Contact Our Team
         </p>
 
@@ -29,13 +29,12 @@ export default function ContactHero() {
         </h1>
 
         {/* Description */}
-        <p className="max-w-2xl mx-auto mt-5 text-[15px] md:text-[14px] leading-[1.9] text-slate-700">
+        <p className="max-w-2xl mx-auto mt-6 text-sm leading-relaxed text-slate-700">
           Ready to scale your Amazon store? Contact us today to learn more about our
           advertising, account management, and content creation services.
         </p>
 
       </div>
-
     </section>
   );
 }

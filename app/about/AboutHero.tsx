@@ -5,14 +5,14 @@ export default function AboutHero() {
     <section className="relative overflow-hidden bg-[#f4f3ff] min-h-screen flex items-center justify-center px-6">
 
       {/* Background Glow */}
-      <div className="absolute bottom-[-180px] right-[-100px] h-[380px] w-[380px] rounded-full bg-purple-300/25 blur-3xl" />
-      <div className="absolute top-[-100px] left-[-80px] h-[300px] w-[300px] rounded-full bg-teal-200/20 blur-3xl" />
+      <div className="absolute top-[-120px] right-[-100px] w-[380px] h-[380px] bg-purple-300/20 rounded-full blur-3xl" />
+      <div className="absolute bottom-[-120px] left-[-100px] w-[300px] h-[300px] rounded-full bg-teal-200/20 blur-3xl" />
 
       {/* Huge GAIN shadow background */}
       <GainWatermark />
 
       {/* Main Content */}
-      <div className="relative z-10 max-w-4xl text-center pt-28">
+      <div className="relative z-10 max-w-4xl text-center">
 
         {/* Small Badge */}
         <p className="text-xs font-bold tracking-[0.2em] uppercase text-[#13B3B7] mb-6">

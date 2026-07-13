@@ -6,10 +6,11 @@ import GainWatermark from "../components/GainWatermark";
 
 export default function ServicesHero() {
   return (
-    <section className="relative overflow-hidden bg-[#f4f3ff] pt-64 md:pt-72 pb-32 md:pb-40 flex items-center justify-center px-6">
+    <section className="relative overflow-hidden bg-[#f4f3ff] min-h-screen flex items-center justify-center px-6">
 
       {/* Background Glow */}
       <div className="absolute top-[-120px] right-[-100px] w-[380px] h-[380px] bg-purple-300/20 rounded-full blur-3xl" />
+      <div className="absolute bottom-[-120px] left-[-100px] w-[300px] h-[300px] rounded-full bg-teal-200/20 blur-3xl" />
 
       {/* Huge GAIN shadow background */}
       <GainWatermark />

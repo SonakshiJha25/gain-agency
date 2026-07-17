@@ -53,7 +53,7 @@ function AnimatedArrow() {
 
   return (
     <svg
-      viewBox="0 -30 1316 1050"
+      viewBox="0 -30 1316 1120"
       className="absolute inset-0 w-full h-full"
       fill="none"
       aria-hidden="true"
@@ -106,7 +106,7 @@ function AnimatedArrow() {
 /* Static PNG + SVG overlay — no 3D, no tilt */
 function HeroImage() {
   return (
-    <div className="relative w-full max-w-[1180px]" style={{ isolation: "isolate" }}>
+    <div className="relative w-full max-w-[1350px]" style={{ isolation: "isolate" }}>
       {/* The static PNG — bars + background never move */}
       <motion.img
         src="/hero1.png"
@@ -226,7 +226,7 @@ export default function Hero() {
           initial={{ opacity: 0, x: 60 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1.1, ease: [0.16, 1, 0.3, 1], delay: 0.15 }}
-          className="flex-[1.4] flex items-center justify-end md:-mr-12"
+          className="flex-[1.8] flex items-center justify-end md:-mr-16"
         >
           <HeroImage />
         </motion.div>

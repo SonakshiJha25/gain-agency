@@ -2,8 +2,12 @@
 
 import { useState } from "react";
 import { ArrowRight, CheckCircle } from "lucide-react";
+import { useRouter } from "next/navigation";
+
+const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwrK6f8NSm5EwTBpjFXCXCZZbLRZ8jZe2iOHhQjzrNrF4ZAkQiIzwOUbKjjLr_SgIQS/exec";
 
 export default function ContactForm() {
+  const router = useRouter();
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -13,7 +17,6 @@ export default function ContactForm() {
   });
 
   const [loading, setLoading] = useState(false);
-  const [success, setSuccess] = useState(false);
   const [error, setError] = useState("");
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -41,10 +44,14 @@ export default function ContactForm() {
     setLoading(true);
 
     try {
-      // simulate API call
-      await new Promise((res) => setTimeout(res, 1200));
+      await fetch(APPS_SCRIPT_URL, {
+        method: "POST",
+        body: JSON.stringify({
+          ...form,
+          formSource: "Contact Form"
+        }),
+      });
 
-      setSuccess(true);
       setForm({
         name: "",
         email: "",
@@ -52,30 +59,14 @@ export default function ContactForm() {
         store: "",
         message: "",
       });
+
+      router.push('/thank-you');
     } catch (err) {
       setError("Something went wrong. Try again.");
     } finally {
       setLoading(false);
     }
   };
-
-  if (success) {
-    return (
-      <div className="bg-[#f0fdf4] border border-[#bbf7d0] rounded-[32px] p-8 text-center shadow-sm">
-
-        <CheckCircle className="w-10 h-10 text-[#16a34a] mx-auto" />
-
-        <h2 className="mt-4 text-lg font-bold text-[#15803d]">
-          Request Submitted Successfully
-        </h2>
-
-        <p className="mt-2 text-[14px] text-[#166534]">
-          We’ll review your store and get back within 24–48 hours.
-        </p>
-
-      </div>
-    );
-  }
 
   return (
     <div className="bg-white border border-gray-100 rounded-3xl p-8 md:p-10 shadow-2xl shadow-slate-200/60">

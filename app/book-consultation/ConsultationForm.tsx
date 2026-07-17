@@ -1,9 +1,12 @@
 "use client";
 
 import { useState } from "react";
+import { useRouter } from "next/navigation";
+
+const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwrK6f8NSm5EwTBpjFXCXCZZbLRZ8jZe2iOHhQjzrNrF4ZAkQiIzwOUbKjjLr_SgIQS/exec";
 
 export default function ConsultationForm() {
-
+  const router = useRouter();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -13,8 +16,6 @@ export default function ConsultationForm() {
   });
 
   const [loading, setLoading] = useState(false);
-
-  const [success, setSuccess] = useState(false);
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -37,15 +38,13 @@ export default function ConsultationForm() {
 
     try {
 
-      await fetch(
-        "https://script.google.com/macros/s/AKfycbw9S9QV_-6a9Tka6adIfHyh7eFtWrD0uU5i8CbNRPpCx_SOZPUk2XkjnSETiTnbH6F6/exec",
-        {
-          method: "POST",
-          body: JSON.stringify(formData)
-        }
-      );
-
-      setSuccess(true);
+      await fetch(APPS_SCRIPT_URL, {
+        method: "POST",
+        body: JSON.stringify({
+          ...formData,
+          formSource: "Consultation Form"
+        }),
+      });
 
       setFormData({
         name: "",
@@ -55,11 +54,7 @@ export default function ConsultationForm() {
         goals: ""
       });
 
-      setTimeout(() => {
-
-        setSuccess(false);
-
-      }, 4000);
+      router.push('/thank-you');
 
     } catch (error) {
 
@@ -296,56 +291,7 @@ export default function ConsultationForm() {
 
       </div>
 
-      {/* Toast Popup */}
-      {
-        success && (
 
-          <div
-            className="
-              fixed
-              bottom-6
-              right-6
-              z-[999]
-              w-[340px]
-              rounded-2xl
-              border
-              border-green-200
-              bg-white
-              p-5
-              shadow-2xl
-              shadow-green-100/40
-              animate-[slideUp_0.4s_ease]
-            "
-          >
-
-            <div className="flex items-start gap-3">
-
-              {/* Icon */}
-              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-green-100">
-
-                <div className="h-3 w-3 rounded-full bg-green-500" />
-
-              </div>
-
-              {/* Content */}
-              <div>
-
-                <h3 className="text-[15px] font-semibold text-[#152268]">
-                  Consultation Request Sent
-                </h3>
-
-                <p className="mt-1 text-[13px] leading-[1.7] text-slate-700">
-                  Our team will contact you within 24–48 hours.
-                </p>
-
-              </div>
-
-            </div>
-
-          </div>
-
-        )
-      }
 
     </section>
   );
